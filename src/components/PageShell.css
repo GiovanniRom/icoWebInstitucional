@@ -1,0 +1,8 @@
+.page-shell h1 {
+  margin-top: 0;
+}
+
+.page-shell__description {
+  color: var(--text);
+  max-width: 42rem;
+}

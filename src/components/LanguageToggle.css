@@ -1,0 +1,46 @@
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.lang-toggle__track {
+  position: relative;
+  width: 2.5rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}
+
+.lang-toggle__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(50% - 2px);
+  height: calc(100% - 4px);
+  border-radius: 999px;
+  background: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.lang-toggle__thumb--en {
+  left: unset;
+  top: unset;
+  right: 2px;
+  bottom: 2px;
+  transform: none;
+}
+
+.lang-toggle__label--active {
+  color: var(--text-h);
+  font-weight: 600;
+}

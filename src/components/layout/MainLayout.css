@@ -1,0 +1,16 @@
+.site-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  width: 100%;
+  text-align: left;
+}
+
+.site-main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+}
+
+.site-main:has(.soy-alumno-page) {
+  padding: 0;
+}

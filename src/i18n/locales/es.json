@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "programaAcademico": "Programa académico",
+    "soyAlumno": "Soy alumno",
+    "soyProfesor": "Soy profesor",
+    "soyEgresado": "Soy egresado",
+    "logoAlt": "Logotipos institucionales",
+    "logoFesAlt": "Logo FES",
+    "logoPowerAlt": "Logo Power",
+    "programTitleLine1": "Ingeniería",
+    "programTitleLine2": "en computación",
+    "menuOpen": "Abrir menú de navegación",
+    "menuClose": "Cerrar menú de navegación",
+    "mainNavigation": "Navegación principal"
+  },
+  "schedulesView": {
+    "tituloSemestre": "HORARIOS DEL SEMESTRE 2026 -II",
+    "iframeTitle": "Tabla de horarios por semestre"
+  },
+  "language": {
+    "es": "ES",
+    "en": "EN"
+  },
+  "pages": {
+    "inicio": {
+      "title": "Inicio",
+      "description": "Bienvenido al sitio institucional de la escuela."
+    },
+    "programaAcademico": {
+      "title": "Programa académico",
+      "description": "Consulta planes de estudio, materias y calendario escolar."
+    },
+    "soyAlumno": {
+      "title": "Soy alumno",
+      "description": "Accede a servicios, horarios y recursos para estudiantes."
+    },
+    "soyProfesor": {
+      "title": "Soy profesor",
+      "description": "Herramientas y enlaces para el personal docente."
+    },
+    "soyEgresado": {
+      "title": "Soy egresado",
+      "description": "Información y comunidad para egresados."
+    }
+  },
+  "footer": {
+    "anivAlt": "50 aniversario",
+    "roleHead": "Jefa de carrera",
+    "nameHead": "Ing. Ana Claudia Reyes Cruz",
+    "roleSecretary": "Secretario Técnico",
+    "nameSecretary": "Ing. Toberto Agustin Garcia Castrejon",
+    "mailAlt": "Correo electrónico",
+    "whatsappAlt": "WhatsApp",
+    "facebookAlt": "Facebook"
+  }
+}

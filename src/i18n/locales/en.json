@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "programaAcademico": "Academic program",
+    "soyAlumno": "I am a student",
+    "soyProfesor": "I am a teacher",
+    "soyEgresado": "I am an alumnus",
+    "logoAlt": "Institutional logos",
+    "logoFesAlt": "FES logo",
+    "logoPowerAlt": "Power logo",
+    "programTitleLine1": "Computer",
+    "programTitleLine2": "Engineering",
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close navigation menu",
+    "mainNavigation": "Main navigation"
+  },
+  "schedulesView": {
+    "tituloSemestre": "SCHEDULES FOR SEMESTER 2026 -II",
+    "iframeTitle": "Semester schedule table"
+  },
+  "language": {
+    "es": "ES",
+    "en": "EN"
+  },
+  "pages": {
+    "inicio": {
+      "title": "Home",
+      "description": "Welcome to the school's institutional website."
+    },
+    "programaAcademico": {
+      "title": "Academic program",
+      "description": "View study plans, subjects, and school calendar."
+    },
+    "soyAlumno": {
+      "title": "I am a student",
+      "description": "Access services, schedules, and resources for students."
+    },
+    "soyProfesor": {
+      "title": "I am a teacher",
+      "description": "Tools and links for teaching staff."
+    },
+    "soyEgresado": {
+      "title": "I am an alumnus",
+      "description": "Information and community for alumni."
+    }
+  },
+  "footer": {
+    "anivAlt": "50th anniversary",
+    "roleHead": "Program head",
+    "nameHead": "Eng. Ana Claudia Reyes Cruz",
+    "roleSecretary": "Technical secretary",
+    "nameSecretary": "Eng. Toberto Agustin Garcia Castrejon",
+    "mailAlt": "Email",
+    "whatsappAlt": "WhatsApp",
+    "facebookAlt": "Facebook"
+  }
+}

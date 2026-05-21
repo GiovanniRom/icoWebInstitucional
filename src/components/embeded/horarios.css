@@ -1,0 +1,15 @@
+.horarios-embed {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.horarios-embed__cabeceras {
+  margin: 0;
+}
+
+.horarios-embed__iframe {
+  min-height: min(70vh, 720px);
+}

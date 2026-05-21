@@ -1,0 +1,25 @@
+/**
+ * Paleta de colores institucional — referencia del proyecto
+ *
+ * Uso: importar este archivo al inicio de la app (main.tsx) y consumir
+ * las variables CSS en componentes y estilos.
+ *
+ * | Rol        | Variable              | Hex     | Uso sugerido                          |
+ * |------------|-----------------------|---------|---------------------------------------|
+ * | Primario   | --color-primary       | #002F6C | Pantone 294 C — cabecera, CTAs, enlaces |
+ * | Secundario | --color-secondary     | #F2A900 | Pantone 130 C — acentos, hover, CTAs  |
+ * | Terciario  | --color-tertiary      | #FFFFFF | Texto sobre primario, fondos claros   |
+ */
+
+:root {
+  --color-primary: #002f6c; /* Pantone 294 C — RGB(0, 47, 108) */
+  --color-secondary: #f2a900; /* Pantone 130 C — RGB(242, 169, 0) */
+  --color-tertiary: #FFFFFF;
+
+  /* Alias semánticos */
+  --color-header-bg: var(--color-primary);
+  --color-header-text: var(--color-tertiary);
+  --color-header-text-muted: rgba(255, 255, 255, 0.85);
+  --color-header-accent: var(--color-secondary);
+  --color-header-border: rgba(255, 255, 255, 0.2);
+}

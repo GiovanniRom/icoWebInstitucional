@@ -29,7 +29,16 @@
   "pages": {
     "inicio": {
       "title": "Home",
-      "description": "Welcome to the school's institutional website."
+      "description": "Welcome to the school's institutional website.",
+      "carouselLabel": "Announcements",
+      "convocatoria1Alt": "Institutional announcement",
+      "accesos": {
+        "navLabel": "Main site sections",
+        "programaAcademico": "Academic program",
+        "soyAlumno": "I am a student",
+        "soyProfesor": "I am a teacher",
+        "soyEgresado": "I am an alumnus"
+      }
     },
     "programaAcademico": {
       "title": "Academic program",

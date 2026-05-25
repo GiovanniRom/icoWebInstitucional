@@ -1,13 +1,14 @@
-import { useTranslation } from 'react-i18next'
-import { PageShell } from '../components/PageShell'
+import { ConvocatoriasCarousel } from '../components/inicio/ConvocatoriasCarousel'
+import { InicioAccesos } from '../components/inicio/InicioAccesos'
+import './InicioPage.css'
 
 export function InicioPage() {
-  const { t } = useTranslation()
-
   return (
-    <PageShell
-      title={t('pages.inicio.title')}
-      description={t('pages.inicio.description')}
-    />
+    <div className="inicio-page">
+      <ConvocatoriasCarousel />
+      <div className="inicio-page__content">
+        <InicioAccesos />
+      </div>
+    </div>
   )
 }

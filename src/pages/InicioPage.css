@@ -1,0 +1,12 @@
+.inicio-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.inicio-page__content {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1.5rem 10% 2rem;
+}

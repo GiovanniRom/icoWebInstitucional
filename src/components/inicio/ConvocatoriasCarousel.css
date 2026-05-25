@@ -1,0 +1,43 @@
+.convocatorias-carousel {
+  width: 100%;
+  margin: 0;
+}
+
+.convocatorias-carousel__slider {
+  width: 100%;
+}
+
+.convocatorias-carousel__slider .slick-slider,
+.convocatorias-carousel__slider .slick-list,
+.convocatorias-carousel__slider .slick-track,
+.convocatorias-carousel__slider .slick-slide > div {
+  width: 100%;
+}
+
+.convocatorias-carousel__slide {
+  width: 100%;
+  line-height: 0;
+}
+
+.convocatorias-carousel__imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(55vh, 520px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.convocatorias-carousel__slider .slick-dots {
+  bottom: 12px;
+}
+
+.convocatorias-carousel__slider .slick-dots li button {
+  background: var(--color-primary);
+  opacity: 0.35;
+}
+
+.convocatorias-carousel__slider .slick-dots li.slick-active button {
+  opacity: 1;
+  background: var(--color-dorado);
+}

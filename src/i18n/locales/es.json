@@ -29,7 +29,16 @@
   "pages": {
     "inicio": {
       "title": "Inicio",
-      "description": "Bienvenido al sitio institucional de la escuela."
+      "description": "Bienvenido al sitio institucional de la escuela.",
+      "carouselLabel": "Convocatorias",
+      "convocatoria1Alt": "Convocatoria institucional",
+      "accesos": {
+        "navLabel": "Accesos principales del sitio",
+        "programaAcademico": "Programa académico",
+        "soyAlumno": "Soy alumno",
+        "soyProfesor": "Soy profesor",
+        "soyEgresado": "Soy egresado"
+      }
     },
     "programaAcademico": {
       "title": "Programa académico",

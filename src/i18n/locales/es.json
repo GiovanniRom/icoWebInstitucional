@@ -18,6 +18,10 @@
     "tituloSemestre": "HORARIOS DEL SEMESTRE 2026 -II",
     "iframeTitle": "Tabla de horarios por semestre"
   },
+  "tutorsView": {
+    "titulo": "Búsqueda de mis tutores",
+    "iframeTitle": "Tabla de tutores por grupo y profesor"
+  },
   "language": {
     "es": "ES",
     "en": "EN"
@@ -33,7 +37,34 @@
     },
     "soyAlumno": {
       "title": "Soy alumno",
-      "description": "Accede a servicios, horarios y recursos para estudiantes."
+      "description": "Accede a servicios, horarios y recursos para estudiantes.",
+      "calendarioEscolar": "Calendario escolar 2026 - II",
+      "abrirCalendarioPdf": "Abrir calendario escolar (PDF) en una nueva pestaña",
+      "accesos": {
+        "navLabel": "Accesos rápidos para alumnos",
+        "evalProf": "Evaluación a profesores",
+        "evalProfLine1": "Evaluación a",
+        "evalProfLine2": "profesores",
+        "horariosLab": "Horarios de laboratorio",
+        "horariosLabLine1": "Horarios de",
+        "horariosLabLine2": "laboratorio",
+        "extra": "Horarios de extraordinarios",
+        "extraLine1": "Horarios de",
+        "extraLine2": "extraordinarios",
+        "formacion": "Horas de formación complementaria",
+        "formacionLine1": "Horas de formación",
+        "formacionLine2": "complementaria"
+      },
+      "practicaRedes": {
+        "titulo": "Práctica de redes",
+        "descripcion": "Llevadas a cabo durante el séptimo semestre de la carrera, consisten en entender y armar los sistemas de conexión computacionales de redes de Internet, aplicando los conocimientos vistos durante la carrera. No forman parte del Laboratorio L3 Silvia Torres Castilleja.",
+        "botonesLabel": "Seleccionar práctica de redes",
+        "redes1": "REDES I",
+        "redes2": "REDES II",
+        "practica": "Práctica {{num}}",
+        "practica6y7": "Práctica 6 y 7",
+        "vistaPrevia": "Vista previa práctica {{num}}"
+      }
     },
     "soyProfesor": {
       "title": "Soy profesor",

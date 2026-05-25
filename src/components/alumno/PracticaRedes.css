@@ -1,0 +1,71 @@
+.practica-redes {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.practica-redes__texto {
+  margin: 1rem 0 1.5rem;
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--text);
+}
+
+.practica-redes__botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.practica-redes__boton {
+  flex: 0 0 40%;
+  width: 40%;
+  max-width: 40%;
+  padding: 0.85rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 16px;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 1.75vw, 1.3rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-dorado);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.practica-redes__boton:hover:not(.practica-redes__boton--activo) {
+  background-color: #003d85;
+}
+
+.practica-redes__boton--activo {
+  background-color: var(--color-dorado);
+  color: var(--color-primary);
+  border-color: var(--color-dorado);
+}
+
+.practica-redes__lista {
+  width: 100%;
+}
+
+.practica-redes__boton:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .practica-redes__boton {
+    flex: 0 0 40%;
+    width: 40%;
+    max-width: 40%;
+    padding: 0.75rem 0.75rem;
+    font-size: 1.05rem;
+  }
+}

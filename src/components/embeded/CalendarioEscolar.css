@@ -1,0 +1,29 @@
+.calendario-escolar-embed {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.calendario-escolar-embed__pdf {
+  display: block;
+  width: 100%;
+  min-height: min(75vh, 820px);
+  height: min(75vh, 820px);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+}
+
+.calendario-escolar-embed__fallback {
+  margin: 0.75rem 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.calendario-escolar-embed__fallback a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.calendario-escolar-embed__fallback a:hover {
+  color: var(--color-secondary);
+}

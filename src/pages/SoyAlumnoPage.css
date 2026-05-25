@@ -18,3 +18,7 @@
 .soy-alumno-page__content .page-shell__description {
   max-width: none;
 }
+
+.soy-alumno-page__content .cabecera-titulo:last-of-type {
+  margin-top: 2rem;
+}

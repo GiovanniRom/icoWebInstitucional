@@ -18,6 +18,10 @@
     "tituloSemestre": "SCHEDULES FOR SEMESTER 2026 -II",
     "iframeTitle": "Semester schedule table"
   },
+  "tutorsView": {
+    "titulo": "Search for my tutors",
+    "iframeTitle": "Tutors table by group and instructor"
+  },
   "language": {
     "es": "ES",
     "en": "EN"
@@ -33,7 +37,34 @@
     },
     "soyAlumno": {
       "title": "I am a student",
-      "description": "Access services, schedules, and resources for students."
+      "description": "Access services, schedules, and resources for students.",
+      "calendarioEscolar": "School calendar 2026 - II",
+      "abrirCalendarioPdf": "Open school calendar (PDF) in a new tab",
+      "accesos": {
+        "navLabel": "Quick links for students",
+        "evalProf": "Professor evaluation",
+        "evalProfLine1": "Professor",
+        "evalProfLine2": "evaluation",
+        "horariosLab": "Laboratory schedules",
+        "horariosLabLine1": "Laboratory",
+        "horariosLabLine2": "schedules",
+        "extra": "Extraordinary course schedules",
+        "extraLine1": "Extraordinary",
+        "extraLine2": "schedules",
+        "formacion": "Complementary training hours",
+        "formacionLine1": "Complementary",
+        "formacionLine2": "training hours"
+      },
+      "practicaRedes": {
+        "titulo": "Network practicum",
+        "descripcion": "Carried out during the seventh semester of the program, these activities consist of understanding and building computer network connection systems for the Internet, applying knowledge acquired throughout the program. They are not part of the L3 Silvia Torres Castilleja Laboratory.",
+        "botonesLabel": "Select network practicum",
+        "redes1": "NETWORKS I",
+        "redes2": "NETWORKS II",
+        "practica": "Practice {{num}}",
+        "practica6y7": "Practices 6 and 7",
+        "vistaPrevia": "Practice {{num}} preview"
+      }
     },
     "soyProfesor": {
       "title": "I am a teacher",

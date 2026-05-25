@@ -1,0 +1,44 @@
+.redes-practicas-lista {
+  margin-top: 1.5rem;
+}
+
+.redes-practicas-lista .ant-collapse-header {
+  align-items: center !important;
+}
+
+.redes-practicas-lista__etiqueta {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.redes-practicas-lista__vistas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.redes-practicas-lista__vistas > .vista-previa-documento {
+  flex: 1 1 280px;
+  min-width: 280px;
+}
+
+.redes-practicas-lista__vistas > .vista-previa-documento:not(:last-child) {
+  border-right: 4px solid var(--color-primary);
+  padding-right: 1rem;
+  margin-right: 0;
+}
+
+@media (max-width: 720px) {
+  .redes-practicas-lista__vistas > .vista-previa-documento:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 4px solid var(--color-primary);
+    padding-bottom: 1rem;
+  }
+}

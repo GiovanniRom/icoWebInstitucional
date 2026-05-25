@@ -32,6 +32,7 @@
       "description": "Bienvenido al sitio institucional de la escuela.",
       "carouselLabel": "Convocatorias",
       "convocatoria1Alt": "Convocatoria institucional",
+      "convocatoria2Alt": "Convocatoria institucional 2",
       "accesos": {
         "navLabel": "Accesos principales del sitio",
         "programaAcademico": "Programa académico",

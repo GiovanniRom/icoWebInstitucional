@@ -32,6 +32,7 @@
       "description": "Welcome to the school's institutional website.",
       "carouselLabel": "Announcements",
       "convocatoria1Alt": "Institutional announcement",
+      "convocatoria2Alt": "Institutional announcement 2",
       "accesos": {
         "navLabel": "Main site sections",
         "programaAcademico": "Academic program",

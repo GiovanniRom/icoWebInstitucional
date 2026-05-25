@@ -1,6 +1,12 @@
 .inicio-page {
   width: 100%;
   min-height: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.inicio-page > .convocatorias-carousel {
+  margin-top: 0;
 }
 
 .inicio-page__content {

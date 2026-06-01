@@ -3,6 +3,7 @@ import { MainLayout } from '../components/layout/MainLayout'
 import { InicioPage } from '../pages/InicioPage'
 import { ProgramaAcademicoPage } from '../pages/ProgramaAcademicoPage'
 import { SoyAlumnoPage } from '../pages/SoyAlumnoPage'
+import { SoyAlumnoHorariosPage } from '../pages/SoyAlumnoHorariosPage'
 import { SoyProfesorPage } from '../pages/SoyProfesorPage'
 import { SoyEgresadoPage } from '../pages/SoyEgresadoPage'
 
@@ -13,6 +14,7 @@ export function AppRoutes() {
         <Route index element={<InicioPage />} />
         <Route path="programa-academico" element={<ProgramaAcademicoPage />} />
         <Route path="soy-alumno" element={<SoyAlumnoPage />} />
+        <Route path="soy-alumno/horarios" element={<SoyAlumnoHorariosPage />} />
         <Route path="soy-profesor" element={<SoyProfesorPage />} />
         <Route path="soy-egresado" element={<SoyEgresadoPage />} />
       </Route>

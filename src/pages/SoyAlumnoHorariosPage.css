@@ -1,0 +1,25 @@
+.soy-alumno-horarios-page .soy-alumno-page__content {
+  width: 90%;
+  max-width: 90%;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.soy-alumno-horarios-page__volver {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.soy-alumno-horarios-page__volver:hover {
+  color: var(--color-dorado);
+  text-decoration: underline;
+}
+
+.soy-alumno-horarios-page .horarios-embed {
+  margin-top: 0;
+}

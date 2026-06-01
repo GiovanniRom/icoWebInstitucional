@@ -43,11 +43,73 @@
     },
     "programaAcademico": {
       "title": "Academic program",
-      "description": "View study plans, subjects, and school calendar."
+      "description": "View study plans, subjects, and school calendar.",
+      "fila1": {
+        "imagenAlt": "Program teaching staff",
+        "titulo": "Graduate profile",
+        "descripcion": "Graduates will be able to analyze, design, develop, and implement software and hardware systems; manage IT projects; apply engineering methodologies and standards; and communicate results orally and in writing in professional and academic settings.",
+        "boton": "Areas of performance",
+        "textoExtra": "Computer engineers can work in public and private sector organizations in software development, databases, networks, artificial intelligence, cybersecurity, teaching and research, as well as in technology entrepreneurship."
+      },
+      "fila2": {
+        "imagenAlt": "Academic program image",
+        "titulo": "Admission profile",
+        "descripcion": "Applicants are encouraged to have a solid foundation in mathematics (algebra, geometry, precalculus), logical and abstract reasoning skills, as well as an interest in technology and solving problems using computers.",
+        "boton": "Study plan",
+        "textoExtra": "It is desirable to have analytical skills, teamwork ability, discipline for self-directed study, scientific curiosity, and a willingness to continuously update one's knowledge in a constantly evolving field."
+      },
+      "fila3": {
+        "malla": {
+          "imagenAlt": "Curriculum map icon",
+          "tituloLinea1": "Curriculum",
+          "tituloLinea2": "map"
+        },
+        "plan": {
+          "imagenAlt": "Study plan icon",
+          "tituloLinea1": "Study",
+          "tituloLinea2": "plan"
+        }
+      },
+      "institucional": {
+        "ariaLabel": "UNAM and Engineering in Aragón institutional identity",
+        "todosSomosUnam": "#TodosSomosUNAM",
+        "carrusel": "image carousel",
+        "hechoEnAragon": "#HechoEnAragón"
+      },
+      "misionVision": {
+        "ariaLabel": "Program mission, vision, and values",
+        "mision": {
+          "titulo": "Mission",
+          "descripcion": "To educate computer engineering professionals with a strong scientific and humanistic foundation, capable of analyzing, designing, implementing, and managing technological solutions that contribute to societal development, in alignment with UNAM principles and values."
+        },
+        "vision": {
+          "titulo": "Vision",
+          "descripcion": "To be a leading academic program in computer engineering education, recognized for teaching quality, engagement with industry, and contributions to innovation, research, and the training of professionals committed to Mexico."
+        },
+        "valores": {
+          "titulo": "Values",
+          "descripcion": "Honesty, responsibility, respect, equity, freedom of thought and critique, commitment to academic excellence, collaborative work, and service to the university community and society."
+        }
+      }
     },
     "soyAlumno": {
       "title": "I am a student",
       "description": "Access services, schedules, and resources for students.",
+      "navegacion": {
+        "label": "I am a student section navigation",
+        "horarios": "Go to schedules",
+        "calendario": "Go to school calendar",
+        "tutores": "Go to tutor search",
+        "redes": "Go to network practicum",
+        "tooltipPrincipal": "In this section you will find useful information about schedules, the school calendar, tutors, and network practicum activities."
+      },
+      "horarios": {
+        "pageTitle": "Semester schedules",
+        "description": "View schedules by semester and group.",
+        "verHorarios": "View schedules for semester 2026-II",
+        "clicTitulo": "Click the title to view the schedules",
+        "volver": "← Back to I am a student"
+      },
       "calendarioEscolar": "School calendar 2026 - II",
       "abrirCalendarioPdf": "Open school calendar (PDF) in a new tab",
       "accesos": {
@@ -78,7 +140,9 @@
     },
     "soyProfesor": {
       "title": "I am a teacher",
-      "description": "Tools and links for teaching staff."
+      "description": "Tools and links for teaching staff.",
+      "tituloCorreos": "Faculty email directory",
+      "correosIframeTitle": "Faculty email directory"
     },
     "soyEgresado": {
       "title": "I am an alumnus",

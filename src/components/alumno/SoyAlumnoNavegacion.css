@@ -1,0 +1,205 @@
+.soy-alumno-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.soy-alumno-nav__identidad {
+  display: flex;
+  flex: 0 0 25%;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  min-width: 0;
+}
+
+.soy-alumno-nav__tooltip-envoltorio {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.soy-alumno-nav__icono-principal {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  cursor: help;
+  border-radius: 6px;
+  outline: none;
+}
+
+.soy-alumno-nav__icono-principal:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+.soy-alumno-nav__tooltip {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: calc(100% + 0.75rem);
+  width: max-content;
+  max-width: min(320px, 55vw);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: var(--color-tertiary);
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  text-transform: none;
+  box-shadow: 0 8px 24px rgba(0, 47, 108, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%) translateX(-6px);
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease;
+}
+
+.soy-alumno-nav__tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  border: 8px solid transparent;
+  border-right-color: var(--color-primary);
+  transform: translateY(-50%);
+}
+
+.soy-alumno-nav__tooltip-envoltorio:hover .soy-alumno-nav__tooltip,
+.soy-alumno-nav__tooltip-envoltorio:focus-within .soy-alumno-nav__tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 900px) {
+  .soy-alumno-nav__tooltip {
+    top: auto;
+    bottom: calc(100% + 0.65rem);
+    left: 50%;
+    max-width: min(280px, 85vw);
+    text-align: center;
+    transform: translateX(-50%) translateY(6px);
+  }
+
+  .soy-alumno-nav__tooltip::after {
+    top: 100%;
+    right: auto;
+    left: 50%;
+    border: 8px solid transparent;
+    border-right-color: transparent;
+    border-top-color: var(--color-primary);
+    transform: translateX(-50%);
+  }
+
+  .soy-alumno-nav__tooltip-envoltorio:hover .soy-alumno-nav__tooltip,
+  .soy-alumno-nav__tooltip-envoltorio:focus-within .soy-alumno-nav__tooltip {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.soy-alumno-nav__secciones {
+  display: flex;
+  flex: 0 0 75%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 75%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.soy-alumno-nav__item {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+}
+
+.soy-alumno-nav__boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.35rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.soy-alumno-nav__boton:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.soy-alumno-nav__boton:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+.soy-alumno-nav__icono-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 72px;
+}
+
+.soy-alumno-nav__icono {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.soy-alumno-nav__etiqueta {
+  font-family: var(--sans);
+  font-size: clamp(0.6rem, 0.85vw, 0.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .soy-alumno-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .soy-alumno-nav__identidad {
+    flex: none;
+    width: 100%;
+  }
+
+  .soy-alumno-nav__secciones {
+    flex: none;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .soy-alumno-nav__item {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+}

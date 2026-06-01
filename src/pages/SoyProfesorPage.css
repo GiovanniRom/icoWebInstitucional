@@ -1,0 +1,63 @@
+.soy-profesor-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.soy-profesor-page__content {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+  margin-block: 0;
+  padding: 0 5% 2rem;
+}
+
+/* Proporción del banner.svg de profesor (viewBox ≈ 813 × 50), no la del programa académico */
+.soy-profesor-page__titulo-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 812.88 / 50.25;
+  min-height: 0;
+  line-height: 0;
+  background-color: #fff;
+  background-image: url('../assets/images/profesor/banner.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+.soy-profesor-page__titulo-cabecera h1.soy-profesor-page__titulo-texto {
+  margin-block: 0;
+  letter-spacing: 0.04em;
+}
+
+.soy-profesor-page__titulo-texto {
+  margin: 0;
+  padding: 0.35rem 1.25rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3vw, 2.25rem);
+  line-height: 1.2;
+  color: var(--color-dorado);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.profesores-correo {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .soy-profesor-page__content {
+    padding: 0 1.25rem 1.75rem;
+  }
+
+  .soy-profesor-page__titulo-cabecera h1.soy-profesor-page__titulo-texto {
+    margin-block: 0;
+  }
+}

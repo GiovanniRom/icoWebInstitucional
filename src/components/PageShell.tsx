@@ -3,7 +3,8 @@ import './PageShell.css'
 
 type PageShellProps = {
   title: string
-  description: string
+  description?: string
+  beforeTitle?: ReactNode
   children?: ReactNode
   className?: string
 }
@@ -11,6 +12,7 @@ type PageShellProps = {
 export function PageShell({
   title,
   description,
+  beforeTitle,
   children,
   className,
 }: PageShellProps) {
@@ -20,8 +22,11 @@ export function PageShell({
 
   return (
     <article className={articleClass}>
+      {beforeTitle}
       <h1>{title}</h1>
-      <p className="page-shell__description">{description}</p>
+      {description ? (
+        <p className="page-shell__description">{description}</p>
+      ) : null}
       {children}
     </article>
   )

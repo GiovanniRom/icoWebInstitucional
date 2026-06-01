@@ -1,0 +1,18 @@
+.programa-academico-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.programa-academico-page__content {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding: 1.5rem 5% 2rem;
+}
+
+.programa-academico-page__content h1 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}

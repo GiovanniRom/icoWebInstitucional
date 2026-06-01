@@ -12,6 +12,8 @@
 }
 
 .site-main:has(.soy-alumno-page),
-.site-main:has(.inicio-page) {
+.site-main:has(.inicio-page),
+.site-main:has(.programa-academico-page),
+.site-main:has(.soy-profesor-page) {
   padding: 0;
 }

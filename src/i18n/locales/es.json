@@ -43,11 +43,73 @@
     },
     "programaAcademico": {
       "title": "Programa académico",
-      "description": "Consulta planes de estudio, materias y calendario escolar."
+      "description": "Consulta planes de estudio, materias y calendario escolar.",
+      "fila1": {
+        "imagenAlt": "Cuerpo docente del programa",
+        "titulo": "Perfil de egreso",
+        "descripcion": "El egresado será capaz de analizar, diseñar, desarrollar e implementar sistemas de software y hardware; gestionar proyectos de TI; aplicar metodologías y estándares de la ingeniería; y comunicar resultados de forma oral y escrita en contextos profesionales y académicos.",
+        "boton": "Ámbitos de desempeño",
+        "textoExtra": "El ingeniero en computación puede desempeñarse en empresas del sector público y privado, en desarrollo de software, bases de datos, redes, inteligencia artificial, ciberseguridad, docencia e investigación, así como en el emprendimiento de proyectos tecnológicos."
+      },
+      "fila2": {
+        "imagenAlt": "Imagen del programa académico",
+        "titulo": "Perfil de ingreso",
+        "descripcion": "Se recomienda que el aspirante tenga bases sólidas en matemáticas (álgebra, geometría, precálculo), capacidad de razonamiento lógico y abstracto, así como interés por la tecnología y la resolución de problemas mediante el uso de computadoras.",
+        "boton": "Plan de estudios",
+        "textoExtra": "Es deseable contar con capacidad de análisis, trabajo en equipo, disciplina para el estudio autónomo, curiosidad científica y disposición para actualizarse de forma continua en un área en constante evolución."
+      },
+      "fila3": {
+        "malla": {
+          "imagenAlt": "Icono de malla curricular",
+          "tituloLinea1": "Malla",
+          "tituloLinea2": "curricular"
+        },
+        "plan": {
+          "imagenAlt": "Icono de plan de estudios",
+          "tituloLinea1": "Plan de",
+          "tituloLinea2": "estudios"
+        }
+      },
+      "institucional": {
+        "ariaLabel": "Identidad institucional UNAM e Ingeniería en Aragón",
+        "todosSomosUnam": "#TodosSomosUNAM",
+        "carrusel": "carrousel de imagenes",
+        "hechoEnAragon": "#HechoEnAragón"
+      },
+      "misionVision": {
+        "ariaLabel": "Misión, visión y valores del programa",
+        "mision": {
+          "titulo": "Misión",
+          "descripcion": "Formar profesionales en ingeniería en computación con sólida preparación científica y humanística, capaces de analizar, diseñar, implementar y gestionar soluciones tecnológicas que contribuyan al desarrollo de la sociedad, en congruencia con los principios y valores de la UNAM."
+        },
+        "vision": {
+          "titulo": "Visión",
+          "descripcion": "Ser un programa académico de referencia en la formación de ingenieros en computación, reconocido por la calidad de su docencia, la vinculación con el sector productivo y su aportación a la innovación, la investigación y la formación de profesionales comprometidos con México."
+        },
+        "valores": {
+          "titulo": "Valores",
+          "descripcion": "Honestidad, responsabilidad, respeto, equidad, libertad de pensamiento y crítica, compromiso con la excelencia académica, el trabajo colaborativo y el servicio a la comunidad universitaria y a la sociedad."
+        }
+      }
     },
     "soyAlumno": {
       "title": "Soy alumno",
       "description": "Accede a servicios, horarios y recursos para estudiantes.",
+      "navegacion": {
+        "label": "Navegación por secciones de Soy alumno",
+        "horarios": "Ir a horarios",
+        "calendario": "Ir a calendario escolar",
+        "tutores": "Ir a búsqueda de tutores",
+        "redes": "Ir a práctica de redes",
+        "tooltipPrincipal": "En esta sección encontrarás información útil sobre horarios, calendario escolar, tutores y prácticas de redes."
+      },
+      "horarios": {
+        "pageTitle": "Horarios del semestre",
+        "description": "Consulta los horarios por semestre y grupo.",
+        "verHorarios": "Ver horarios del semestre 2026-II",
+        "clicTitulo": "Da clic en el título para ver los horarios",
+        "volver": "← Volver a Soy alumno"
+      },
       "calendarioEscolar": "Calendario escolar 2026 - II",
       "abrirCalendarioPdf": "Abrir calendario escolar (PDF) en una nueva pestaña",
       "accesos": {
@@ -78,7 +140,9 @@
     },
     "soyProfesor": {
       "title": "Soy profesor",
-      "description": "Herramientas y enlaces para el personal docente."
+      "description": "Herramientas y enlaces para el personal docente.",
+      "tituloCorreos": "Correos del profesorado",
+      "correosIframeTitle": "Directorio de correos del profesorado"
     },
     "soyEgresado": {
       "title": "Soy egresado",

@@ -11,17 +11,20 @@ type FilaTextoProps = {
   readonly boton: string
 }
 
-type FilaTextoImagenProps = FilaTextoProps & {
+type FilaTextoImagenBaseProps = FilaTextoProps & {
   readonly imagenSrc?: string
   readonly imagenAlt: string
   readonly invertido?: boolean
   readonly imagenPlaceholder?: boolean
+}
+
+type FilaTextoImagenProps = FilaTextoImagenBaseProps & {
   readonly extraVisible: boolean
   readonly extraId: string
   readonly onBotonClick: () => void
 }
 
-type ProgramaAcademicoBloqueProps = FilaTextoImagenProps & {
+type ProgramaAcademicoBloqueProps = FilaTextoImagenBaseProps & {
   readonly textoExtra: string
 }
 

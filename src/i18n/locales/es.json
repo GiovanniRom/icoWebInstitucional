@@ -62,12 +62,14 @@
         "malla": {
           "imagenAlt": "Icono de malla curricular",
           "tituloLinea1": "Malla",
-          "tituloLinea2": "curricular"
+          "tituloLinea2": "curricular",
+          "enlaceAriaLabel": "Abrir malla curricular del plan de estudios 2119"
         },
         "plan": {
           "imagenAlt": "Icono de plan de estudios",
           "tituloLinea1": "Plan de",
-          "tituloLinea2": "estudios"
+          "tituloLinea2": "estudios",
+          "enlaceAriaLabel": "Abrir plan de estudios en PDF"
         }
       },
       "institucional": {
@@ -109,6 +111,16 @@
         "verHorarios": "Ver horarios del semestre 2026-II",
         "clicTitulo": "Da clic en el título para ver los horarios",
         "volver": "← Volver a Soy alumno"
+      },
+      "extraordinarios": {
+        "pageTitle": "Horarios de extraordinarios",
+        "description": "Consulta los horarios de exámenes extraordinarios en PDF.",
+        "volver": "← Volver a Soy alumno",
+        "listaAriaLabel": "Listado de horarios de extraordinarios",
+        "pdfs": {
+          "primeraVuelta": "Extras primera vuelta",
+          "extraLargo": "Extra largo ICO"
+        }
       },
       "calendarioEscolar": "Calendario escolar 2026 - II",
       "abrirCalendarioPdf": "Abrir calendario escolar (PDF) en una nueva pestaña",

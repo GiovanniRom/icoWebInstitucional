@@ -33,7 +33,7 @@ export function Footer() {
             <img src={mailIconUrl} alt="" />
           </a>
           <a
-            href="https://wa.me/"
+            href="https://api.whatsapp.com/send?phone=5216632132912&text=Hola%21%20"
             className="site-footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export function Footer() {
             <img src={waIconUrl} alt="" />
           </a>
           <a
-            href="https://facebook.com/"
+            href="https://www.facebook.com/FESAragon.computacion"
             className="site-footer__social-link"
             target="_blank"
             rel="noopener noreferrer"

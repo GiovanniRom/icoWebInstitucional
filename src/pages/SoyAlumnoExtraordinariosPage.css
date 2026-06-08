@@ -1,0 +1,21 @@
+.soy-alumno-extraordinarios-page .soy-alumno-page__content {
+  width: 90%;
+  max-width: 90%;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.soy-alumno-extraordinarios-page__volver {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.soy-alumno-extraordinarios-page__volver:hover {
+  color: var(--color-dorado);
+  text-decoration: underline;
+}

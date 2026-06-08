@@ -62,12 +62,14 @@
         "malla": {
           "imagenAlt": "Curriculum map icon",
           "tituloLinea1": "Curriculum",
-          "tituloLinea2": "map"
+          "tituloLinea2": "map",
+          "enlaceAriaLabel": "Open curriculum map for study plan 2119"
         },
         "plan": {
           "imagenAlt": "Study plan icon",
           "tituloLinea1": "Study",
-          "tituloLinea2": "plan"
+          "tituloLinea2": "plan",
+          "enlaceAriaLabel": "Open study plan PDF"
         }
       },
       "institucional": {
@@ -109,6 +111,16 @@
         "verHorarios": "View schedules for semester 2026-II",
         "clicTitulo": "Click the title to view the schedules",
         "volver": "← Back to I am a student"
+      },
+      "extraordinarios": {
+        "pageTitle": "Make-up exam schedules",
+        "description": "View make-up exam schedules in PDF format.",
+        "volver": "← Back to I am a student",
+        "listaAriaLabel": "Make-up exam schedule documents",
+        "pdfs": {
+          "primeraVuelta": "First-round make-up exams",
+          "extraLargo": "ICO extended make-up exam"
+        }
       },
       "calendarioEscolar": "School calendar 2026 - II",
       "abrirCalendarioPdf": "Open school calendar (PDF) in a new tab",

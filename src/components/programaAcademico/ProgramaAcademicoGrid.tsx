@@ -134,6 +134,8 @@ type ProgramaAcademicoAccesoProps = {
   readonly imagenAlt: string
   readonly tituloLinea1: string
   readonly tituloLinea2: string
+  readonly href?: string
+  readonly enlaceAriaLabel?: string
 }
 
 function ProgramaAcademicoAcceso({
@@ -141,18 +143,40 @@ function ProgramaAcademicoAcceso({
   imagenAlt,
   tituloLinea1,
   tituloLinea2,
+  href,
+  enlaceAriaLabel,
 }: ProgramaAcademicoAccesoProps) {
+  const tituloAccesible = enlaceAriaLabel ?? `${tituloLinea1} ${tituloLinea2}`
+
+  const contenidoTarjeta = (
+    <>
+      <div className="programa-academico-acceso__imagen">
+        <img src={imagenSrc} alt={imagenAlt} className="programa-academico-acceso__imagen-media" draggable={false} />
+      </div>
+      <div className="programa-academico-acceso__titulo" aria-hidden={href ? true : undefined}>
+        <span className="programa-academico-acceso__titulo-linea">{tituloLinea1}</span>
+        <span className="programa-academico-acceso__titulo-linea">{tituloLinea2}</span>
+      </div>
+    </>
+  )
+
   return (
     <article className="programa-academico-acceso">
-      <div className="programa-academico-acceso__tarjeta">
-        <div className="programa-academico-acceso__imagen">
-          <img src={imagenSrc} alt={imagenAlt} className="programa-academico-acceso__imagen-media" draggable={false} />
+      {href ? (
+        <a
+          href={href}
+          className="programa-academico-acceso__tarjeta programa-academico-acceso__tarjeta--enlace"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={tituloAccesible}
+        >
+          {contenidoTarjeta}
+        </a>
+      ) : (
+        <div className="programa-academico-acceso__tarjeta" aria-label={tituloAccesible}>
+          {contenidoTarjeta}
         </div>
-        <div className="programa-academico-acceso__titulo" aria-label={`${tituloLinea1} ${tituloLinea2}`}>
-          <span className="programa-academico-acceso__titulo-linea">{tituloLinea1}</span>
-          <span className="programa-academico-acceso__titulo-linea">{tituloLinea2}</span>
-        </div>
-      </div>
+      )}
     </article>
   )
 }
@@ -187,12 +211,16 @@ export function ProgramaAcademicoGrid() {
           imagenAlt={t('pages.programaAcademico.fila3.malla.imagenAlt')}
           tituloLinea1={t('pages.programaAcademico.fila3.malla.tituloLinea1')}
           tituloLinea2={t('pages.programaAcademico.fila3.malla.tituloLinea2')}
+          href="https://ingenierias-aragon.net/ICO/PlanEstudios2119/"
+          enlaceAriaLabel={t('pages.programaAcademico.fila3.malla.enlaceAriaLabel')}
         />
         <ProgramaAcademicoAcceso
           imagenSrc={planIcon}
           imagenAlt={t('pages.programaAcademico.fila3.plan.imagenAlt')}
           tituloLinea1={t('pages.programaAcademico.fila3.plan.tituloLinea1')}
           tituloLinea2={t('pages.programaAcademico.fila3.plan.tituloLinea2')}
+          href="https://drive.google.com/file/d/1mnPvcATbixSNaC_qd6pNSgXWvtD2N_1M/view"
+          enlaceAriaLabel={t('pages.programaAcademico.fila3.plan.enlaceAriaLabel')}
         />
       </div>
     </div>

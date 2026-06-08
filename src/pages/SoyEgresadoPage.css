@@ -1,0 +1,29 @@
+.soy-egresado-page {
+  min-height: 100%;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+.soy-egresado-page__content {
+  margin-inline: 5%;
+  padding: 1.5rem 2rem 3rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+}
+
+.soy-egresado-page__content h1 {
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+.soy-egresado-page__content .page-shell__description {
+  max-width: none;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .soy-egresado-page__content {
+    margin-inline: 0;
+    padding: 1.25rem 1.25rem 2.5rem;
+  }
+}

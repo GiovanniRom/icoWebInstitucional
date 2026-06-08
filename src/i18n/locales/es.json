@@ -158,7 +158,64 @@
     },
     "soyEgresado": {
       "title": "Soy egresado",
-      "description": "Información y comunidad para egresados."
+      "description": "Información útil para guiarte en tu proceso de titulación.",
+      "pasos": {
+        "tituloSeccion": "Titúlate en 3 sencillos pasos",
+        "paso1": {
+          "titulo": "Expide tu documentación básica",
+          "descripcion": "Son los certificados que has obtenido durante tu trayectoria estudiantil."
+        },
+        "paso2": {
+          "titulo": "Escoge y realiza tu modalidad de titulación",
+          "descripcion": "Escoge de acuerdo a tus intereses y objetivos personales, ¡Tienes que disfrutarla!"
+        },
+        "paso3": {
+          "titulo": "Monitorea el estado y recibe tu título",
+          "descripcion": "¡Felicidades!, ya eres titulado de la carrera de Ingeniería en Computación."
+        }
+      },
+      "documentacionBasica": {
+        "tituloSeccion": "Documentación básica",
+        "listo": "¡Listo!",
+        "filaInicio": {
+          "col1": "Reúne los documentos oficiales que respaldan tu trayectoria académica. Estos certificados son indispensables para iniciar cualquier trámite de titulación.",
+          "col2": "Verifica que cada documento esté legible, vigente y en el formato solicitado por la facultad. Guarda copias digitales y físicas para tu expediente."
+        },
+        "filaFin": {
+          "col1": "Cuando hayas completado los siete puntos de esta lista, habrás reunido la documentación básica necesaria para continuar con tu proceso.",
+          "col2": "Conserva tus originales y presenta los documentos según las indicaciones de la jefatura de carrera o la ventanilla correspondiente."
+        },
+        "documentos": {
+          "doc1": {
+            "titulo": "Acta de nacimiento",
+            "texto": "Solicita copia certificada reciente. Debe coincidir con los datos de tu expediente escolar y demás documentos oficiales."
+          },
+          "doc2": {
+            "titulo": "CURP",
+            "texto": "Presenta copia legible y vigente. Verifica que no contenga errores en tu nombre, fecha de nacimiento o clave alfanumérica."
+          },
+          "doc3": {
+            "titulo": "Certificado de bachillerato",
+            "texto": "Incluye el certificado original o copia certificada del nivel medio superior, con sello y firma de la institución emisora."
+          },
+          "doc4": {
+            "titulo": "Historial académico",
+            "texto": "Obtén el historial completo de la licenciatura en la ventanilla escolar. Revisa que refleje todas las materias acreditadas."
+          },
+          "doc5": {
+            "titulo": "Constancia de servicio social",
+            "texto": "Debe acreditar la liberación del servicio social conforme a la normativa de la facultad y del programa académico."
+          },
+          "doc6": {
+            "titulo": "Certificado de idioma",
+            "texto": "Entrega el comprobante del requisito de idioma extranjero vigente, según el plan de estudios y las disposiciones vigentes."
+          },
+          "doc7": {
+            "titulo": "Fotografías tamaño titulación",
+            "texto": "Prepara las fotografías en el formato y cantidad indicados para trámites de titulación. Deben ser recientes y con fondo blanco."
+          }
+        }
+      }
     }
   },
   "footer": {

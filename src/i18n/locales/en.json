@@ -158,7 +158,64 @@
     },
     "soyEgresado": {
       "title": "I am an alumnus",
-      "description": "Information and community for alumni."
+      "description": "Useful information to guide you through the degree certification process.",
+      "pasos": {
+        "tituloSeccion": "Get your degree in 3 simple steps",
+        "paso1": {
+          "titulo": "Obtain your basic documentation",
+          "descripcion": "These are the certificates you have obtained throughout your academic journey."
+        },
+        "paso2": {
+          "titulo": "Choose and complete your degree certification modality",
+          "descripcion": "Choose according to your interests and personal goals—you should enjoy the process!"
+        },
+        "paso3": {
+          "titulo": "Track your status and receive your degree",
+          "descripcion": "Congratulations! you are now a graduate of the Computer Engineering program."
+        }
+      },
+      "documentacionBasica": {
+        "tituloSeccion": "Basic documentation",
+        "listo": "Done!",
+        "filaInicio": {
+          "col1": "Gather the official documents that support your academic record. These certificates are essential to begin any degree certification process.",
+          "col2": "Make sure each document is legible, valid, and in the format required by the faculty. Keep digital and physical copies for your file."
+        },
+        "filaFin": {
+          "col1": "Once you have completed all seven items on this list, you will have gathered the basic documentation needed to move forward.",
+          "col2": "Keep your originals safe and submit documents according to instructions from the program office or the appropriate service desk."
+        },
+        "documentos": {
+          "doc1": {
+            "titulo": "Birth certificate",
+            "texto": "Request a recent certified copy. It must match the personal data on your school file and other official documents."
+          },
+          "doc2": {
+            "titulo": "CURP",
+            "texto": "Submit a legible, valid copy. Check that your name, date of birth, and alphanumeric code are correct."
+          },
+          "doc3": {
+            "titulo": "High school certificate",
+            "texto": "Include the original certificate or a certified copy from upper secondary school, with the issuing institution's seal and signature."
+          },
+          "doc4": {
+            "titulo": "Academic transcript",
+            "texto": "Obtain the complete undergraduate transcript from the school office. Verify that it lists all credited courses."
+          },
+          "doc5": {
+            "titulo": "Social service certificate",
+            "texto": "It must confirm completion of social service according to faculty regulations and the academic program requirements."
+          },
+          "doc6": {
+            "titulo": "Language certificate",
+            "texto": "Submit valid proof of the foreign language requirement according to the study plan and current regulations."
+          },
+          "doc7": {
+            "titulo": "Degree photo set",
+            "texto": "Prepare photographs in the format and quantity required for degree procedures. They must be recent with a white background."
+          }
+        }
+      }
     }
   },
   "footer": {

@@ -36,6 +36,9 @@ export function PasosTitulacion() {
           </article>
         ))}
       </div>
+      <p className="egresado-pasos__hint">
+        {t('pages.soyEgresado.pasos.hintInteraccion')}
+      </p>
     </section>
   )
 }

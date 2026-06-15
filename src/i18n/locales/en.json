@@ -161,6 +161,7 @@
       "description": "Useful information to guide you through the degree certification process.",
       "pasos": {
         "tituloSeccion": "Get your degree in 3 simple steps",
+        "hintInteraccion": "Hover over the numbers to learn more details",
         "paso1": {
           "titulo": "Obtain your basic documentation",
           "descripcion": "These are the certificates you have obtained throughout your academic journey."
@@ -178,41 +179,150 @@
         "tituloSeccion": "Basic documentation",
         "listo": "Done!",
         "filaInicio": {
-          "col1": "Gather the official documents that support your academic record. These certificates are essential to begin any degree certification process.",
-          "col2": "Make sure each document is legible, valid, and in the format required by the faculty. Keep digital and physical copies for your file."
+          "col1": {
+            "parrafo1": "Throughout your time as a student, you will obtain each of the following documents for your eventual degree certification.",
+            "parrafo2": "The first four documents are required to begin your degree certification process."
+          },
+          "botonEnviar": "I want to submit my documentation!"
         },
         "filaFin": {
-          "col1": "Once you have completed all seven items on this list, you will have gathered the basic documentation needed to move forward.",
-          "col2": "Keep your originals safe and submit documents according to instructions from the program office or the appropriate service desk."
+          "col1": {
+            "parrafo1": "Documents 5 through 7 are required to complete your degree certification process; however, they are not essential to choose and carry out your degree certification modality.",
+            "parrafo2": "If you have any questions, contact the ICO program office."
+          },
+          "jefaturaAlt": "ICO program office contact"
         },
         "documentos": {
           "doc1": {
-            "titulo": "Birth certificate",
-            "texto": "Request a recent certified copy. It must match the personal data on your school file and other official documents."
+            "titulo": "Academic transcript with 100% of credits",
+            "texto": "To obtain it, review your academic record/progress on https://www.dgae-siae.unam.mx/www_gate.php and verify that the term 11 completion label appears. The corresponding document is then used as support to continue your degree certification process."
           },
           "doc2": {
-            "titulo": "CURP",
-            "texto": "Submit a legible, valid copy. Check that your name, date of birth, and alphanumeric code are correct."
+            "titulo": "Social service release letter",
+            "texto": "This is the official document stating that your social service has been validated and recognized by UNAM. To obtain it, you must first register where you want to complete your social service in UNAM's social service registration system at https://siassypp.unam.mx/, or visit the program office for guidance on internal social service openings. Remember that you must have completed at least 70% of your total credits; do not forget to bring your updated academic transcript."
           },
           "doc3": {
-            "titulo": "High school certificate",
-            "texto": "Include the original certificate or a certified copy from upper secondary school, with the issuing institution's seal and signature."
+            "titulo": "English language proficiency certificate",
+            "texto": "This is the official document certifying that you have reading comprehension in English. You can obtain it from the FES Aragón language center. If the certificate is digital, you must print it on colored opaline paper."
           },
           "doc4": {
-            "titulo": "Academic transcript",
-            "texto": "Obtain the complete undergraduate transcript from the school office. Verify that it lists all credited courses."
+            "titulo": "480-hour complementary training certificate",
+            "texto": "The complementary training hours certificate is an official document certifying that the graduate has completed the required hours in extracurricular activities established by the study plan. You can obtain this document at the program office."
           },
           "doc5": {
-            "titulo": "Social service certificate",
-            "texto": "It must confirm completion of social service according to faculty regulations and the academic program requirements."
+            "titulo": "Computer Engineering studies certificate",
+            "texto": "The studies certificate is requested during the initial stage of the degree certification process, in parallel with modality registration and the academic record review. To obtain it, you must bring your academic transcript with term 11 status and 4 oval passport-size photos (3.5 × 5 cm) to the school services office."
           },
           "doc6": {
-            "titulo": "Language certificate",
-            "texto": "Submit valid proof of the foreign language requirement according to the study plan and current regulations."
+            "titulo": "UNAM high school studies certificate",
+            "texto": {
+              "parrafo1": "This is the complete high school studies certificate issued by any UNAM campus. It officially certifies your upper secondary education when you completed high school there.",
+              "parrafo2": "To process it or request information, visit the CCH campus where you completed high school or consult UNAM's school certification guidelines."
+            }
           },
           "doc7": {
-            "titulo": "Degree photo set",
-            "texto": "Prepare photographs in the format and quantity required for degree procedures. They must be recent with a white background."
+            "titulo": "DGAE academic record review",
+            "texto": "Go to https://ingreso.dgae.unam.mx:8020/consulta_avance_sl to obtain the academic record review dates. You will need your account number and password for the SIAE-DGAE system. It is important that the specific dates appear through the tenth item."
+          }
+        }
+      },
+      "modalidadTitulacion": {
+        "tituloSeccion": "Degree certification modality",
+        "intro": "Explore and choose from the different degree certification modalities available to you at FES Aragón. Keep in mind that you must complete the modality you select in order to finish your degree certification process. Choose according to your interests and personal goals.",
+        "hintModalidad": "Click on the modality you are interested in to learn more details",
+        "listo": "Done!",
+        "pasosPlaceholder": {
+          "paso1": {
+            "titulo": "Step 8",
+            "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          },
+          "paso2": {
+            "titulo": "Step 9",
+            "texto": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          },
+          "paso3": {
+            "titulo": "Step 10",
+            "texto": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          },
+          "paso4": {
+            "titulo": "Step 11",
+            "texto": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          "paso5": {
+            "titulo": "Step 12",
+            "texto": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, et interdum mi tempus imperdiet."
+          },
+          "paso6": {
+            "titulo": "Step 13",
+            "texto": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+          },
+          "paso7": {
+            "titulo": "Step 14",
+            "texto": "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper."
+          }
+        },
+        "modalidades": {
+          "conReplicaOral": {
+            "titulo": "Written work with oral defense",
+            "descripcion": "Includes thesis/tesina components and a research activity.",
+            "submodalidades": {
+              "tesisTesina": {
+                "titulo": "Thesis/Tesina",
+                "descripcion": "Written research work and its oral defense before a committee, according to the stages outlined in your study plan."
+              },
+              "actividadInvestigacion": {
+                "titulo": "Research activity",
+                "descripcion": "Participation in a research project and presentation of results before a committee."
+              }
+            }
+          },
+          "sinReplicaOral": {
+            "titulo": "Written work without oral defense",
+            "descripcion": "Focuses on professional or teaching experience, complemented by social service and an academic article.",
+            "submodalidades": {
+              "apoyoDocencia": {
+                "titulo": "Teaching support",
+                "descripcion": "Teaching support at the faculty: preparation of materials and guidance with a faculty advisor."
+              },
+              "trabajoProfesional": {
+                "titulo": "Professional work",
+                "descripcion": "Verifiable work experience and documentation of work performed in the professional field."
+              },
+              "servicioSocial": {
+                "titulo": "Social service",
+                "descripcion": "Completion of social service and submission of the documentation required by this modality."
+              },
+              "articuloAcademico": {
+                "titulo": "Academic article",
+                "descripcion": "Publication in an indexed journal and proof of authorship or co-authorship of the article."
+              }
+            }
+          },
+          "sinTrabajoEscrito": {
+            "titulo": "No written work",
+            "descripcion": "Base requirements are met and a general exam (CENEVAL/EGEL) and performance conditions are completed, with the possibility of graduate studies.",
+            "submodalidades": {
+              "examenGeneralCeneval": {
+                "titulo": "General exam (CENEVAL)",
+                "descripcion": "Requirements for the general graduation exam (EGEL/CENEVAL) and performance records."
+              },
+              "altoNivelAcademico": {
+                "titulo": "High academic standing",
+                "descripcion": "Academic excellence criteria: grade point average, transcript with no failed courses, and completion within the standard program duration."
+              },
+              "estudiosPosgrado": {
+                "titulo": "Graduate studies",
+                "descripcion": "Admission to and continuation in recognized and authorized graduate programs."
+              },
+              "cursosAmpliacion": {
+                "titulo": "Courses for expanding and deepening knowledge",
+                "descripcion": "Additional courses to broaden and deepen competencies, with a required minimum grade point average."
+              },
+              "diplomado": {
+                "titulo": "Diploma program",
+                "descripcion": "Diploma program with required hours, minimum grade, and validation by the corresponding committee."
+              }
+            }
           }
         }
       }

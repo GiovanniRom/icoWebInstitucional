@@ -161,6 +161,7 @@
       "description": "Información útil para guiarte en tu proceso de titulación.",
       "pasos": {
         "tituloSeccion": "Titúlate en 3 sencillos pasos",
+        "hintInteraccion": "Desliza el mouse sobre los números para conocer más detalles",
         "paso1": {
           "titulo": "Expide tu documentación básica",
           "descripcion": "Son los certificados que has obtenido durante tu trayectoria estudiantil."
@@ -178,41 +179,150 @@
         "tituloSeccion": "Documentación básica",
         "listo": "¡Listo!",
         "filaInicio": {
-          "col1": "Reúne los documentos oficiales que respaldan tu trayectoria académica. Estos certificados son indispensables para iniciar cualquier trámite de titulación.",
-          "col2": "Verifica que cada documento esté legible, vigente y en el formato solicitado por la facultad. Guarda copias digitales y físicas para tu expediente."
+          "col1": {
+            "parrafo1": "Durante tu trayectoria como estudiante irás obteniendo cada uno de los siguientes documentos para tu eventual titulación.",
+            "parrafo2": "Son obligatorios los primeros cuatro documentos para poder iniciar tu proceso de titulación."
+          },
+          "botonEnviar": "¡Quiero enviar mi documentación!"
         },
         "filaFin": {
-          "col1": "Cuando hayas completado los siete puntos de esta lista, habrás reunido la documentación básica necesaria para continuar con tu proceso.",
-          "col2": "Conserva tus originales y presenta los documentos según las indicaciones de la jefatura de carrera o la ventanilla correspondiente."
+          "col1": {
+            "parrafo1": "Los documentos del 5 al 7 son obligatorios para finalizar tu proceso de titulación, sin embargo, no son imprescindibles para escoger y realizar la modalidad de titulación.",
+            "parrafo2": "Si tienes alguna duda, contacta a jefatura de ICO."
+          },
+          "jefaturaAlt": "Contacto jefatura ICO"
         },
         "documentos": {
           "doc1": {
-            "titulo": "Acta de nacimiento",
-            "texto": "Solicita copia certificada reciente. Debe coincidir con los datos de tu expediente escolar y demás documentos oficiales."
+            "titulo": "Historial académico con 100% de créditos",
+            "texto": "Para obtenerlo, revisa tu historial/avance en la página https://www.dgae-siae.unam.mx/www_gate.php y verifica que aparezca la leyenda de término 11. Posteriormente, el documento correspondiente se usa como soporte para continuar con tu proceso de titulación."
           },
           "doc2": {
-            "titulo": "CURP",
-            "texto": "Presenta copia legible y vigente. Verifica que no contenga errores en tu nombre, fecha de nacimiento o clave alfanumérica."
+            "titulo": "Carta de liberación de servicio social",
+            "texto": "Es el documento oficial que dice que tu servicio social está validado y reconocido por la UNAM. Para obtenerlo es necesario que primero registres donde quieres realizar tu servicio social en el sistema de registro de servicio social de la UNAM https://siassypp.unam.mx/ o te acerques a la jefatura de carrera para que te asesoren sobre vacantes de servicio social internas. Recuerda que como requisito indispensable debes contar con al menos 70% de créditos totales cursados, no olvides llevar tu historial académico actualizado."
           },
           "doc3": {
-            "titulo": "Certificado de bachillerato",
-            "texto": "Incluye el certificado original o copia certificada del nivel medio superior, con sello y firma de la institución emisora."
+            "titulo": "Constancia de acreditación del idioma inglés",
+            "texto": "Es el documento oficial que acredita que tienes comprensión de lectura en inglés. Puedes obtenerlo del centro de lenguas FES Aragón. Si la constancia es digital, es necesario imprimirla en papel opalina a color."
           },
           "doc4": {
-            "titulo": "Historial académico",
-            "texto": "Obtén el historial completo de la licenciatura en la ventanilla escolar. Revisa que refleje todas las materias acreditadas."
+            "titulo": "Constancia 480 horas de formación complementaria",
+            "texto": "La constancia de horas de formación complementaria es un documento oficial que acredita que el egresado ha cumplido con el número de horas requeridas en actividades extracurriculares establecidas por el plan de estudios. Este documento lo puedes obtener en la jefatura de carrera."
           },
           "doc5": {
-            "titulo": "Constancia de servicio social",
-            "texto": "Debe acreditar la liberación del servicio social conforme a la normativa de la facultad y del programa académico."
+            "titulo": "Certificado de estudios de ingeniería en computación",
+            "texto": "El certificado de estudios se solicita durante la etapa inicial del proceso de titulación, de manera paralela al registro de modalidad y a la revisión de estudios. Para obtenerlo es necesario llevar tu historial académico con estatus de término 11 y 4 fotografías tamaño credencial ovaladas (3,5 × 5 cm) a servicios escolares."
           },
           "doc6": {
-            "titulo": "Certificado de idioma",
-            "texto": "Entrega el comprobante del requisito de idioma extranjero vigente, según el plan de estudios y las disposiciones vigentes."
+            "titulo": "Certificado de estudios bachillerato UNAM",
+            "texto": {
+              "parrafo1": "Es el certificado íntegro de estudios del bachillerato emitido por cualquier plantel UNAM. Acredita de forma oficial tu trayectoria en el nivel medio superior cuando cursaste el bachillerato.",
+              "parrafo2": "Para tramitarlo o solicitar información, acude al plantel CCH donde cursaste el bachillerato o consulta los lineamientos de certificación escolar de la UNAM."
+            }
           },
           "doc7": {
-            "titulo": "Fotografías tamaño titulación",
-            "texto": "Prepara las fotografías en el formato y cantidad indicados para trámites de titulación. Deben ser recientes y con fondo blanco."
+            "titulo": "Revisión de estudios de la DGAE",
+            "texto": "Ingresa a la siguiente liga https://ingreso.dgae.unam.mx:8020/consulta_avance_sl para obtener las fechas de revisión de estudios. Pide número de cuenta y contraseña del sistema SIAE-DGAE. Es importante que aparezcan las fechas específicas hasta el décimo inciso."
+          }
+        }
+      },
+      "modalidadTitulacion": {
+        "tituloSeccion": "Modalidad de titulación",
+        "intro": "Explora y elige las diferentes modalidades de titulación que la FES Aragón dispone para ti, ten en cuenta que tendrás que completar la modalidad escogida para poder finalizar tu proceso de titulación. Escógelas de acuerdo a tus intereses y objetivos personales.",
+        "hintModalidad": "Da clic en la modalidad de tu interés para conocer más detalles",
+        "listo": "¡Listo!",
+        "pasosPlaceholder": {
+          "paso1": {
+            "titulo": "Paso 8",
+            "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          },
+          "paso2": {
+            "titulo": "Paso 9",
+            "texto": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          },
+          "paso3": {
+            "titulo": "Paso 10",
+            "texto": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          },
+          "paso4": {
+            "titulo": "Paso 11",
+            "texto": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          "paso5": {
+            "titulo": "Paso 12",
+            "texto": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, et interdum mi tempus imperdiet."
+          },
+          "paso6": {
+            "titulo": "Paso 13",
+            "texto": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+          },
+          "paso7": {
+            "titulo": "Paso 14",
+            "texto": "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper."
+          }
+        },
+        "modalidades": {
+          "conReplicaOral": {
+            "titulo": "Trabajo escrito con réplica oral",
+            "descripcion": "Incluye componentes de tesis/tesina y una actividad de investigación.",
+            "submodalidades": {
+              "tesisTesina": {
+                "titulo": "Tesis/Tesina",
+                "descripcion": "Trabajo escrito de investigación y su defensa oral ante jurado, según las etapas que marca tu plan de estudios."
+              },
+              "actividadInvestigacion": {
+                "titulo": "Actividad de investigación",
+                "descripcion": "Participación en un proyecto de investigación y presentación de resultados ante jurado."
+              }
+            }
+          },
+          "sinReplicaOral": {
+            "titulo": "Trabajo escrito sin réplica oral",
+            "descripcion": "Se enfoca en experiencia o actividades profesionales/docentes, complementado con servicio social y un artículo académico.",
+            "submodalidades": {
+              "apoyoDocencia": {
+                "titulo": "Apoyo a la docencia",
+                "descripcion": "Apoyo a la docencia en la facultad: elaboración de material y acompañamiento con asesor docente."
+              },
+              "trabajoProfesional": {
+                "titulo": "Trabajo profesional",
+                "descripcion": "Experiencia laboral acreditable y documentación del trabajo realizado en el ámbito profesional."
+              },
+              "servicioSocial": {
+                "titulo": "Servicio social",
+                "descripcion": "Cumplimiento del servicio social y entrega de la documentación que exige esta modalidad."
+              },
+              "articuloAcademico": {
+                "titulo": "Artículo académico",
+                "descripcion": "Publicación en revista indexada y constancia de autoría o coautoría del artículo."
+              }
+            }
+          },
+          "sinTrabajoEscrito": {
+            "titulo": "Sin trabajo escrito",
+            "descripcion": "Se cubren requisitos base y se realiza un examen general (CENEVAL/EGEL) y condiciones de desempeño, con posibilidad de posgrado.",
+            "submodalidades": {
+              "examenGeneralCeneval": {
+                "titulo": "Examen general (CENEVAL)",
+                "descripcion": "Requisitos del examen general de egreso (EGEL/CENEVAL) y testimonios de desempeño."
+              },
+              "altoNivelAcademico": {
+                "titulo": "Alto nivel académico",
+                "descripcion": "Criterios de excelencia académica: promedio, historial sin reprobadas y conclusión en tiempo curricular."
+              },
+              "estudiosPosgrado": {
+                "titulo": "Estudios de posgrado",
+                "descripcion": "Ingreso y permanencia en programas de posgrado reconocidos y autorizados."
+              },
+              "cursosAmpliacion": {
+                "titulo": "Cursos para ampliación y profundización de conocimientos",
+                "descripcion": "Cursos adicionales para ampliar y profundizar competencias, con promedio mínimo requerido."
+              },
+              "diplomado": {
+                "titulo": "Diplomado",
+                "descripcion": "Diplomado con carga horaria, calificación mínima y validación por comité correspondiente."
+              }
+            }
           }
         }
       }

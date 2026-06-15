@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { DocumentacionBasica } from '../components/egresado/DocumentacionBasica'
+import { ModalidadTitulacion } from '../components/egresado/ModalidadTitulacion'
 import { PasosTitulacion } from '../components/egresado/PasosTitulacion'
 import { PageShell } from '../components/PageShell'
 import './SoyEgresadoPage.css'
@@ -16,6 +17,7 @@ export function SoyEgresadoPage() {
       >
         <PasosTitulacion />
         <DocumentacionBasica />
+        <ModalidadTitulacion />
       </PageShell>
     </div>
   )

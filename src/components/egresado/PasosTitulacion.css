@@ -144,6 +144,16 @@
   outline-offset: 4px;
 }
 
+.egresado-pasos__hint {
+  margin: 1.25rem 0 0;
+  font-family: var(--sans);
+  font-size: clamp(0.75rem, 1.1vw, 0.875rem);
+  line-height: 1.4;
+  color: var(--text);
+  text-align: center;
+  opacity: 0.75;
+}
+
 @media (max-width: 900px) {
   .egresado-pasos__grid {
     grid-template-columns: 1fr;

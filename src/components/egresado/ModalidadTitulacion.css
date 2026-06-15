@@ -1,0 +1,244 @@
+.egresado-modalidad {
+  width: 100%;
+  padding-block: 0 3rem;
+  scroll-margin-top: 6rem;
+}
+
+.egresado-modalidad__titulo-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100vw;
+  margin-bottom: 2rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 0;
+  aspect-ratio: 812.88 / 50.25;
+  background-color: #fff;
+  background-image: url('../../assets/images/egresado/header.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+}
+
+.egresado-modalidad__titulo-seccion {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.egresado-modalidad__titulo-etiqueta {
+  display: inline-block;
+  padding: 0.35rem 1.25rem;
+  background-color: #fff;
+  color: var(--color-dorado);
+}
+
+.egresado-modalidad__intro {
+  margin: 0 0 2rem;
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  line-height: 1.6;
+  color: var(--text);
+  text-align: justify;
+}
+
+.egresado-modalidad__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.egresado-modalidad__tarjeta {
+  min-height: 12rem;
+  padding: 0;
+  border-radius: 20px;
+  background-color: var(--color-tertiary);
+  box-shadow:
+    0 4px 14px rgba(0, 47, 108, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.06);
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.egresado-modalidad__tarjeta--activa {
+  background-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(0, 47, 108, 0.2);
+}
+
+.egresado-modalidad__tarjeta-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  min-height: 12rem;
+  padding: 1.75rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.egresado-modalidad__tarjeta-btn:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+.egresado-modalidad__tarjeta-titulo {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.3;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: color 0.25s ease;
+}
+
+.egresado-modalidad__tarjeta--activa .egresado-modalidad__tarjeta-titulo {
+  color: var(--color-dorado);
+}
+
+.egresado-modalidad__tarjeta-descripcion {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  line-height: 1.55;
+  color: var(--text);
+  transition: color 0.25s ease;
+}
+
+.egresado-modalidad__tarjeta--activa .egresado-modalidad__tarjeta-descripcion {
+  color: var(--color-tertiary);
+}
+
+.egresado-modalidad__subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.egresado-modalidad__subgrid--cuatro {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.egresado-modalidad__subgrid--cinco {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.egresado-modalidad__subtarjeta {
+  padding: 0;
+  border-radius: 20px;
+  background-color: var(--color-tertiary);
+  box-shadow:
+    0 4px 14px rgba(0, 47, 108, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.06);
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.egresado-modalidad__subtarjeta--activa {
+  background-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(0, 47, 108, 0.2);
+}
+
+.egresado-modalidad__subtarjeta-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.25rem;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.egresado-modalidad__subtarjeta-btn:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+.egresado-modalidad__subtarjeta-titulo {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  line-height: 1.3;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: color 0.25s ease;
+}
+
+.egresado-modalidad__subtarjeta--activa .egresado-modalidad__subtarjeta-titulo {
+  color: var(--color-dorado);
+}
+
+.egresado-modalidad__subtarjeta-descripcion {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  line-height: 1.55;
+  color: var(--text);
+  transition: color 0.25s ease;
+}
+
+.egresado-modalidad__subtarjeta--activa .egresado-modalidad__subtarjeta-descripcion {
+  color: var(--color-tertiary);
+}
+
+.egresado-modalidad__hint {
+  margin: 1.25rem 0 0;
+  font-family: var(--sans);
+  font-size: clamp(0.75rem, 1.1vw, 0.875rem);
+  line-height: 1.4;
+  color: var(--text);
+  text-align: center;
+  opacity: 0.75;
+}
+
+@media (max-width: 1400px) {
+  .egresado-modalidad__subgrid--cinco {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1200px) {
+  .egresado-modalidad__subgrid--cuatro,
+  .egresado-modalidad__subgrid--cinco {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .egresado-modalidad__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .egresado-modalidad__tarjeta-btn {
+    min-height: auto;
+  }
+
+  .egresado-modalidad__subgrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

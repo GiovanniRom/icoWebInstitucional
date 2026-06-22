@@ -1,0 +1,127 @@
+.soy-egresado-cabecera {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.soy-egresado-cabecera__identidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  max-width: 25%;
+  min-width: 0;
+}
+
+.soy-egresado-cabecera__tooltip-envoltorio {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.soy-egresado-cabecera__icono-principal {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 96px;
+  object-fit: contain;
+  cursor: help;
+  border-radius: 6px;
+  outline: none;
+}
+
+.soy-egresado-cabecera__icono-principal:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+.soy-egresado-cabecera__titulo {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.soy-egresado-cabecera__tooltip {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: calc(100% + 0.75rem);
+  width: max-content;
+  max-width: min(320px, 55vw);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: var(--color-tertiary);
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  text-transform: none;
+  box-shadow: 0 8px 24px rgba(0, 47, 108, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%) translateX(-6px);
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease;
+}
+
+.soy-egresado-cabecera__tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  border: 8px solid transparent;
+  border-right-color: var(--color-primary);
+  transform: translateY(-50%);
+}
+
+.soy-egresado-cabecera__tooltip-envoltorio:hover .soy-egresado-cabecera__tooltip,
+.soy-egresado-cabecera__tooltip-envoltorio:focus-within .soy-egresado-cabecera__tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 900px) {
+  .soy-egresado-cabecera__tooltip {
+    top: auto;
+    bottom: calc(100% + 0.65rem);
+    left: 50%;
+    max-width: min(280px, 85vw);
+    text-align: center;
+    transform: translateX(-50%) translateY(6px);
+  }
+
+  .soy-egresado-cabecera__tooltip::after {
+    top: 100%;
+    right: auto;
+    left: 50%;
+    border: 8px solid transparent;
+    border-right-color: transparent;
+    border-top-color: var(--color-primary);
+    transform: translateX(-50%);
+  }
+
+  .soy-egresado-cabecera__tooltip-envoltorio:hover .soy-egresado-cabecera__tooltip,
+  .soy-egresado-cabecera__tooltip-envoltorio:focus-within .soy-egresado-cabecera__tooltip {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .soy-egresado-cabecera__identidad {
+    max-width: 100%;
+  }
+}

@@ -2,9 +2,9 @@
   "nav": {
     "inicio": "Home",
     "programaAcademico": "Academic program",
-    "soyAlumno": "I am a student",
-    "soyProfesor": "I am a teacher",
-    "soyEgresado": "I am an alumnus",
+    "soyAlumno": "I'm a student",
+    "soyProfesor": "I'm a teacher",
+    "soyEgresado": "I'm a graduate",
     "logoAlt": "Institutional logos",
     "logoFesAlt": "FES logo",
     "logoPowerAlt": "Power logo",
@@ -36,14 +36,17 @@
       "accesos": {
         "navLabel": "Main site sections",
         "programaAcademico": "Academic program",
-        "soyAlumno": "I am a student",
-        "soyProfesor": "I am a teacher",
-        "soyEgresado": "I am an alumnus"
+        "soyAlumno": "I'm a student",
+        "soyProfesor": "I'm a teacher",
+        "soyEgresado": "I'm a graduate"
       }
     },
     "programaAcademico": {
       "title": "Academic program",
       "description": "View study plans, subjects, and school calendar.",
+      "cabecera": {
+        "tooltipPrincipal": "In this section you will find information about the admission and graduate profiles, the curriculum map, the study plan, and the program's institutional identity."
+      },
       "fila1": {
         "imagenAlt": "Program teaching staff",
         "titulo": "Graduate profile",
@@ -95,10 +98,10 @@
       }
     },
     "soyAlumno": {
-      "title": "I am a student",
+      "title": "I'm a student",
       "description": "Access services, schedules, and resources for students.",
       "navegacion": {
-        "label": "I am a student section navigation",
+        "label": "I'm a student section navigation",
         "horarios": "Go to schedules",
         "calendario": "Go to school calendar",
         "tutores": "Go to tutor search",
@@ -110,12 +113,12 @@
         "description": "View schedules by semester and group.",
         "verHorarios": "View schedules for semester 2026-II",
         "clicTitulo": "Click the title to view the schedules",
-        "volver": "← Back to I am a student"
+        "volver": "← Back to I'm a student"
       },
       "extraordinarios": {
         "pageTitle": "Make-up exam schedules",
         "description": "View make-up exam schedules in PDF format.",
-        "volver": "← Back to I am a student",
+        "volver": "← Back to I'm a student",
         "listaAriaLabel": "Make-up exam schedule documents",
         "pdfs": {
           "primeraVuelta": "First-round make-up exams",
@@ -151,13 +154,13 @@
       }
     },
     "soyProfesor": {
-      "title": "I am a teacher",
+      "title": "I'm a teacher",
       "description": "Tools and links for teaching staff.",
       "tituloCorreos": "Faculty email directory",
       "correosIframeTitle": "Faculty email directory"
     },
     "soyEgresado": {
-      "title": "I am an alumnus",
+      "title": "I'm a graduate",
       "description": "Useful information to guide you through the degree certification process.",
       "pasos": {
         "tituloSeccion": "Get your degree in 3 simple steps",
@@ -178,6 +181,9 @@
       "documentacionBasica": {
         "tituloSeccion": "Basic documentation",
         "listo": "Done!",
+        "verEjemplo": "View example",
+        "cerrarEjemplo": "Close example",
+        "ejemploAlt": "Example of {{titulo}}",
         "filaInicio": {
           "col1": {
             "parrafo1": "Throughout your time as a student, you will obtain each of the following documents for your eventual degree certification.",
@@ -333,7 +339,7 @@
     "roleHead": "Program head",
     "nameHead": "Eng. Ana Claudia Reyes Cruz",
     "roleSecretary": "Technical secretary",
-    "nameSecretary": "Eng. Toberto Agustin Garcia Castrejon",
+    "nameSecretary": "Eng. Roberto Agustin Garcia Castrejon",
     "mailAlt": "Email",
     "whatsappAlt": "WhatsApp",
     "facebookAlt": "Facebook"

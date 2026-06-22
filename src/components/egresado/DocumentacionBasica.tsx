@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import jefaturaSvg from '../../assets/images/egresado/jefatura.svg'
+import { DocumentacionEjemploModal } from './DocumentacionEjemploModal'
+import { DOCUMENTOS_EJEMPLO, type DocumentoEjemploKey } from './documentosEjemplo'
 import './DocumentacionBasica.css'
 
-const DOCUMENTOS = ['doc1', 'doc2', 'doc3', 'doc4', 'doc5', 'doc6', 'doc7'] as const
+const DOCUMENTOS = ['doc1', 'doc2', 'doc3', 'doc4', 'doc5', 'doc6', 'doc7'] as const satisfies readonly DocumentoEjemploKey[]
 
 function obtenerTextosDocumento(
   docKey: (typeof DOCUMENTOS)[number],
@@ -26,12 +28,20 @@ function obtenerTextosDocumento(
 export function DocumentacionBasica() {
   const { t, i18n } = useTranslation()
   const [completados, setCompletados] = useState<boolean[]>(() => DOCUMENTOS.map(() => false))
+  const [ejemploAbierto, setEjemploAbierto] = useState<DocumentoEjemploKey | null>(null)
 
   const alternarDocumento = (indice: number) => {
     setCompletados((estado) =>
       estado.map((valor, i) => (i === indice ? !valor : valor)),
     )
   }
+
+  const ejemploActual = ejemploAbierto
+    ? {
+        titulo: t(`pages.soyEgresado.documentacionBasica.documentos.${ejemploAbierto}.titulo`),
+        imagenSrc: DOCUMENTOS_EJEMPLO[ejemploAbierto],
+      }
+    : null
 
   return (
     <section
@@ -65,8 +75,10 @@ export function DocumentacionBasica() {
             titulo={t(`pages.soyEgresado.documentacionBasica.documentos.${docKey}.titulo`)}
             textos={obtenerTextosDocumento(docKey, t, i18n)}
             listoLabel={t('pages.soyEgresado.documentacionBasica.listo')}
+            verEjemploLabel={t('pages.soyEgresado.documentacionBasica.verEjemplo')}
             completado={completados[indice]}
             onAlternar={() => alternarDocumento(indice)}
+            onVerEjemplo={() => setEjemploAbierto(docKey)}
           />
         ))}
 
@@ -82,6 +94,15 @@ export function DocumentacionBasica() {
           />
         </div>
       </div>
+
+      {ejemploActual ? (
+        <DocumentacionEjemploModal
+          abierto={ejemploAbierto !== null}
+          titulo={ejemploActual.titulo}
+          imagenSrc={ejemploActual.imagenSrc}
+          onCerrar={() => setEjemploAbierto(null)}
+        />
+      ) : null}
     </section>
   )
 }
@@ -91,8 +112,10 @@ type DocumentacionBasicaFilaProps = {
   readonly titulo: string
   readonly textos: readonly string[]
   readonly listoLabel: string
+  readonly verEjemploLabel: string
   readonly completado: boolean
   readonly onAlternar: () => void
+  readonly onVerEjemplo: () => void
 }
 
 function DocumentacionBasicaFila({
@@ -100,8 +123,10 @@ function DocumentacionBasicaFila({
   titulo,
   textos,
   listoLabel,
+  verEjemploLabel,
   completado,
   onAlternar,
+  onVerEjemplo,
 }: DocumentacionBasicaFilaProps) {
   return (
     <>
@@ -135,6 +160,13 @@ function DocumentacionBasicaFila({
             {parrafo}
           </p>
         ))}
+        <button
+          type="button"
+          className="egresado-documentacion__ejemplo-btn"
+          onClick={onVerEjemplo}
+        >
+          {verEjemploLabel}
+        </button>
       </div>
     </>
   )

@@ -129,6 +129,40 @@
   margin-top: 0.75rem;
 }
 
+.egresado-documentacion__ejemplo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.55rem 1.25rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-dorado);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.egresado-documentacion__ejemplo-btn:hover {
+  background-color: #003d85;
+  border-color: #003d85;
+  transform: translateY(-1px);
+}
+
+.egresado-documentacion__ejemplo-btn:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
 .egresado-documentacion__indicador-interno {
   display: grid;
   grid-template-columns: 30% 70%;

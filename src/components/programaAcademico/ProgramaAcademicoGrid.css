@@ -215,8 +215,8 @@
   justify-content: flex-start;
   align-self: flex-start;
   box-sizing: border-box;
-  width: 62%;
-  max-width: 62%;
+  width: 82%;
+  max-width: 82%;
   margin: 0;
   padding: 0;
   /* Altura = proporción del SVG cuando el fondo ocupa --titulo-banner-ancho */
@@ -285,6 +285,7 @@
   color: var(--color-dorado);
   text-align: left;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .programa-academico-fila__descripcion {
@@ -367,5 +368,14 @@
     width: 100%;
     max-width: 26rem;
     padding: 1.25rem 1.5rem;
+  }
+
+  .programa-academico-fila__titulo-cabecera {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .programa-academico-fila__titulo-texto {
+    white-space: normal;
   }
 }

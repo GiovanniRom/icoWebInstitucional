@@ -17,6 +17,10 @@
 
 .soy-alumno-page__content h1 {
   margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   color: var(--color-primary);
 }
 
@@ -26,42 +30,6 @@
 
 .soy-alumno-page__content .page-shell__description {
   max-width: none;
-}
-
-.soy-alumno-page__horarios-enlace {
-  display: block;
-  margin: 0 0 1.5rem;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-
-.soy-alumno-page__horarios-bloque {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.soy-alumno-page__horarios-ayuda {
-  margin: 0;
-  font-family: var(--sans);
-  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
-  font-weight: 400;
-  line-height: 1.35;
-  text-align: center;
-  color: var(--text);
-}
-
-.soy-alumno-page__horarios-enlace:hover {
-  opacity: 0.85;
-}
-
-.soy-alumno-page__horarios-enlace:focus-visible {
-  outline: 2px solid var(--color-dorado);
-  outline-offset: 4px;
-  border-radius: 4px;
 }
 
 .soy-alumno-page__content .cabecera-titulo:last-of-type {

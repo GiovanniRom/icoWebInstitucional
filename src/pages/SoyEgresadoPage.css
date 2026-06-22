@@ -11,11 +11,6 @@
   border-radius: 4px;
 }
 
-.soy-egresado-page__content h1 {
-  margin-top: 0;
-  color: var(--color-primary);
-}
-
 .soy-egresado-page__content .page-shell__description {
   max-width: none;
   margin-bottom: 1rem;

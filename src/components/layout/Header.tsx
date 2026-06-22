@@ -61,13 +61,21 @@ export function Header() {
     >
       <div className="site-header__bar">
         <div className="site-header__brand">
-          <NavLink to="/" className="site-header__logo" onClick={closeMenu}>
-            <span className="site-header__logos">
+          <span className="site-header__logos">
+            <a
+              href="https://www.aragon.unam.mx/fes-aragon/#!/inicio"
+              className="site-header__logo"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
               <img
                 src={logoFesUrl}
                 alt={t('nav.logoFesAlt')}
                 className="site-header__logo-img site-header__logo-img--fes"
               />
+            </a>
+            <NavLink to="/" className="site-header__logo" onClick={closeMenu}>
               <span className="site-header__program">
                 <img
                   src={logoPowerUrl}
@@ -83,8 +91,8 @@ export function Header() {
                   </span>
                 </span>
               </span>
-            </span>
-          </NavLink>
+            </NavLink>
+          </span>
         </div>
 
         <div className="site-header__actions">

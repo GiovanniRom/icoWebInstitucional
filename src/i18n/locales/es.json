@@ -44,6 +44,9 @@
     "programaAcademico": {
       "title": "Programa académico",
       "description": "Consulta planes de estudio, materias y calendario escolar.",
+      "cabecera": {
+        "tooltipPrincipal": "En esta sección encontrarás información sobre el perfil de ingreso y egreso, la malla curricular, el plan de estudios y la identidad institucional del programa."
+      },
       "fila1": {
         "imagenAlt": "Cuerpo docente del programa",
         "titulo": "Perfil de egreso",
@@ -178,6 +181,9 @@
       "documentacionBasica": {
         "tituloSeccion": "Documentación básica",
         "listo": "¡Listo!",
+        "verEjemplo": "Ver ejemplo",
+        "cerrarEjemplo": "Cerrar ejemplo",
+        "ejemploAlt": "Ejemplo de {{titulo}}",
         "filaInicio": {
           "col1": {
             "parrafo1": "Durante tu trayectoria como estudiante irás obteniendo cada uno de los siguientes documentos para tu eventual titulación.",
@@ -333,7 +339,7 @@
     "roleHead": "Jefa de carrera",
     "nameHead": "Ing. Ana Claudia Reyes Cruz",
     "roleSecretary": "Secretario Técnico",
-    "nameSecretary": "Ing. Toberto Agustin Garcia Castrejon",
+    "nameSecretary": "Ing. Roberto Agustin Garcia Castrejon",
     "mailAlt": "Correo electrónico",
     "whatsappAlt": "WhatsApp",
     "facebookAlt": "Facebook"

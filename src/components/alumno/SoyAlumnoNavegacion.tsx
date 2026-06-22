@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import alumnoIcon from '../../assets/images/inicio/alumnoicon.png'
 import horariosIcon from '../../assets/images/alumno/horariosicon.png'
 import calendarioIcon from '../../assets/images/alumno/calendarioicon.png'
@@ -7,7 +8,7 @@ import horariosLabIcon from '../../assets/images/alumno/horarioslabicon.png'
 import './SoyAlumnoNavegacion.css'
 
 const SECCIONES = [
-  { id: 'seccion-horarios', icon: horariosIcon, labelKey: 'horarios' },
+  { icon: horariosIcon, labelKey: 'horarios', to: '/soy-alumno/horarios' },
   { id: 'seccion-calendario', icon: calendarioIcon, labelKey: 'calendario' },
   { id: 'seccion-tutores', icon: tutoresIcon, labelKey: 'tutores' },
   { id: 'seccion-redes', icon: horariosLabIcon, labelKey: 'redes' },
@@ -46,31 +47,49 @@ export function SoyAlumnoNavegacion() {
             {t('pages.soyAlumno.navegacion.tooltipPrincipal')}
           </div>
         </div>
+        <h1 className="soy-alumno-nav__titulo">{t('pages.soyAlumno.title')}</h1>
       </div>
 
       <ul className="soy-alumno-nav__secciones">
-        {SECCIONES.map(({ id, icon, labelKey }) => (
-          <li key={id} className="soy-alumno-nav__item">
-            <button
-              type="button"
-              className="soy-alumno-nav__boton"
-              onClick={() => scrollToSection(id)}
-              aria-label={t(`pages.soyAlumno.navegacion.${labelKey}`)}
-            >
+        {SECCIONES.map((seccion) => {
+          const etiqueta = t(`pages.soyAlumno.navegacion.${seccion.labelKey}`)
+          const contenido = (
+            <>
               <span className="soy-alumno-nav__icono-contenedor">
                 <img
-                  src={icon}
+                  src={seccion.icon}
                   alt=""
                   className="soy-alumno-nav__icono"
                   draggable={false}
                 />
               </span>
-              <span className="soy-alumno-nav__etiqueta">
-                {t(`pages.soyAlumno.navegacion.${labelKey}`)}
-              </span>
-            </button>
-          </li>
-        ))}
+              <span className="soy-alumno-nav__etiqueta">{etiqueta}</span>
+            </>
+          )
+
+          return (
+            <li key={'to' in seccion ? seccion.to : seccion.id} className="soy-alumno-nav__item">
+              {'to' in seccion ? (
+                <Link
+                  to={seccion.to}
+                  className="soy-alumno-nav__boton"
+                  aria-label={etiqueta}
+                >
+                  {contenido}
+                </Link>
+              ) : (
+                <button
+                  type="button"
+                  className="soy-alumno-nav__boton"
+                  onClick={() => scrollToSection(seccion.id)}
+                  aria-label={etiqueta}
+                >
+                  {contenido}
+                </button>
+              )}
+            </li>
+          )
+        })}
       </ul>
     </nav>
   )

@@ -5,20 +5,23 @@
 
 .alumno-accesos__lista {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: stretch;
 }
 
 .alumno-accesos__item {
+  display: flex;
   min-width: 0;
 }
 
 .alumno-accesos__boton {
-  display: block;
+  display: flex;
+  flex: 1;
   width: 100%;
   padding: 0;
   border: none;
@@ -39,8 +42,10 @@
 
 .alumno-accesos__tarjeta {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: stretch;
+  width: 100%;
   gap: 0.75rem;
   padding: 0.85rem 0.5rem 1rem;
   border-radius: 10px;
@@ -54,9 +59,12 @@
 }
 
 .alumno-accesos__titulo {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 0.2rem;
+  min-height: calc(3 * 1.2 * clamp(0.8rem, 1.35vw, 1.05rem) + 0.2rem);
   font-family: var(--sans);
   font-weight: 700;
   text-align: center;
@@ -73,9 +81,13 @@
 
 .alumno-accesos__imagen {
   display: block;
+  flex: 1;
   width: 100%;
-  height: auto;
+  min-height: clamp(150px, 16vw, 170px);
+  max-height: clamp(150px, 16vw, 170px);
+  height: clamp(150px, 16vw, 170px);
   object-fit: contain;
+  object-position: center bottom;
   pointer-events: none;
   user-select: none;
   box-shadow: none;
@@ -96,8 +108,18 @@
 
 @media (max-width: 640px) {
   .alumno-accesos__lista {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
+  }
+
+  .alumno-accesos__titulo {
+    min-height: calc(3 * 1.2 * clamp(0.72rem, 3.2vw, 0.95rem) + 0.2rem);
+  }
+
+  .alumno-accesos__imagen {
+    min-height: 130px;
+    max-height: 130px;
+    height: 130px;
   }
 
   .alumno-accesos__titulo-linea {

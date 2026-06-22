@@ -9,9 +9,11 @@
 
 .soy-alumno-nav__identidad {
   display: flex;
+  flex-direction: column;
   flex: 0 0 25%;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   width: 25%;
   min-width: 0;
 }
@@ -28,7 +30,7 @@
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 120px;
+  max-height: 96px;
   object-fit: contain;
   cursor: help;
   border-radius: 6px;
@@ -38,6 +40,17 @@
 .soy-alumno-nav__icono-principal:focus-visible {
   outline: 2px solid var(--color-dorado);
   outline-offset: 3px;
+}
+
+.soy-alumno-nav__titulo {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-primary);
 }
 
 .soy-alumno-nav__tooltip {
@@ -141,6 +154,8 @@
   border: none;
   border-radius: 8px;
   background: transparent;
+  color: inherit;
+  text-decoration: none;
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }

@@ -243,36 +243,6 @@
         "intro": "Explora y elige las diferentes modalidades de titulación que la FES Aragón dispone para ti, ten en cuenta que tendrás que completar la modalidad escogida para poder finalizar tu proceso de titulación. Escógelas de acuerdo a tus intereses y objetivos personales.",
         "hintModalidad": "Da clic en la modalidad de tu interés para conocer más detalles",
         "listo": "¡Listo!",
-        "pasosPlaceholder": {
-          "paso1": {
-            "titulo": "Paso 8",
-            "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          },
-          "paso2": {
-            "titulo": "Paso 9",
-            "texto": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          "paso3": {
-            "titulo": "Paso 10",
-            "texto": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          },
-          "paso4": {
-            "titulo": "Paso 11",
-            "texto": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          },
-          "paso5": {
-            "titulo": "Paso 12",
-            "texto": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, et interdum mi tempus imperdiet."
-          },
-          "paso6": {
-            "titulo": "Paso 13",
-            "texto": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-          },
-          "paso7": {
-            "titulo": "Paso 14",
-            "texto": "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper."
-          }
-        },
         "modalidades": {
           "conReplicaOral": {
             "titulo": "Trabajo escrito con réplica oral",
@@ -280,11 +250,43 @@
             "submodalidades": {
               "tesisTesina": {
                 "titulo": "Tesis/Tesina",
-                "descripcion": "Trabajo escrito de investigación y su defensa oral ante jurado, según las etapas que marca tu plan de estudios."
+                "descripcion": "Trabajo escrito de investigación y su defensa oral ante jurado, según las etapas que marca tu plan de estudios.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Selección de tutor aprobado por el comité académico",
+                    "texto": "Se debe contar con la selección de un tutor académico aprobada por el comité académico de la carrera, quien acompaña la elaboración del trabajo escrito."
+                  },
+                  "paso2": {
+                    "titulo": "Registro formal de proyecto ante jefatura",
+                    "texto": "Trámite ante la jefatura de carrera para registrar formalmente el proyecto de investigación o trabajo escrito, conforme a formatos, requisitos y calendario que indique la jefatura."
+                  },
+                  "paso3": {
+                    "titulo": "Aprobación de borrador final por el tutor",
+                    "texto": "El tutor debe firmar un documento en el que acredite que el trabajo está terminado y que cumple con los requisitos establecidos; con ello queda formalizada la aprobación del borrador final."
+                  },
+                  "paso4": {
+                    "titulo": "Defensa oral ante jurado",
+                    "texto": "Presentación y defensa ante un jurado del trabajo desarrollado por el egresado."
+                  }
+                }
               },
               "actividadInvestigacion": {
                 "titulo": "Actividad de investigación",
-                "descripcion": "Participación en un proyecto de investigación y presentación de resultados ante jurado."
+                "descripcion": "Participación en un proyecto de investigación y presentación de resultados ante jurado.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Participación certificada en proyecto (mín. 1 semestre)",
+                    "texto": "Integración a un proyecto de investigación activo durante al menos un semestre. El proyecto debe estar avalado por una institución académica reconocida; el investigador principal debe emitir una carta de aceptación. Además, se requiere constancia o documento que certifique la participación ante la jefatura o instancia correspondiente."
+                  },
+                  "paso2": {
+                    "titulo": "Informe detallado de actividades y resultados",
+                    "texto": "Documento en el que se detallan las actividades realizadas en el proyecto y los resultados obtenidos, como evidencia del trabajo desarrollado durante la actividad de investigación. Su elaboración se realiza con el acompañamiento del tutor o asesor académico."
+                  },
+                  "paso3": {
+                    "titulo": "Presentación y defensa de resultados",
+                    "texto": "Exposición ante jurado en la que se presentan y defienden los resultados de la actividad de investigación y el informe elaborado."
+                  }
+                }
               }
             }
           },
@@ -294,19 +296,71 @@
             "submodalidades": {
               "apoyoDocencia": {
                 "titulo": "Apoyo a la docencia",
-                "descripcion": "Apoyo a la docencia en la facultad: elaboración de material y acompañamiento con asesor docente."
+                "descripcion": "Apoyo a la docencia en la facultad: elaboración de material y acompañamiento con asesor docente.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Crear material didáctico",
+                    "texto": "Trabajo académico orientado a la generación de materiales o productos que contribuyan al proceso de enseñanza-aprendizaje o al desarrollo de actividades de investigación. La creación de dicho material requiere la aprobación del comité académico, supervisión docente y evaluación por especialistas pedagógicos."
+                  },
+                  "paso2": {
+                    "titulo": "Selección de asesor docente",
+                    "texto": "Debes contar con la selección formal de un asesor docente: académico que orienta, supervisa y valida el desarrollo del trabajo de titulación, conforme a la modalidad y los lineamientos de la jefatura."
+                  }
+                }
               },
               "trabajoProfesional": {
                 "titulo": "Trabajo profesional",
-                "descripcion": "Experiencia laboral acreditable y documentación del trabajo realizado en el ámbito profesional."
+                "descripcion": "Experiencia laboral acreditable y documentación del trabajo realizado en el ámbito profesional.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "2 años de experiencia laboral",
+                    "texto": "Comprobante de trabajo continuo por un plazo de dos años; pueden ser múltiples períodos laborales, siempre y cuando no se superen los 15 días entre un período y otro. El documento debe estar membretado por el empleador, tener firma autógrafa, especificar el período laboral y las actividades realizadas."
+                  },
+                  "paso2": {
+                    "titulo": "Informe del trabajo realizado",
+                    "texto": "Consiste en la elaboración de un informe técnico-académico en el que el egresado documenta su experiencia laboral en un área afín a su formación, demostrando la aplicación de conocimientos, habilidades y resolución de problemas reales. Este documento se elabora acompañado de un asesor docente que valida el trabajo."
+                  }
+                }
               },
               "servicioSocial": {
                 "titulo": "Servicio social",
-                "descripcion": "Cumplimiento del servicio social y entrega de la documentación que exige esta modalidad."
+                "descripcion": "Cumplimiento del servicio social y entrega de la documentación que exige esta modalidad.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Haber cumplido 100% créditos",
+                    "texto": "Obtención del 100% de créditos totales en historial académico con estatus de término 11."
+                  },
+                  "paso2": {
+                    "titulo": "Constancia de acreditación de idioma inglés.",
+                    "texto": "Es el documento oficial que acredita que tienes comprensión de lectura en inglés. Puedes obtenerlo del centro de lenguas FES Aragón. Si la constancia es digital, es necesario imprimirla en papel opalina a color."
+                  },
+                  "paso3": {
+                    "titulo": "Horas complementarias",
+                    "texto": "La constancia de horas de formación complementaria es un documento oficial que acredita que el egresado ha cumplido con el número de horas requeridas en actividades extracurriculares establecidas por el plan de estudios. Este documento lo puedes obtener en la jefatura de carrera."
+                  },
+                  "paso4": {
+                    "titulo": "Informe de actividades",
+                    "texto": "Informe académico en el que el egresado documenta las actividades realizadas durante su servicio social, destacando la aplicación de conocimientos y el impacto del trabajo desarrollado. El desarrollo de este documento se realiza acompañado de un asesor académico."
+                  },
+                  "paso5": {
+                    "titulo": "Carta de término y liberación de servicio social",
+                    "texto": "Este documento no es necesario para registrar la modalidad de titulación; sin embargo, es necesario para concluir el trámite."
+                  }
+                }
               },
               "articuloAcademico": {
                 "titulo": "Artículo académico",
-                "descripcion": "Publicación en revista indexada y constancia de autoría o coautoría del artículo."
+                "descripcion": "Publicación en revista indexada y constancia de autoría o coautoría del artículo.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Publicación en revista indexada",
+                    "texto": "Participar en un proyecto de investigación avalado por un académico. Se requiere como evidencia la portada de la revista, datos de indexación e identificadores ISSN/ISBN, carta de aceptación del artículo en revista indexada y copia del artículo mostrando afiliación institucional."
+                  },
+                  "paso2": {
+                    "titulo": "Autor o coautor",
+                    "texto": "El egresado debe figurar como autor o coautor de la publicación. En caso de coautoría, se requiere carta del investigador principal que confirme la participación del egresado."
+                  }
+                }
               }
             }
           },
@@ -316,23 +370,81 @@
             "submodalidades": {
               "examenGeneralCeneval": {
                 "titulo": "Examen general (CENEVAL)",
-                "descripcion": "Requisitos del examen general de egreso (EGEL/CENEVAL) y testimonios de desempeño."
+                "descripcion": "Requisitos del examen general de egreso (EGEL/CENEVAL) y testimonios de desempeño.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Comprobante aprobatorio emitido por EGEL",
+                    "texto": "Debes presentar el Examen General para el Egreso de Licenciatura (EGEL) en el área de Ingeniería en Computación y conservar el comprobante aprobatorio emitido por el organismo aplicador (CENEVAL/EGEL) que acredite resultado aprobatorio."
+                  },
+                  "paso2": {
+                    "titulo": "Constancia oficial de resultados",
+                    "texto": "Contar con la constancia oficial de resultados emitida por CENEVAL (documento que acredita el desempeño en el examen)."
+                  }
+                }
               },
               "altoNivelAcademico": {
                 "titulo": "Alto nivel académico",
-                "descripcion": "Criterios de excelencia académica: promedio, historial sin reprobadas y conclusión en tiempo curricular."
+                "descripcion": "Criterios de excelencia académica: promedio, historial sin reprobadas y conclusión en tiempo curricular.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Promedio ≥ 9.5",
+                    "texto": "Es necesario contar con un promedio final de 9.5, comprobable mediante historial académico."
+                  },
+                  "paso2": {
+                    "titulo": "Sin materias reprobadas",
+                    "texto": "Es necesario haber cursado todas las materias de forma ordinaria, sin haber reprobado ninguna o presentado extraordinarios."
+                  },
+                  "paso3": {
+                    "titulo": "Terminar en tiempo curricular",
+                    "texto": "Es requisito indispensable haber cursado las materias en el tiempo curricular establecido."
+                  }
+                }
               },
               "estudiosPosgrado": {
                 "titulo": "Estudios de posgrado",
-                "descripcion": "Ingreso y permanencia en programas de posgrado reconocidos y autorizados."
+                "descripcion": "Ingreso y permanencia en programas de posgrado reconocidos y autorizados.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Ingreso a posgrado válido",
+                    "texto": "El posgrado debe estar avalado por la institución (no cualquier programa es válido). Cumplir con los requisitos de ingreso establecidos por el programa de posgrado. Es necesario presentar carta de aceptación al programa de posgrado al que se ingresa."
+                  },
+                  "paso2": {
+                    "titulo": "Comprobante de acreditación satisfactoria del primer semestre",
+                    "texto": "El programa de posgrado debe estar autorizado o validado por la institución para esta modalidad. Se requiere comprobante de acreditación satisfactoria del primer semestre en dicho programa."
+                  }
+                }
               },
               "cursosAmpliacion": {
                 "titulo": "Cursos para ampliación y profundización de conocimientos",
-                "descripcion": "Cursos adicionales para ampliar y profundizar competencias, con promedio mínimo requerido."
+                "descripcion": "Cursos adicionales para ampliar y profundizar competencias, con promedio mínimo requerido.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Cursar materias extra (~10% créditos)",
+                    "texto": "Inscribirse a asignaturas adicionales equivalentes a aproximadamente el 10% de los créditos totales del plan de estudios y cursar dichas asignaturas en un período adicional de semestre. Las asignaturas deben ser diferentes a las ya cursadas."
+                  },
+                  "paso2": {
+                    "titulo": "Promedio mínimo 9",
+                    "texto": "Todas las asignaturas extras deben acreditarse con una calificación mínima de 9."
+                  }
+                }
               },
               "diplomado": {
                 "titulo": "Diplomado",
-                "descripcion": "Diplomado con carga horaria, calificación mínima y validación por comité correspondiente."
+                "descripcion": "Diplomado con carga horaria, calificación mínima y validación por comité correspondiente.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Mínimo 240 horas",
+                    "texto": "La duración mínima del curso deberá ser de 240 horas."
+                  },
+                  "paso2": {
+                    "titulo": "Promedio mínimo 8",
+                    "texto": "La calificación mínima aprobatoria es de 8."
+                  },
+                  "paso3": {
+                    "titulo": "Debe estar aprobado por comité",
+                    "texto": "El curso o diplomado deberá estar avalado por el comité de carrera; de lo contrario no será válido para esta modalidad."
+                  }
+                }
               }
             }
           }

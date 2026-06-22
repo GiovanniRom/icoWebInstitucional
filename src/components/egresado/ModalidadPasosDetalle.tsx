@@ -1,24 +1,21 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import './ModalidadPasosDetalle.css'
 
 const PASOS = ['paso1', 'paso2', 'paso3', 'paso4', 'paso5', 'paso6', 'paso7'] as const
 const NUMERO_INICIAL = 8
-const PASOS_PLACEHOLDER_BASE = 'pages.soyEgresado.modalidadTitulacion.pasosPlaceholder'
 
-function obtenerTextoPaso(
-  pasoKey: (typeof PASOS)[number],
-  campo: 'titulo' | 'texto',
+type PasoKey = (typeof PASOS)[number]
+
+function pasoEstaDefinido(
+  pasoKey: PasoKey,
   baseI18nKey: string,
-  t: (key: string) => string,
   i18n: { exists: (key: string) => boolean },
-): string {
-  const claveEspecifica = `${baseI18nKey}.pasos.${pasoKey}.${campo}`
-  if (i18n.exists(claveEspecifica)) {
-    return t(claveEspecifica)
-  }
-
-  return t(`${PASOS_PLACEHOLDER_BASE}.${pasoKey}.${campo}`)
+): boolean {
+  return (
+    i18n.exists(`${baseI18nKey}.pasos.${pasoKey}.titulo`) &&
+    i18n.exists(`${baseI18nKey}.pasos.${pasoKey}.texto`)
+  )
 }
 
 type ModalidadPasosDetalleProps = {
@@ -27,7 +24,15 @@ type ModalidadPasosDetalleProps = {
 
 export function ModalidadPasosDetalle({ baseI18nKey }: ModalidadPasosDetalleProps) {
   const { t, i18n } = useTranslation()
-  const [completados, setCompletados] = useState<boolean[]>(() => PASOS.map(() => false))
+
+  const pasosDefinidos = useMemo(
+    () => PASOS.filter((pasoKey) => pasoEstaDefinido(pasoKey, baseI18nKey, i18n)),
+    [baseI18nKey, i18n],
+  )
+
+  const [completados, setCompletados] = useState<boolean[]>(() =>
+    pasosDefinidos.map(() => false),
+  )
 
   const alternarPaso = (indice: number) => {
     setCompletados((estado) =>
@@ -38,23 +43,17 @@ export function ModalidadPasosDetalle({ baseI18nKey }: ModalidadPasosDetalleProp
   return (
     <div className="egresado-modalidad-pasos">
       <div className="egresado-modalidad-pasos__grid">
-        {PASOS.map((pasoKey, indice) => {
-          const numero = NUMERO_INICIAL + indice
-          const titulo = obtenerTextoPaso(pasoKey, 'titulo', baseI18nKey, t, i18n)
-          const texto = obtenerTextoPaso(pasoKey, 'texto', baseI18nKey, t, i18n)
-
-          return (
-            <ModalidadPasosDetalleFila
-              key={pasoKey}
-              numero={numero}
-              titulo={titulo}
-              texto={texto}
-              listoLabel={t('pages.soyEgresado.modalidadTitulacion.listo')}
-              completado={completados[indice]}
-              onAlternar={() => alternarPaso(indice)}
-            />
-          )
-        })}
+        {pasosDefinidos.map((pasoKey, indice) => (
+          <ModalidadPasosDetalleFila
+            key={pasoKey}
+            numero={NUMERO_INICIAL + indice}
+            titulo={t(`${baseI18nKey}.pasos.${pasoKey}.titulo`)}
+            texto={t(`${baseI18nKey}.pasos.${pasoKey}.texto`)}
+            listoLabel={t('pages.soyEgresado.modalidadTitulacion.listo')}
+            completado={completados[indice]}
+            onAlternar={() => alternarPaso(indice)}
+          />
+        ))}
       </div>
     </div>
   )

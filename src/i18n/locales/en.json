@@ -243,36 +243,6 @@
         "intro": "Explore and choose from the different degree certification modalities available to you at FES Aragón. Keep in mind that you must complete the modality you select in order to finish your degree certification process. Choose according to your interests and personal goals.",
         "hintModalidad": "Click on the modality you are interested in to learn more details",
         "listo": "Done!",
-        "pasosPlaceholder": {
-          "paso1": {
-            "titulo": "Step 8",
-            "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          },
-          "paso2": {
-            "titulo": "Step 9",
-            "texto": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          "paso3": {
-            "titulo": "Step 10",
-            "texto": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          },
-          "paso4": {
-            "titulo": "Step 11",
-            "texto": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          },
-          "paso5": {
-            "titulo": "Step 12",
-            "texto": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, et interdum mi tempus imperdiet."
-          },
-          "paso6": {
-            "titulo": "Step 13",
-            "texto": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-          },
-          "paso7": {
-            "titulo": "Step 14",
-            "texto": "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper."
-          }
-        },
         "modalidades": {
           "conReplicaOral": {
             "titulo": "Written work with oral defense",
@@ -280,11 +250,43 @@
             "submodalidades": {
               "tesisTesina": {
                 "titulo": "Thesis/Tesina",
-                "descripcion": "Written research work and its oral defense before a committee, according to the stages outlined in your study plan."
+                "descripcion": "Written research work and its oral defense before a committee, according to the stages outlined in your study plan.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Tutor selected and approved by the academic committee",
+                    "texto": "You must have an academic tutor selected and approved by the programme's academic committee, who guides the preparation of the written work."
+                  },
+                  "paso2": {
+                    "titulo": "Formal project registration with programme office",
+                    "texto": "Procedure with the programme office to formally register the research project or written work, following the formats, requirements, and calendar indicated by the office."
+                  },
+                  "paso3": {
+                    "titulo": "Final draft approved by the tutor",
+                    "texto": "The tutor must sign a document certifying that the work is finished and meets the requirements; this formally approves the final draft."
+                  },
+                  "paso4": {
+                    "titulo": "Oral defence before a committee",
+                    "texto": "Presentation and defence of the graduate's work before a committee."
+                  }
+                }
               },
               "actividadInvestigacion": {
                 "titulo": "Research activity",
-                "descripcion": "Participation in a research project and presentation of results before a committee."
+                "descripcion": "Participation in a research project and presentation of results before a committee.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Certified participation in a project (min. 1 semester)",
+                    "texto": "Participation in an active research project for at least one semester. The project must be endorsed by a recognised academic institution; the principal investigator must issue an acceptance letter. You also need a certificate or document proving participation, filed with the programme office or the relevant authority."
+                  },
+                  "paso2": {
+                    "titulo": "Detailed report of activities and results",
+                    "texto": "Document detailing the activities carried out in the project and the results obtained, as evidence of the work during the research activity. It is prepared with guidance from the tutor or academic advisor."
+                  },
+                  "paso3": {
+                    "titulo": "Presentation and defence of results",
+                    "texto": "Presentation before a committee where the results of the research activity and the report are presented and defended."
+                  }
+                }
               }
             }
           },
@@ -294,19 +296,71 @@
             "submodalidades": {
               "apoyoDocencia": {
                 "titulo": "Teaching support",
-                "descripcion": "Teaching support at the faculty: preparation of materials and guidance with a faculty advisor."
+                "descripcion": "Teaching support at the faculty: preparation of materials and guidance with a faculty advisor.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Create teaching materials",
+                    "texto": "Academic work aimed at producing materials or products that support teaching and learning or research activities. Creating such material requires approval by the academic committee, faculty supervision, and evaluation by pedagogical specialists."
+                  },
+                  "paso2": {
+                    "titulo": "Select a faculty advisor",
+                    "texto": "You must have formal selection of a faculty advisor: an academic who guides, supervises, and validates the graduation work according to the modality and programme office guidelines."
+                  }
+                }
               },
               "trabajoProfesional": {
                 "titulo": "Professional work",
-                "descripcion": "Verifiable work experience and documentation of work performed in the professional field."
+                "descripcion": "Verifiable work experience and documentation of work performed in the professional field.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Two years of work experience",
+                    "texto": "Proof of two years of continuous work; multiple employment periods are allowed as long as gaps do not exceed 15 days between periods. The document must be on company letterhead, bear a handwritten signature, and specify the employment period and activities performed."
+                  },
+                  "paso2": {
+                    "titulo": "Report on work performed",
+                    "texto": "A technical-academic report in which the graduate documents professional experience in a field related to their training, demonstrating applied knowledge, skills, and solving real problems. The document is prepared with a faculty advisor who validates the work."
+                  }
+                }
               },
               "servicioSocial": {
                 "titulo": "Social service",
-                "descripcion": "Completion of social service and submission of the documentation required by this modality."
+                "descripcion": "Completion of social service and submission of the documentation required by this modality.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Have completed 100% of credits",
+                    "texto": "100% of total credits on the academic transcript with termination status 11."
+                  },
+                  "paso2": {
+                    "titulo": "Certificate of English reading proficiency.",
+                    "texto": "This official document certifies English reading comprehension. You can obtain it from the FES Aragón language centre. If the certificate is digital, print it in colour on opaline paper."
+                  },
+                  "paso3": {
+                    "titulo": "Complementary hours",
+                    "texto": "The complementary training hours certificate is an official document certifying that the graduate has completed the required hours in extracurricular activities set by the study plan. You can obtain this document at the programme office."
+                  },
+                  "paso4": {
+                    "titulo": "Activity report",
+                    "texto": "Academic report in which the graduate documents activities during social service, highlighting applied knowledge and the impact of the work. The report is developed with guidance from an academic advisor."
+                  },
+                  "paso5": {
+                    "titulo": "Termination letter and release of social service",
+                    "texto": "This document is not required to register the graduation modality; however, it is required to complete the procedure."
+                  }
+                }
               },
               "articuloAcademico": {
                 "titulo": "Academic article",
-                "descripcion": "Publication in an indexed journal and proof of authorship or co-authorship of the article."
+                "descripcion": "Publication in an indexed journal and proof of authorship or co-authorship of the article.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Publication in an indexed journal",
+                    "texto": "Participate in a research project endorsed by a faculty member. Evidence required: journal cover, indexing data and ISSN/ISBN identifiers, acceptance letter for the article in an indexed journal, and a copy of the article showing institutional affiliation."
+                  },
+                  "paso2": {
+                    "titulo": "Author or co-author",
+                    "texto": "The graduate must appear as author or co-author of the publication. For co-authorship, a letter from the principal investigator confirming the graduate's participation is required."
+                  }
+                }
               }
             }
           },
@@ -316,23 +370,81 @@
             "submodalidades": {
               "examenGeneralCeneval": {
                 "titulo": "General exam (CENEVAL)",
-                "descripcion": "Requirements for the general graduation exam (EGEL/CENEVAL) and performance records."
+                "descripcion": "Requirements for the general graduation exam (EGEL/CENEVAL) and performance records.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Pass certificate issued by EGEL",
+                    "texto": "You must take the General Examination for the Completion of the Bachelor's Degree (EGEL) in Computer Engineering and keep the pass certificate issued by the testing organisation (CENEVAL/EGEL) that proves a passing result."
+                  },
+                  "paso2": {
+                    "titulo": "Official results certificate",
+                    "texto": "You must have the official results certificate issued by CENEVAL (document certifying your performance on the exam)."
+                  }
+                }
               },
               "altoNivelAcademico": {
                 "titulo": "High academic standing",
-                "descripcion": "Academic excellence criteria: grade point average, transcript with no failed courses, and completion within the standard program duration."
+                "descripcion": "Academic excellence criteria: grade point average, transcript with no failed courses, and completion within the standard program duration.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "GPA ≥ 9.5",
+                    "texto": "A final grade point average of 9.5 is required, verifiable with the academic transcript."
+                  },
+                  "paso2": {
+                    "titulo": "No failed courses",
+                    "texto": "All courses must have been taken in the regular term, with no failures or make-up exams."
+                  },
+                  "paso3": {
+                    "titulo": "Finish within standard curriculum time",
+                    "texto": "It is mandatory to have completed coursework within the standard curriculum time."
+                  }
+                }
               },
               "estudiosPosgrado": {
                 "titulo": "Graduate studies",
-                "descripcion": "Admission to and continuation in recognized and authorized graduate programs."
+                "descripcion": "Admission to and continuation in recognized and authorized graduate programs.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Valid graduate programme admission",
+                    "texto": "The graduate programme must be endorsed by the institution (not every programme qualifies). You must meet the admission requirements of the graduate programme. You must submit an acceptance letter for the graduate programme you enter."
+                  },
+                  "paso2": {
+                    "titulo": "Proof of satisfactory completion of the first semester",
+                    "texto": "The graduate programme must be authorised or validated by the institution for this modality. Proof of satisfactory completion of the first semester in that programme is required."
+                  }
+                }
               },
               "cursosAmpliacion": {
                 "titulo": "Courses for expanding and deepening knowledge",
-                "descripcion": "Additional courses to broaden and deepen competencies, with a required minimum grade point average."
+                "descripcion": "Additional courses to broaden and deepen competencies, with a required minimum grade point average.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Take extra courses (~10% credits)",
+                    "texto": "Enrol in additional courses equivalent to approximately 10% of the total credits in the study plan and complete them in an additional semester term. The courses must differ from those already taken."
+                  },
+                  "paso2": {
+                    "titulo": "Minimum grade 9",
+                    "texto": "All extra courses must be passed with a minimum grade of 9."
+                  }
+                }
               },
               "diplomado": {
                 "titulo": "Diploma program",
-                "descripcion": "Diploma program with required hours, minimum grade, and validation by the corresponding committee."
+                "descripcion": "Diploma program with required hours, minimum grade, and validation by the corresponding committee.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Minimum 240 hours",
+                    "texto": "The course must last at least 240 hours."
+                  },
+                  "paso2": {
+                    "titulo": "Minimum grade 8",
+                    "texto": "The minimum passing grade is 8."
+                  },
+                  "paso3": {
+                    "titulo": "Must be approved by the committee",
+                    "texto": "The course or diploma must be endorsed by the programme committee; otherwise it is not valid for this modality."
+                  }
+                }
               }
             }
           }

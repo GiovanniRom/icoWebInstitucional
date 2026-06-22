@@ -39,6 +39,12 @@
         "soyAlumno": "I'm a student",
         "soyProfesor": "I'm a teacher",
         "soyEgresado": "I'm a graduate"
+      },
+      "enlacesFin": {
+        "label": "Institutional links",
+        "bibliotecaAlt": "UNAM Digital Library",
+        "bibliotecaAriaLabel": "Go to UNAM Digital Library",
+        "jefaturaAlt": "ICO program office contact"
       }
     },
     "programaAcademico": {

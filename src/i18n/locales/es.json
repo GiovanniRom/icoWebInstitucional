@@ -39,6 +39,12 @@
         "soyAlumno": "Soy alumno",
         "soyProfesor": "Soy profesor",
         "soyEgresado": "Soy egresado"
+      },
+      "enlacesFin": {
+        "label": "Enlaces institucionales",
+        "bibliotecaAlt": "Biblioteca Digital UNAM",
+        "bibliotecaAriaLabel": "Ir a la Biblioteca Digital UNAM",
+        "jefaturaAlt": "Contacto jefatura ICO"
       }
     },
     "programaAcademico": {

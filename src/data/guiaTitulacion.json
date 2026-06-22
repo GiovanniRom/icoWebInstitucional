@@ -1,0 +1,770 @@
+{
+  "version": "1.0.0",
+  "origen": "webICO — Guía de titulación (Ingeniería en Computación, FES Aragón)",
+  "generadoDesde": "src/locales/graduationGuide.es.ts, src/views/guiaTitulacion.tsx, src/views/titulacion/detalles.tsx",
+  "notas": {
+    "requisitosMinimos": "Aplican a prácticamente todas las modalidades antes de elegir una vía de titulación.",
+    "seleccionSubmodalidad": "En cada modalidad el alumno elige UNA submodalidad (alternativa); el progreso de esa modalidad solo considera los requisitos de la submodalidad elegida.",
+    "imagenEjemplo": "Nombre de archivo relativo a src/assets/images/documentos/ en webICO. null si no hay ejemplo.",
+    "textos": "Cada campo con es/en puede mapearse directo a i18n en el proyecto destino."
+  },
+  "requisitosMinimos": {
+    "id": "requisitos-minimos",
+    "titulo": {
+      "es": "Requisitos mínimos para iniciar titulación",
+      "en": "Minimum requirements to begin graduation"
+    },
+    "descripcion": {
+      "es": "Estos requisitos aplican prácticamente para todas las modalidades. Antes de elegir una modalidad, asegúrate de tener base obligatoria y documentos comunes listos para continuar con el proceso.",
+      "en": "These requirements apply to almost all modalities. Before choosing a modality, make sure your mandatory base and common documents are ready to continue the process."
+    },
+    "requisitos": [
+      {
+        "id": "requisitos-minimos-r1",
+        "orden": 1,
+        "titulo": {
+          "es": "Historial académico con 100% de créditos",
+          "en": "Academic transcript with 100% of credits"
+        },
+        "descripcion": {
+          "es": "Para obtenerlo, revisa tu historial/avance en la pagina 'https://www.dgae-siae.unam.mx/www_gate.php' y verifica que aparezca la leyenda de término 11. Posteriormente, el documento correspondiente se usa como soporte para continuar con tu proceso de titulación.",
+          "en": "To obtain it, check your transcript/progress at 'https://www.dgae-siae.unam.mx/www_gate.php' and verify that termination code 11 appears. The corresponding document is then used as supporting paperwork to continue your graduation process."
+        },
+        "opcional": false,
+        "imagenEjemplo": "historialAcademicoT11.png",
+        "enlaces": []
+      },
+      {
+        "id": "requisitos-minimos-r3",
+        "orden": 2,
+        "titulo": {
+          "es": "Carta de liberación de servicio social",
+          "en": "Letter releasing social service"
+        },
+        "descripcion": {
+          "es": "Es el documento oficial que dice que tu servicio social está validado y reconocido por la UNAM. Para obtenerlo es necesario que primero registres donde quieres realizar tu servicio social en el sistema de registro de servicio social de la UNAM 'https://siassypp.unam.mx/' o te acerques a la jefatura de carrera para que te asesoren sobre vacantes de servicio social internas. Recuerda que como requisito indispensable debes contar con al menos 70% de créditos totales cursados, no olvides llevar tu historial académico actualizado.",
+          "en": "This is the official document stating that your social service is validated and recognised by UNAM. To obtain it you must first register where you will perform social service in UNAM's social service system 'https://siassypp.unam.mx/' or visit the programme office for advice on internal placements. Remember that you need at least 70% of total credits completed; bring an up-to-date academic transcript."
+        },
+        "opcional": false,
+        "imagenEjemplo": "cartaterminossfes.png",
+        "enlaces": []
+      },
+      {
+        "id": "requisitos-minimos-r4",
+        "orden": 3,
+        "titulo": {
+          "es": "Constancia de acreditación de idioma inglés",
+          "en": "Certificate of English reading proficiency"
+        },
+        "descripcion": {
+          "es": "Es el documento oficial que acredita que tienes comprensión de lectura en inglés. Puedes obtenerlo del centro de lenguas FES Aragón.\n\nSi la constancia es digital, es necesario imprimirla en papel opalina a color.",
+          "en": "This official document certifies English reading comprehension. You can obtain it from the FES Aragón language centre.\n\nIf the certificate is digital, print it in colour on opaline paper."
+        },
+        "opcional": false,
+        "imagenEjemplo": "constanciaidioma.png",
+        "enlaces": []
+      },
+      {
+        "id": "requisitos-minimos-r5",
+        "orden": 4,
+        "titulo": {
+          "es": "Constancia de horas de formación complementaria (480 hrs)",
+          "en": "Certificate of complementary training hours (480 hrs)"
+        },
+        "descripcion": {
+          "es": "La constancia de horas de formación complementaria es un documento oficial que acredita que el egresado ha cumplido con el número de horas requeridas en actividades extracurriculares establecidas por el plan de estudios. Este documento lo puedes obtener en la jefatura de carrera.",
+          "en": "The complementary training hours certificate is an official document certifying that the graduate has completed the required hours in extracurricular activities set by the study plan. You can obtain this document at the programme office."
+        },
+        "opcional": false,
+        "imagenEjemplo": "constanciahoras.png",
+        "enlaces": []
+      },
+      {
+        "id": "requisitos-minimos-r8",
+        "orden": 5,
+        "titulo": {
+          "es": "Certificado de estudios",
+          "en": "Certificate of studies"
+        },
+        "descripcion": {
+          "es": "El certificado de estudios se solicita durante la etapa inicial del proceso de titulación, de manera paralela al registro de modalidad y a la revisión de estudios. Para obtenerlo es necesario llevar tu historial académico con estatus de término 11 y 4 fotografías tamaño credencial ovaladas (3,5 × 5 cm) a servicios escolares.",
+          "en": "The certificate of studies is requested during the initial stage of the graduation process, in parallel with modality registration and the academic records review. To obtain it, take your academic transcript with termination status 11 and four oval ID-size photographs (3.5 × 5 cm) to student services."
+        },
+        "opcional": false,
+        "imagenEjemplo": "certificadoestudios.png",
+        "enlaces": [
+          {
+            "texto": {
+              "es": "Características de fotos",
+              "en": "Photo specifications"
+            },
+            "url": "https://www.dgae.unam.mx/tramites/fotos.html"
+          }
+        ]
+      },
+      {
+        "id": "requisitos-minimos-r9",
+        "orden": 6,
+        "titulo": {
+          "es": "Certificado de estudios CCH (opcional)",
+          "en": "CCH certificate of studies (optional)"
+        },
+        "descripcion": {
+          "es": "Es el certificado íntegro de estudios del bachillerato emitido por un plantel del Colegio de Ciencias y Humanidades (CCH) de la UNAM. Acredita de forma oficial tu trayectoria en el nivel medio superior cuando cursaste el bachillerato en el CCH.\n\nEste documento es opcional en la guía: solo aplica si a tu caso le corresponde presentarlo o si servicios escolares o la jefatura de carrera lo solicitan como parte de la revisión de estudios. Si no cursaste el bachillerato en el CCH, no necesitas este certificado.\n\nPara tramitarlo o solicitar información, acude al plantel CCH donde cursaste el bachillerato o consulta los lineamientos de certificación escolar de la UNAM.",
+          "en": "This is the full certificate of upper-secondary studies issued by a campus of UNAM's Colegio de Ciencias y Humanidades (CCH). It officially records your upper-secondary pathway when you completed high school at CCH.\n\nIn this guide the document is optional: it only applies if your case requires it or if student services or the programme office requests it as part of the records review. If you did not attend CCH, you do not need this certificate.\n\nTo process it or request information, contact the CCH campus where you studied or consult UNAM's school certification guidelines."
+        },
+        "opcional": true,
+        "imagenEjemplo": "certificadocch.png",
+        "enlaces": []
+      }
+    ]
+  },
+  "modalidades": [
+    {
+      "id": "modalidad-a",
+      "codigo": "con-trabajo-escrito-con-replica-oral",
+      "titulo": {
+        "es": "Modalidad: Con trabajo escrito con réplica oral",
+        "en": "Modality: Written work with oral defence"
+      },
+      "descripcion": {
+        "es": "Modalidad en la que presentas un trabajo escrito y realizas una réplica oral ante jurado. Incluye componentes de tesis/tesina y una actividad de investigación.",
+        "en": "You submit a written work and complete an oral defence before a committee. It includes thesis/essay components and a research activity."
+      },
+      "submodalidades": [
+        {
+          "id": "modalidad-a-g-tesis",
+          "orden": 1,
+          "titulo": {
+            "es": "Tesis / Tesina",
+            "en": "Thesis / essay"
+          },
+          "descripcion": {
+            "es": "Trabajo escrito de investigación y su defensa oral ante jurado, según las etapas que marca tu plan de estudios.",
+            "en": "Written research work and oral defence before a committee, following the stages set by your study plan."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-a-r1",
+              "orden": 1,
+              "titulo": {
+                "es": "Selección de tutor aprobado por el comité académico",
+                "en": "Tutor selected and approved by the academic committee"
+              },
+              "descripcion": {
+                "es": "Se debe contar con la selección de un tutor académico aprobada por el comité académico de la carrera, quien acompaña la elaboración del trabajo escrito.",
+                "en": "You must have an academic tutor selected and approved by the programme's academic committee, who guides the preparation of the written work."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-a-r2",
+              "orden": 2,
+              "titulo": {
+                "es": "Registro formal de proyecto ante jefatura",
+                "en": "Formal project registration with programme office"
+              },
+              "descripcion": {
+                "es": "Trámite ante la jefatura de carrera para registrar formalmente el proyecto de investigación o trabajo escrito, conforme a formatos, requisitos y calendario que indique la jefatura.",
+                "en": "Procedure with the programme office to formally register the research project or written work, following the formats, requirements, and calendar indicated by the office."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-a-r3",
+              "orden": 3,
+              "titulo": {
+                "es": "Aprobación de borrador final por el tutor",
+                "en": "Final draft approved by the tutor"
+              },
+              "descripcion": {
+                "es": "El tutor debe firmar un documento en el que acredite que el trabajo está terminado y que cumple con los requisitos establecidos; con ello queda formalizada la aprobación del borrador final.",
+                "en": "The tutor must sign a document certifying that the work is finished and meets the requirements; this formally approves the final draft."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-a-r4",
+              "orden": 4,
+              "titulo": {
+                "es": "Defensa oral ante jurado",
+                "en": "Oral defence before a committee"
+              },
+              "descripcion": {
+                "es": "Presentación y defensa ante un jurado del trabajo desarrollado por el egresado.",
+                "en": "Presentation and defence of the graduate's work before a committee."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-a-g-investigacion",
+          "orden": 2,
+          "titulo": {
+            "es": "Actividad de investigación",
+            "en": "Research activity"
+          },
+          "descripcion": {
+            "es": "Participación en un proyecto de investigación y presentación de resultados ante jurado.",
+            "en": "Participation in a research project and presentation of results before a committee."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-a-r5",
+              "orden": 1,
+              "titulo": {
+                "es": "Participación certificada en proyecto (mín. 1 semestre)",
+                "en": "Certified participation in a project (min. 1 semester)"
+              },
+              "descripcion": {
+                "es": "Integración a un proyecto de investigación activo durante al menos un semestre. El proyecto debe estar avalado por una institución académica reconocida; el investigador principal debe emitir una carta de aceptación.\n\nAdemás, se requiere constancia o documento que certifique la participación ante la jefatura o instancia correspondiente.",
+                "en": "Participation in an active research project for at least one semester. The project must be endorsed by a recognised academic institution; the principal investigator must issue an acceptance letter.\n\nYou also need a certificate or document proving participation, filed with the programme office or the relevant authority."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-a-r6",
+              "orden": 2,
+              "titulo": {
+                "es": "Informe detallado de actividades y resultados",
+                "en": "Detailed report of activities and results"
+              },
+              "descripcion": {
+                "es": "Documento en el que se detallan las actividades realizadas en el proyecto y los resultados obtenidos, como evidencia del trabajo desarrollado durante la actividad de investigación.\n\nSu elaboración se realiza con el acompañamiento del tutor o asesor académico.",
+                "en": "Document detailing the activities carried out in the project and the results obtained, as evidence of the work during the research activity.\n\nIt is prepared with guidance from the tutor or academic advisor."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-a-r7",
+              "orden": 3,
+              "titulo": {
+                "es": "Presentación y defensa de resultados",
+                "en": "Presentation and defence of results"
+              },
+              "descripcion": {
+                "es": "Exposición ante jurado en la que se presentan y defienden los resultados de la actividad de investigación y el informe elaborado.",
+                "en": "Presentation before a committee where the results of the research activity and the report are presented and defended."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modalidad-b",
+      "codigo": "con-trabajo-escrito-sin-replica-oral",
+      "titulo": {
+        "es": "Modalidad: Con trabajo escrito sin réplica oral",
+        "en": "Modality: Written work without oral defence"
+      },
+      "descripcion": {
+        "es": "Modalidad con trabajo escrito, pero sin réplica oral. Se enfoca en experiencia o actividades profesionales/docentes, complementado con servicio social y un artículo académico.",
+        "en": "Written work without oral defence. It focuses on professional or teaching experience, complemented by social service and an academic article."
+      },
+      "submodalidades": [
+        {
+          "id": "modalidad-b-g-docencia",
+          "orden": 1,
+          "titulo": {
+            "es": "Apoyo a la docencia",
+            "en": "Teaching support"
+          },
+          "descripcion": {
+            "es": "Apoyo a la docencia en la facultad: elaboración de material y acompañamiento con asesor docente.",
+            "en": "Support for teaching at the school: developing materials and working with a faculty advisor."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-b-r1",
+              "orden": 1,
+              "titulo": {
+                "es": "Crear material didáctico",
+                "en": "Create teaching materials"
+              },
+              "descripcion": {
+                "es": "Trabajo académico orientado a la generación de materiales o productos que contribuyan al proceso de enseñanza-aprendizaje o al desarrollo de actividades de investigación.\n\nLa creación de dicho material requiere la aprobación del comité académico, supervisión docente y evaluación por especialistas pedagógicos.",
+                "en": "Academic work aimed at producing materials or products that support teaching and learning or research activities.\n\nCreating such material requires approval by the academic committee, faculty supervision, and evaluation by pedagogical specialists."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-b-r2",
+              "orden": 2,
+              "titulo": {
+                "es": "Selección de asesor docente",
+                "en": "Select a faculty advisor"
+              },
+              "descripcion": {
+                "es": "Debes contar con la selección formal de un asesor docente: académico que orienta, supervisa y valida el desarrollo del trabajo de titulación, conforme a la modalidad y los lineamientos de la jefatura.",
+                "en": "You must have formal selection of a faculty advisor: an academic who guides, supervises, and validates the graduation work according to the modality and programme office guidelines."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-b-g-profesional",
+          "orden": 2,
+          "titulo": {
+            "es": "Trabajo profesional",
+            "en": "Professional work"
+          },
+          "descripcion": {
+            "es": "Experiencia laboral acreditable y documentación del trabajo realizado en el ámbito profesional.",
+            "en": "Creditable work experience and documentation of work performed in a professional setting."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-b-r3",
+              "orden": 1,
+              "titulo": {
+                "es": "2 años de experiencia laboral",
+                "en": "Two years of work experience"
+              },
+              "descripcion": {
+                "es": "Comprobante de trabajo continuo por un plazo de dos años; pueden ser múltiples períodos laborales, siempre y cuando no se superen los 15 días entre un período y otro.\n\nEl documento debe estar membretado por el empleador, tener firma autógrafa, especificar el período laboral y las actividades realizadas.",
+                "en": "Proof of two years of continuous work; multiple employment periods are allowed as long as gaps do not exceed 15 days between periods.\n\nThe document must be on company letterhead, bear a handwritten signature, and specify the employment period and activities performed."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-b-r4",
+              "orden": 2,
+              "titulo": {
+                "es": "Informe del trabajo realizado",
+                "en": "Report on work performed"
+              },
+              "descripcion": {
+                "es": "Consiste en la elaboración de un informe técnico-académico en el que el egresado documenta su experiencia laboral en un área afín a su formación, demostrando la aplicación de conocimientos, habilidades y resolución de problemas reales.\n\nEste documento se elabora acompañado de un asesor docente que valida el trabajo.",
+                "en": "A technical-academic report in which the graduate documents professional experience in a field related to their training, demonstrating applied knowledge, skills, and solving real problems.\n\nThe document is prepared with a faculty advisor who validates the work."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-b-g-ss",
+          "orden": 3,
+          "titulo": {
+            "es": "Servicio social",
+            "en": "Social service"
+          },
+          "descripcion": {
+            "es": "Cumplimiento del servicio social y entrega de la documentación que exige esta modalidad.",
+            "en": "Completion of social service and submission of the documentation required for this modality."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-b-r5",
+              "orden": 1,
+              "titulo": {
+                "es": "Haber cumplido 100% créditos",
+                "en": "Have completed 100% of credits"
+              },
+              "descripcion": {
+                "es": "Obtención del 100% de créditos totales en historial académico con estatus de término 11.",
+                "en": "100% of total credits on the academic transcript with termination status 11."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-b-r6",
+              "orden": 2,
+              "titulo": {
+                "es": "Constancia de acreditación de idioma inglés.",
+                "en": "Certificate of English reading proficiency."
+              },
+              "descripcion": {
+                "es": "Es el documento oficial que acredita que tienes comprensión de lectura en inglés. Puedes obtenerlo del centro de lenguas FES Aragón.\n\nSi la constancia es digital, es necesario imprimirla en papel opalina a color.",
+                "en": "This official document certifies English reading comprehension. You can obtain it from the FES Aragón language centre.\n\nIf the certificate is digital, print it in colour on opaline paper."
+              },
+              "opcional": false,
+              "imagenEjemplo": "constanciaidioma.png",
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-b-r7",
+              "orden": 3,
+              "titulo": {
+                "es": "Horas complementarias",
+                "en": "Complementary hours"
+              },
+              "descripcion": {
+                "es": "La constancia de horas de formación complementaria es un documento oficial que acredita que el egresado ha cumplido con el número de horas requeridas en actividades extracurriculares establecidas por el plan de estudios. Este documento lo puedes obtener en la jefatura de carrera.",
+                "en": "The complementary training hours certificate is an official document certifying that the graduate has completed the required hours in extracurricular activities set by the study plan. You can obtain this document at the programme office."
+              },
+              "opcional": false,
+              "imagenEjemplo": "constanciahoras.png",
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-b-r8",
+              "orden": 4,
+              "titulo": {
+                "es": "Informe de actividades",
+                "en": "Activity report"
+              },
+              "descripcion": {
+                "es": "Informe académico en el que el egresado documenta las actividades realizadas durante su servicio social, destacando la aplicación de conocimientos y el impacto del trabajo desarrollado.\n\nEl desarrollo de este documento se realiza acompañado de un asesor académico.",
+                "en": "Academic report in which the graduate documents activities during social service, highlighting applied knowledge and the impact of the work.\n\nThe report is developed with guidance from an academic advisor."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-b-r9",
+              "orden": 5,
+              "titulo": {
+                "es": "Carta de término y liberación de servicio social",
+                "en": "Termination letter and release of social service"
+              },
+              "descripcion": {
+                "es": "Este documento no es necesario para registrar la modalidad de titulación; sin embargo, es necesario para concluir el trámite.",
+                "en": "This document is not required to register the graduation modality; however, it is required to complete the procedure."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-b-g-articulo",
+          "orden": 4,
+          "titulo": {
+            "es": "Artículo académico",
+            "en": "Academic article"
+          },
+          "descripcion": {
+            "es": "Publicación en revista indexada y constancia de autoría o coautoría del artículo.",
+            "en": "Publication in an indexed journal and proof of authorship or co-authorship."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-b-r10",
+              "orden": 1,
+              "titulo": {
+                "es": "Publicación en revista indexada",
+                "en": "Publication in an indexed journal"
+              },
+              "descripcion": {
+                "es": "Participar en un proyecto de investigación avalado por un académico.\n\nSe requiere como evidencia la portada de la revista, datos de indexación e identificadores ISSN/ISBN, carta de aceptación del artículo en revista indexada y copia del artículo mostrando afiliación institucional.",
+                "en": "Participate in a research project endorsed by a faculty member.\n\nEvidence required: journal cover, indexing data and ISSN/ISBN identifiers, acceptance letter for the article in an indexed journal, and a copy of the article showing institutional affiliation."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-b-r11",
+              "orden": 2,
+              "titulo": {
+                "es": "Autor o coautor",
+                "en": "Author or co-author"
+              },
+              "descripcion": {
+                "es": "El egresado debe figurar como autor o coautor de la publicación.\n\nEn caso de coautoría, se requiere carta del investigador principal que confirme la participación del egresado.",
+                "en": "The graduate must appear as author or co-author of the publication.\n\nFor co-authorship, a letter from the principal investigator confirming the graduate's participation is required."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modalidad-c",
+      "codigo": "sin-trabajo-escrito",
+      "titulo": {
+        "es": "Modalidad: Sin trabajo escrito",
+        "en": "Modality: No written work"
+      },
+      "descripcion": {
+        "es": "Modalidad donde no se desarrolla un trabajo escrito. Se cubren requisitos base y se realiza un examen general (CENEVAL/EGEL) y condiciones de desempeño, con posibilidad de posgrado, ampliación y/o diplomado.",
+        "en": "No written work is developed. Base requirements are met through a general exam (CENEVAL/EGEL) and performance conditions, with options such as graduate studies, extension courses, and/or a diploma programme."
+      },
+      "submodalidades": [
+        {
+          "id": "modalidad-c-g-ceneval",
+          "orden": 1,
+          "titulo": {
+            "es": "Examen general (CENEVAL)",
+            "en": "General exam (CENEVAL)"
+          },
+          "descripcion": {
+            "es": "Requisitos del examen general de egreso (EGEL/CENEVAL) y testimonios de desempeño.",
+            "en": "Requirements for the general graduation exam (EGEL/CENEVAL) and performance records."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-c-r2",
+              "orden": 1,
+              "titulo": {
+                "es": "Comprobante aprobatorio emitido por EGEL",
+                "en": "Pass certificate issued by EGEL"
+              },
+              "descripcion": {
+                "es": "Debes presentar el Examen General para el Egreso de Licenciatura (EGEL) en el área de Ingeniería en Computación y conservar el comprobante aprobatorio emitido por el organismo aplicador (CENEVAL/EGEL) que acredite resultado aprobatorio.",
+                "en": "You must take the General Examination for the Completion of the Bachelor's Degree (EGEL) in Computer Engineering and keep the pass certificate issued by the testing organisation (CENEVAL/EGEL) that proves a passing result."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-c-r3",
+              "orden": 2,
+              "titulo": {
+                "es": "Constancia oficial de resultados",
+                "en": "Official results certificate"
+              },
+              "descripcion": {
+                "es": "Contar con la constancia oficial de resultados emitida por CENEVAL (documento que acredita el desempeño en el examen).",
+                "en": "You must have the official results certificate issued by CENEVAL (document certifying your performance on the exam)."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-c-g-alto",
+          "orden": 2,
+          "titulo": {
+            "es": "Alto nivel académico",
+            "en": "High academic level"
+          },
+          "descripcion": {
+            "es": "Criterios de excelencia académica: promedio, historial sin reprobadas y conclusión en tiempo curricular.",
+            "en": "Excellence criteria: grade point average, no failed courses, and completion within the standard curriculum time."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-c-r4",
+              "orden": 1,
+              "titulo": {
+                "es": "Promedio ≥ 9.5",
+                "en": "GPA ≥ 9.5"
+              },
+              "descripcion": {
+                "es": "Es necesario contar con un promedio final de 9.5, comprobable mediante historial académico.",
+                "en": "A final grade point average of 9.5 is required, verifiable with the academic transcript."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-c-r5",
+              "orden": 2,
+              "titulo": {
+                "es": "Sin materias reprobadas",
+                "en": "No failed courses"
+              },
+              "descripcion": {
+                "es": "Es necesario haber cursado todas las materias de forma ordinaria, sin haber reprobado ninguna o presentado extraordinarios.",
+                "en": "All courses must have been taken in the regular term, with no failures or make-up exams."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-c-r6",
+              "orden": 3,
+              "titulo": {
+                "es": "Terminar en tiempo curricular",
+                "en": "Finish within standard curriculum time"
+              },
+              "descripcion": {
+                "es": "Es requisito indispensable haber cursado las materias en el tiempo curricular establecido.",
+                "en": "It is mandatory to have completed coursework within the standard curriculum time."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-c-g-posgrado",
+          "orden": 3,
+          "titulo": {
+            "es": "Estudios de posgrado",
+            "en": "Graduate studies"
+          },
+          "descripcion": {
+            "es": "Ingreso y permanencia en programas de posgrado reconocidos y autorizados.",
+            "en": "Admission to and progress in recognised, authorised graduate programmes."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-c-r7",
+              "orden": 1,
+              "titulo": {
+                "es": "Ingreso a posgrado válido",
+                "en": "Valid graduate programme admission"
+              },
+              "descripcion": {
+                "es": "El posgrado debe estar avalado por la institución (no cualquier programa es válido).\n\nCumplir con los requisitos de ingreso establecidos por el programa de posgrado.\n\nEs necesario presentar carta de aceptación al programa de posgrado al que se ingresa.\n\n",
+                "en": "The graduate programme must be endorsed by the institution (not every programme qualifies).\n\nYou must meet the admission requirements of the graduate programme.\n\nYou must submit an acceptance letter for the graduate programme you enter.\n\n"
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-c-r8",
+              "orden": 2,
+              "titulo": {
+                "es": "Comprobante de acreditación satisfactoria del primer semestre",
+                "en": "Proof of satisfactory completion of the first semester"
+              },
+              "descripcion": {
+                "es": "El programa de posgrado debe estar autorizado o validado por la institución para esta modalidad.\n\nSe requiere comprobante de acreditación satisfactoria del primer semestre en dicho programa.",
+                "en": "The graduate programme must be authorised or validated by the institution for this modality.\n\nProof of satisfactory completion of the first semester in that programme is required."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-c-g-ampliacion",
+          "orden": 4,
+          "titulo": {
+            "es": "Ampliación y profundización",
+            "en": "Extension and deepening"
+          },
+          "descripcion": {
+            "es": "Cursos adicionales para ampliar y profundizar competencias, con promedio mínimo requerido. Se cuenta con un período máximo de un año, contado a partir de haber terminado el 100% de los créditos, para inscribir esta modalidad de titulación.",
+            "en": "Additional courses to broaden and deepen competencies, with a required minimum average. You have a maximum period of one year, counted from completing 100% of credits, to register this graduation modality."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-c-r9",
+              "orden": 1,
+              "titulo": {
+                "es": "Cursar materias extra (~10% créditos)",
+                "en": "Take extra courses (~10% credits)"
+              },
+              "descripcion": {
+                "es": "Inscribirse a asignaturas adicionales equivalentes a aproximadamente el 10% de los créditos totales del plan de estudios y cursar dichas asignaturas en un período adicional de semestre. Las asignaturas deben ser diferentes a las ya cursadas.",
+                "en": "Enrol in additional courses equivalent to approximately 10% of the total credits in the study plan and complete them in an additional semester term. The courses must differ from those already taken."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-c-r10",
+              "orden": 2,
+              "titulo": {
+                "es": "Promedio mínimo 9",
+                "en": "Minimum grade 9"
+              },
+              "descripcion": {
+                "es": "Todas las asignaturas extras deben acreditarse con una calificación mínima de 9.",
+                "en": "All extra courses must be passed with a minimum grade of 9."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        },
+        {
+          "id": "modalidad-c-g-diplomado",
+          "orden": 5,
+          "titulo": {
+            "es": "Diplomado",
+            "en": "Diploma programme"
+          },
+          "descripcion": {
+            "es": "Diplomado con carga horaria, calificación mínima y validación por comité correspondiente.",
+            "en": "Diploma with required hours, minimum grade, and validation by the corresponding committee."
+          },
+          "requisitos": [
+            {
+              "id": "modalidad-c-r11",
+              "orden": 1,
+              "titulo": {
+                "es": "Mínimo 240 horas",
+                "en": "Minimum 240 hours"
+              },
+              "descripcion": {
+                "es": "La duración mínima del curso deberá ser de 240 horas.",
+                "en": "The course must last at least 240 hours."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-c-r12",
+              "orden": 2,
+              "titulo": {
+                "es": "Promedio mínimo 8",
+                "en": "Minimum grade 8"
+              },
+              "descripcion": {
+                "es": "La calificación mínima aprobatoria es de 8.",
+                "en": "The minimum passing grade is 8."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            },
+            {
+              "id": "modalidad-c-r13",
+              "orden": 3,
+              "titulo": {
+                "es": "Debe estar aprobado por comité",
+                "en": "Must be approved by the committee"
+              },
+              "descripcion": {
+                "es": "El curso o diplomado deberá estar avalado por el comité de carrera; de lo contrario no será válido para esta modalidad.",
+                "en": "The course or diploma must be endorsed by the programme committee; otherwise it is not valid for this modality."
+              },
+              "opcional": false,
+              "imagenEjemplo": null,
+              "enlaces": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

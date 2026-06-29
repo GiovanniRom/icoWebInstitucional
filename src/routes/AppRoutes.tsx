@@ -5,6 +5,7 @@ import { ProgramaAcademicoPage } from '../pages/ProgramaAcademicoPage'
 import { SoyAlumnoPage } from '../pages/SoyAlumnoPage'
 import { SoyAlumnoHorariosPage } from '../pages/SoyAlumnoHorariosPage'
 import { SoyAlumnoExtraordinariosPage } from '../pages/SoyAlumnoExtraordinariosPage'
+import { HorasCompPage } from '../pages/horascomp'
 import { SoyProfesorPage } from '../pages/SoyProfesorPage'
 import { SoyEgresadoPage } from '../pages/SoyEgresadoPage'
 
@@ -17,6 +18,7 @@ export function AppRoutes() {
         <Route path="soy-alumno" element={<SoyAlumnoPage />} />
         <Route path="soy-alumno/horarios" element={<SoyAlumnoHorariosPage />} />
         <Route path="soy-alumno/extraordinarios" element={<SoyAlumnoExtraordinariosPage />} />
+        <Route path="soy-alumno/horas-comp" element={<HorasCompPage />} />
         <Route path="soy-profesor" element={<SoyProfesorPage />} />
         <Route path="soy-egresado" element={<SoyEgresadoPage />} />
       </Route>

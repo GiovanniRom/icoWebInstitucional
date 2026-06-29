@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { ProgramaAcademicoInstitucionalCarousel } from './ProgramaAcademicoInstitucionalCarousel'
 import './ProgramaAcademicoInstitucional.css'
 
 export function ProgramaAcademicoInstitucional() {
@@ -13,9 +14,7 @@ export function ProgramaAcademicoInstitucional() {
         {t('pages.programaAcademico.institucional.todosSomosUnam')}
       </p>
       <div className="programa-academico-institucional__fila programa-academico-institucional__fila--carrusel">
-        <p className="programa-academico-institucional__carrusel-texto">
-          {t('pages.programaAcademico.institucional.carrusel')}
-        </p>
+        <ProgramaAcademicoInstitucionalCarousel />
       </div>
       <p className="programa-academico-institucional__fila programa-academico-institucional__fila--aragon">
         {t('pages.programaAcademico.institucional.hechoEnAragon')}

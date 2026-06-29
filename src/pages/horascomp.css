@@ -1,0 +1,290 @@
+.horascomp-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.horascomp-page__barra {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 5% 0;
+}
+
+.horascomp-page__content {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+  margin-block: 0;
+  padding: 0 5% 2rem;
+}
+
+.horascomp-page__titulo-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 812.88 / 50.25;
+  min-height: 0;
+  line-height: 0;
+  background-color: #fff;
+  background-image: url('../assets/images/horascomp/banner.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+.horascomp-page__titulo-cabecera h1.horascomp-page__titulo-texto {
+  margin-block: 0;
+  letter-spacing: 0.04em;
+}
+
+.horascomp-page__titulo-texto {
+  margin: 0;
+  padding: 0.35rem 1.25rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3vw, 2.25rem);
+  line-height: 1.2;
+  color: var(--color-dorado);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.horascomp-page__intro {
+  margin: 1.25rem auto 0;
+  max-width: 52rem;
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--text);
+}
+
+.horascomp-page__categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 64rem;
+  margin: 2rem auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.horascomp-page__categoria-item {
+  display: flex;
+  min-width: 0;
+}
+
+.horascomp-page__categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  width: 100%;
+  min-width: 0;
+  padding: 0.65rem 0.75rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow:
+    0 3px 10px rgba(0, 47, 108, 0.14),
+    0 8px 22px rgba(0, 47, 108, 0.1);
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.2s ease;
+}
+
+.horascomp-page__categoria:focus-visible {
+  outline: 2px solid var(--color-dorado);
+  outline-offset: 3px;
+}
+
+.horascomp-page__categoria--activa {
+  border-color: var(--color-dorado);
+  box-shadow:
+    0 6px 16px rgba(0, 47, 108, 0.18),
+    0 12px 28px rgba(186, 154, 58, 0.15);
+}
+
+.horascomp-page__categoria-titulo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0.65rem 0 -1.35rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(0.95rem, 1.6vw, 1.25rem);
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+}
+
+.horascomp-page__categoria-imagen {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: clamp(8rem, 18vw, 12rem);
+  margin-inline: auto;
+  object-fit: contain;
+  object-position: center bottom;
+  flex: 1;
+}
+
+@media (hover: hover) {
+  .horascomp-page__categoria:hover {
+    transform: translateY(-10px);
+    box-shadow:
+      0 10px 24px rgba(0, 47, 108, 0.22),
+      0 18px 40px rgba(0, 47, 108, 0.14);
+  }
+
+  .horascomp-page__categoria--activa:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.horascomp-page__separador {
+  width: 100%;
+  max-width: 64rem;
+  margin: 2.5rem auto 1.75rem;
+  border: none;
+  border-top: 2px solid var(--color-dorado);
+}
+
+.horascomp-page__detalle {
+  width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+.horascomp-page__detalle-titulo {
+  margin: 0 0 1rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+}
+
+.horascomp-page__detalle-texto {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--text);
+}
+
+.horascomp-page__tabla-envoltorio {
+  width: 100%;
+  margin-top: 1.75rem;
+  overflow-x: auto;
+}
+
+.horascomp-page__tabla {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--color-dorado);
+  font-family: var(--sans);
+  font-size: clamp(0.875rem, 1.35vw, 1rem);
+  line-height: 1.45;
+}
+
+.horascomp-page__tabla th,
+.horascomp-page__tabla td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-dorado);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.horascomp-page__tabla thead th {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.horascomp-page__tabla tbody td {
+  color: var(--text);
+  background-color: #fff;
+}
+
+.horascomp-page__tabla tbody tr:nth-child(even) td {
+  background-color: rgba(0, 47, 108, 0.04);
+}
+
+.horascomp-page__tabla--dividida {
+  --horascomp-actividad-ancho: 75%;
+  --horascomp-ponderacion-ancho: 25%;
+  table-layout: fixed;
+}
+
+.horascomp-page__tabla--dividida .horascomp-page__tabla-col-act-a {
+  width: calc(var(--horascomp-actividad-ancho) * 0.3);
+}
+
+.horascomp-page__tabla--dividida .horascomp-page__tabla-col-act-b {
+  width: calc(var(--horascomp-actividad-ancho) * 0.7);
+}
+
+.horascomp-page__tabla--dividida .horascomp-page__tabla-col-pond {
+  width: var(--horascomp-ponderacion-ancho);
+}
+
+.horascomp-page__volver {
+  display: inline-block;
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.horascomp-page__volver:hover {
+  color: var(--color-dorado);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .horascomp-page__barra {
+    padding-inline: 1.25rem;
+  }
+
+  .horascomp-page__content {
+    padding: 0 1.25rem 1.75rem;
+  }
+
+  .horascomp-page__categorias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+.horascomp-page__categorias-ayuda {
+  margin: 1.25rem auto 0;
+  max-width: 64rem;
+  font-family: var(--sans);
+  font-size: clamp(0.9rem, 1.35vw, 1.05rem);
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-primary);
+}

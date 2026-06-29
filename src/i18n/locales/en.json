@@ -84,7 +84,9 @@
       "institucional": {
         "ariaLabel": "UNAM and Engineering in Aragón institutional identity",
         "todosSomosUnam": "#TodosSomosUNAM",
-        "carrusel": "image carousel",
+        "carouselLabel": "Program institutional gallery",
+        "carouselSlide1Alt": "Computer engineering program faculty",
+        "carouselSlide2Alt": "Computer engineering academic program",
         "hechoEnAragon": "#HechoEnAragón"
       },
       "misionVision": {
@@ -130,6 +132,26 @@
           "primeraVuelta": "First-round make-up exams",
           "extraLargo": "ICO extended make-up exam"
         }
+      },
+      "formacionComp": {
+        "pageTitle": "Complementary training hours",
+        "volver": "← Back to I'm a student",
+        "intro": "Throughout your university experience, you will have the opportunity to take part in sports, cultural, research, or entrepreneurship activities. These activities are essential to your development as a UNAM student—make the most of every opportunity FES Aragón offers you.",
+        "categoriasLabel": "Complementary training categories",
+        "categoriasAyuda": "Click on the cards to learn more details.",
+        "culturalesTitulo": "CULTURAL",
+        "deportivasTitulo": "SPORTS",
+        "emprendimientoTitulo": "ENTREPRENEURSHIP",
+        "investigacionTitulo": "RESEARCH",
+        "culturalesTexto": "Cultural activities have an established hour weighting set by the University Extension Unit of the Faculty of Higher Studies Aragón. Cultural activities held outside the Faculty will be weighted as follows:",
+        "deportivasTexto": "Sports activities have an established hour weighting set by the University Extension Unit of the Faculty of Higher Studies Aragón. Sports activities held outside the Faculty will be weighted as follows:",
+        "emprendimientoTexto": "Entrepreneurship activities have an established hour weighting set by the University Extension Unit of the Faculty of Higher Studies Aragón. Entrepreneurship activities held outside the Faculty will be weighted as follows:",
+        "investigacionTexto": "Research activities have an established hour weighting set by the University Extension Unit of the Faculty of Higher Studies Aragón. Research activities held outside the Faculty will be weighted as follows:",
+        "deportivasAlt": "Sports activities",
+        "culturalesAlt": "Cultural activities",
+        "investigacionAlt": "Research activities",
+        "emprendimientoAlt": "Entrepreneurship activities",
+        "tablaLabel": "Hour weighting by activity"
       },
       "calendarioEscolar": "School calendar 2026 - II",
       "abrirCalendarioPdf": "Open school calendar (PDF) in a new tab",

@@ -26,23 +26,13 @@
   justify-content: flex-start;
   color: var(--color-dorado);
   text-align: left;
+  padding-bottom: 0.35rem;
 }
 
 .programa-academico-institucional__fila--carrusel {
   justify-content: center;
   min-height: clamp(10rem, 28vw, 18rem);
-  padding-block: 2rem;
-}
-
-.programa-academico-institucional__carrusel-texto {
-  margin: 0;
-  color: var(--color-tertiary);
-  font-weight: 700;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  line-height: 1.3;
-  text-align: center;
-  text-transform: none;
-  letter-spacing: 0.02em;
+  padding-block: 2rem 2.75rem;
 }
 
 .programa-academico-institucional__fila--aragon {

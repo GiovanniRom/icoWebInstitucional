@@ -84,7 +84,9 @@
       "institucional": {
         "ariaLabel": "Identidad institucional UNAM e Ingeniería en Aragón",
         "todosSomosUnam": "#TodosSomosUNAM",
-        "carrusel": "carrousel de imagenes",
+        "carouselLabel": "Galería institucional del programa",
+        "carouselSlide1Alt": "Cuerpo académico del programa de ingeniería en computación",
+        "carouselSlide2Alt": "Programa académico de ingeniería en computación",
         "hechoEnAragon": "#HechoEnAragón"
       },
       "misionVision": {
@@ -130,6 +132,26 @@
           "primeraVuelta": "Extras primera vuelta",
           "extraLargo": "Extra largo ICO"
         }
+      },
+      "formacionComp": {
+        "pageTitle": "Horas de formación complementaria",
+        "volver": "← Volver a Soy alumno",
+        "intro": "Durante el transcurso de tu vida universitaria, tendrás la oportunidad de realizar algunas actividades deportivas, culturales, de investigación o de emprendimiento. Estas actividades son cruciales en tu desarrollo como universitario, aprovecha cada espacio que la FES Aragón tiene para ti.",
+        "categoriasLabel": "Categorías de formación complementaria",
+        "categoriasAyuda": "Da clic en las tarjetas para conocer más detalles.",
+        "culturalesTitulo": "CULTURALES",
+        "deportivasTitulo": "DEPORTIVAS",
+        "emprendimientoTitulo": "EMPRENDIMIENTO",
+        "investigacionTitulo": "INVESTIGACIÓN",
+        "culturalesTexto": "Las actividades culturales cuentan con una ponderación de horas ya establecida por la Unidad de Extensión Universitaria de la Facultad de Estudios Superiores Aragón. Las actividades culturales externas a la Facultad se ponderarán de la siguiente manera:",
+        "deportivasTexto": "Las actividades deportivas cuentan con una ponderación de horas ya establecida por la Unidad de Extensión Universitaria de la Facultad de Estudios Superiores Aragón. Las actividades deportivas externas a la Facultad se ponderarán de la siguiente manera:",
+        "emprendimientoTexto": "Las actividades de emprendimiento cuentan con una ponderación de horas ya establecida por la Unidad de Extensión Universitaria de la Facultad de Estudios Superiores Aragón. Las actividades de emprendimiento externas a la Facultad se ponderarán de la siguiente manera:",
+        "investigacionTexto": "Las actividades de investigación cuentan con una ponderación de horas ya establecida por la Unidad de Extensión Universitaria de la Facultad de Estudios Superiores Aragón. Las actividades de investigación externas a la Facultad se ponderarán de la siguiente manera:",
+        "deportivasAlt": "Actividades deportivas",
+        "culturalesAlt": "Actividades culturales",
+        "investigacionAlt": "Actividades de investigación",
+        "emprendimientoAlt": "Actividades de emprendimiento",
+        "tablaLabel": "Ponderación de horas por actividad"
       },
       "calendarioEscolar": "Calendario escolar 2026 - II",
       "abrirCalendarioPdf": "Abrir calendario escolar (PDF) en una nueva pestaña",

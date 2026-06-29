@@ -1,0 +1,45 @@
+{
+  "col1": "Actividad",
+  "col2": "Ponderación de horas",
+  "culturales": {
+    "fila1": { "c1a": "Concurso", "c1b": "1°, 2° o 3° lugar", "c2": "100" },
+    "fila2": { "c1b": "Otro lugar", "c2": "30" },
+    "fila3": { "c1b": "Participación", "c2": "20" },
+    "fila4": { "c1a": "Curso", "c1b": "Con horas definidas", "c2": "horas x 2" },
+    "fila5": { "c1b": "Sin horas definidas", "c2": "20" },
+    "fila6": { "c1": "Asistencia a eventos", "c2": "20" },
+    "fila7": { "c1": "Visita a museos", "c2": "20" }
+  },
+  "deportivas": {
+    "fila1": { "c1a": "Concurso", "c1b": "1°, 2° o 3° lugar", "c2": "100" },
+    "fila2": { "c1b": "Otro lugar", "c2": "30" },
+    "fila3": { "c1b": "Participación", "c2": "20" },
+    "fila4": { "c1a": "Entrenamiento", "c1b": "Con horas definidas", "c2": "horas x1.5" },
+    "fila5": { "c1b": "Sin horas definidas", "c2": "días x1.5" },
+    "fila6": { "c1a": "Torneos", "c1b": "1°, 2° o 3° lugar", "c2": "100" },
+    "fila7": { "c1b": "Otro lugar", "c2": "30" },
+    "fila8": { "c1b": "Participación", "c2": "50" }
+  },
+  "emprendimiento": {
+    "fila1": { "c1a": "Concurso", "c1b": "Participación", "c2": "20" },
+    "fila2": { "c1b": "Primer lugar", "c2": "150" },
+    "fila3": { "c1b": "Segundo lugar", "c2": "120" },
+    "fila4": { "c1b": "Tercer lugar", "c2": "100" },
+    "fila5": { "c1b": "Cuarto y quinto lugar", "c2": "80" },
+    "fila6": { "c1b": "Sexto a décimo lugar", "c2": "40" },
+    "fila7": { "c1b": "Otro lugar", "c2": "30" },
+    "fila8": { "c1a": "Curso", "c1b": "Con horas definidas", "c2": "horas x2" },
+    "fila9": { "c1b": "Sin horas definidas", "c2": "días x2" },
+    "fila10": { "c1": "Asistencia a eventos", "c2": "20" }
+  },
+  "investigacion": {
+    "fila1": { "c1a": "Concurso", "c1b": "1°, 2° o 3° lugar", "c2": "100" },
+    "fila2": { "c1b": "Otro lugar", "c2": "30" },
+    "fila3": { "c1b": "Participación", "c2": "20" },
+    "fila4": { "c1a": "Curso", "c1b": "Con horas definidas", "c2": "horas x2" },
+    "fila5": { "c1b": "Sin horas definidas", "c2": "20" },
+    "fila6": { "c1": "Apoyo a la docencia", "c2": "Horas firmadas por docente" },
+    "fila7": { "c1a": "Semana de ingeniería", "c1b": "Conferencias (Max. 3)", "c2": "20" },
+    "fila8": { "c1b": "Taller (Max. 2)", "c2": "20" }
+  }
+}

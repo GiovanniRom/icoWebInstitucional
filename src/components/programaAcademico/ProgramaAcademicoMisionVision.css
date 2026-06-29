@@ -1,19 +1,23 @@
 .programa-academico-mvv {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 0;
   padding: 2.5rem 5% 3rem;
   box-sizing: border-box;
-  gap: 1.5rem;
   background-color: var(--color-tertiary);
 }
 
-.programa-academico-mvv__fila {
+.programa-academico-mvv__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
   width: 100%;
+}
+
+.programa-academico-mvv__bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
 }
 
 .programa-academico-mvv__titulo {
@@ -40,15 +44,14 @@
 @media (max-width: 768px) {
   .programa-academico-mvv {
     padding: 2rem 1.25rem 2.5rem;
-    gap: 1.25rem;
   }
 
-  .programa-academico-mvv__fila {
+  .programa-academico-mvv__grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
-  .programa-academico-mvv__fila--titulos {
+  .programa-academico-mvv__bloque {
     gap: 1rem;
   }
 }

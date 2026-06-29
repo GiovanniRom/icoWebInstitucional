@@ -20,7 +20,7 @@ const ACCESOS = [
     href: 'https://sites.google.com/aragon.unam.mx/laboratorio-l3/horarios?authuser=0',
   },
   { id: 'extra', src: extraIcon, labelKey: 'extra', to: '/soy-alumno/extraordinarios' },
-  { id: 'formacion', src: formacionIcon, labelKey: 'formacion' },
+  { id: 'formacion', src: formacionIcon, labelKey: 'formacion', to: '/soy-alumno/horas-comp' },
 ] as const
 
 export function AlumnoAccesos() {

@@ -104,8 +104,34 @@
 }
 
 @media (max-width: 768px) {
+  .site-footer {
+    padding: 1rem 1rem 1.25rem;
+  }
+
   .site-footer__inner {
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
     height: auto;
+  }
+
+  .site-footer__aniv {
+    max-width: min(12rem, 72vw);
+    height: clamp(2.75rem, 10vw, 3.75rem);
+    align-self: center;
+  }
+
+  .site-footer__staff {
+    width: 100%;
+    flex: none;
+    padding-block: 0;
+  }
+
+  .site-footer__social {
+    justify-content: center;
+    width: 100%;
+    align-self: center;
   }
 }

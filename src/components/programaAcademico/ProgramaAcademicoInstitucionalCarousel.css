@@ -1,0 +1,54 @@
+.programa-academico-institucional-carousel {
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.programa-academico-institucional-carousel__slider {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.programa-academico-institucional-carousel__slider .slick-slider,
+.programa-academico-institucional-carousel__slider .slick-list,
+.programa-academico-institucional-carousel__slider .slick-track,
+.programa-academico-institucional-carousel__slider .slick-slide > div {
+  width: 100%;
+}
+
+.programa-academico-institucional-carousel__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.programa-academico-institucional-carousel__imagen {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: clamp(8rem, 22vw, 14rem);
+  margin-inline: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.programa-academico-institucional-carousel__slider .slick-dots {
+  bottom: -1.25rem;
+}
+
+.programa-academico-institucional-carousel__slider .slick-dots li button {
+  background: var(--color-tertiary);
+  opacity: 0.35;
+}
+
+.programa-academico-institucional-carousel__slider .slick-dots li.slick-active button {
+  opacity: 1;
+  background: var(--color-dorado);
+}

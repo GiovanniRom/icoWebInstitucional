@@ -11,18 +11,16 @@ export function ProgramaAcademicoMisionVision() {
       className="programa-academico-mvv"
       aria-label={t('pages.programaAcademico.misionVision.ariaLabel')}
     >
-      <div className="programa-academico-mvv__fila programa-academico-mvv__fila--titulos">
+      <div className="programa-academico-mvv__grid">
         {PILARES.map((pilar) => (
-          <h2 key={pilar} className="programa-academico-mvv__titulo">
-            {t(`pages.programaAcademico.misionVision.${pilar}.titulo`)}
-          </h2>
-        ))}
-      </div>
-      <div className="programa-academico-mvv__fila programa-academico-mvv__fila--descripciones">
-        {PILARES.map((pilar) => (
-          <p key={pilar} className="programa-academico-mvv__descripcion">
-            {t(`pages.programaAcademico.misionVision.${pilar}.descripcion`)}
-          </p>
+          <article key={pilar} className="programa-academico-mvv__bloque">
+            <h2 className="programa-academico-mvv__titulo">
+              {t(`pages.programaAcademico.misionVision.${pilar}.titulo`)}
+            </h2>
+            <p className="programa-academico-mvv__descripcion">
+              {t(`pages.programaAcademico.misionVision.${pilar}.descripcion`)}
+            </p>
+          </article>
         ))}
       </div>
     </section>

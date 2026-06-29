@@ -3,18 +3,25 @@
   flex-direction: column;
   min-height: 100svh;
   width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
   text-align: left;
 }
 
 .site-main {
   flex: 1;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 2rem 1.5rem;
+  box-sizing: border-box;
 }
 
 .site-main:has(.soy-alumno-page),
 .site-main:has(.inicio-page),
 .site-main:has(.programa-academico-page),
 .site-main:has(.soy-profesor-page),
-.site-main:has(.soy-egresado-page) {
+.site-main:has(.soy-egresado-page),
+.site-main:has(.horascomp-page) {
   padding: 0;
 }

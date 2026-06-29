@@ -1,0 +1,45 @@
+{
+  "col1": "Activity",
+  "col2": "Hour weighting",
+  "culturales": {
+    "fila1": { "c1a": "Contest", "c1b": "1st, 2nd or 3rd place", "c2": "100" },
+    "fila2": { "c1b": "Other place", "c2": "30" },
+    "fila3": { "c1b": "Participation", "c2": "20" },
+    "fila4": { "c1a": "Course", "c1b": "With defined hours", "c2": "hours x 2" },
+    "fila5": { "c1b": "Without defined hours", "c2": "20" },
+    "fila6": { "c1": "Attendance at events", "c2": "20" },
+    "fila7": { "c1": "Museum visit", "c2": "20" }
+  },
+  "deportivas": {
+    "fila1": { "c1a": "Contest", "c1b": "1st, 2nd or 3rd place", "c2": "100" },
+    "fila2": { "c1b": "Other place", "c2": "30" },
+    "fila3": { "c1b": "Participation", "c2": "20" },
+    "fila4": { "c1a": "Training", "c1b": "With defined hours", "c2": "hours x1.5" },
+    "fila5": { "c1b": "Without defined hours", "c2": "days x1.5" },
+    "fila6": { "c1a": "Tournaments", "c1b": "1st, 2nd or 3rd place", "c2": "100" },
+    "fila7": { "c1b": "Other place", "c2": "30" },
+    "fila8": { "c1b": "Participation", "c2": "50" }
+  },
+  "emprendimiento": {
+    "fila1": { "c1a": "Contest", "c1b": "Participation", "c2": "20" },
+    "fila2": { "c1b": "First place", "c2": "150" },
+    "fila3": { "c1b": "Second place", "c2": "120" },
+    "fila4": { "c1b": "Third place", "c2": "100" },
+    "fila5": { "c1b": "Fourth and fifth place", "c2": "80" },
+    "fila6": { "c1b": "Sixth to tenth place", "c2": "40" },
+    "fila7": { "c1b": "Other place", "c2": "30" },
+    "fila8": { "c1a": "Course", "c1b": "With defined hours", "c2": "hours x2" },
+    "fila9": { "c1b": "Without defined hours", "c2": "days x2" },
+    "fila10": { "c1": "Attendance at events", "c2": "20" }
+  },
+  "investigacion": {
+    "fila1": { "c1a": "Contest", "c1b": "1st, 2nd or 3rd place", "c2": "100" },
+    "fila2": { "c1b": "Other place", "c2": "30" },
+    "fila3": { "c1b": "Participation", "c2": "20" },
+    "fila4": { "c1a": "Course", "c1b": "With defined hours", "c2": "hours x2" },
+    "fila5": { "c1b": "Without defined hours", "c2": "20" },
+    "fila6": { "c1": "Support for teaching", "c2": "Hours signed by instructor" },
+    "fila7": { "c1a": "Engineering week", "c1b": "Conferences (Max. 3)", "c2": "20" },
+    "fila8": { "c1b": "Workshop (Max. 2)", "c2": "20" }
+  }
+}

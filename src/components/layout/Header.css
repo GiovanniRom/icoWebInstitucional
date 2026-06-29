@@ -1,6 +1,9 @@
 .site-header {
   --header-bar-height: 5.5rem;
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
   background: var(--color-header-bg);
   color: var(--color-header-text);
   border-bottom: 2px solid var(--color-dorado);
@@ -11,8 +14,11 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+  min-width: 0;
   min-height: var(--header-bar-height);
   padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 .site-header__brand {
@@ -35,6 +41,8 @@
   align-items: center;
   gap: 0.75rem;
   height: 100%;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .site-header__program {
@@ -301,5 +309,80 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+
+  .site-header__brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+  }
+}
+
+/* Pantallas muy estrechas: compactar marca y controles */
+@media (max-width: 550px) {
+  .site-header {
+    --header-bar-height: 4.25rem;
+  }
+
+  .site-header__bar {
+    gap: 0.4rem;
+    padding: 0 0.65rem;
+  }
+
+  .site-header__logos {
+    gap: 0.35rem;
+  }
+
+  .site-header__program {
+    gap: 0.35rem;
+    min-width: 0;
+  }
+
+  .site-header__logo-img--fes {
+    max-width: 3.1rem;
+  }
+
+  .site-header__logo-img--power {
+    max-width: 2.35rem;
+  }
+
+  .site-header__logo-img {
+    height: calc(var(--header-bar-height) * 0.88);
+    max-height: calc(var(--header-bar-height) * 0.88);
+  }
+
+  .site-header__program-title {
+    font-size: 0.58rem;
+    min-width: 0;
+  }
+
+  .site-header__program-col {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.1;
+  }
+
+  .site-header__actions {
+    gap: 0.35rem;
+    flex-shrink: 0;
+  }
+
+  .site-header .lang-toggle {
+    gap: 0;
+    padding: 0.2rem;
+  }
+
+  .site-header .lang-toggle > span:not(.lang-toggle__track) {
+    display: none;
+  }
+
+  .site-header__menu-btn {
+    width: 2.15rem;
+    height: 2.15rem;
+    flex-shrink: 0;
+  }
+
+  .site-header__nav {
+    padding: 0 0.65rem;
   }
 }

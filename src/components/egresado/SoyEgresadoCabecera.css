@@ -121,7 +121,13 @@
 }
 
 @media (max-width: 768px) {
+  .soy-egresado-cabecera {
+    display: flex;
+    justify-content: center;
+  }
+
   .soy-egresado-cabecera__identidad {
     max-width: 100%;
+    margin-inline: auto;
   }
 }

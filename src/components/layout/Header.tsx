@@ -95,22 +95,49 @@ export function Header() {
           </span>
         </div>
 
-        <div className="site-header__actions">
-          <LanguageToggle />
-          <button
-            type="button"
-            className="site-header__menu-btn"
-            aria-expanded={menuOpen}
-            aria-controls="main-navigation"
-            aria-label={menuOpen ? t('nav.menuClose') : t('nav.menuOpen')}
-            onClick={toggleMenu}
+        <div className="site-header__tools">
+          <nav
+            id="main-navigation"
+            className="site-header__nav"
+            aria-label={t('nav.mainNavigation')}
           >
-            <span className="site-header__menu-icon" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-            </span>
-          </button>
+            <ul className="site-header__list">
+              {navItems.map(({ to, labelKey, ...rest }) => (
+                <li key={to}>
+                  <NavLink
+                    to={to}
+                    end={'end' in rest ? rest.end : false}
+                    className={({ isActive }) =>
+                      isActive
+                        ? 'site-header__link site-header__link--active'
+                        : 'site-header__link'
+                    }
+                    onClick={closeMenu}
+                  >
+                    {t(labelKey)}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="site-header__actions">
+            <LanguageToggle />
+            <button
+              type="button"
+              className="site-header__menu-btn"
+              aria-expanded={menuOpen}
+              aria-controls="main-navigation"
+              aria-label={menuOpen ? t('nav.menuClose') : t('nav.menuOpen')}
+              onClick={toggleMenu}
+            >
+              <span className="site-header__menu-icon" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -121,31 +148,6 @@ export function Header() {
         tabIndex={-1}
         onClick={closeMenu}
       />
-
-      <nav
-        id="main-navigation"
-        className="site-header__nav"
-        aria-label={t('nav.mainNavigation')}
-      >
-        <ul className="site-header__list">
-          {navItems.map(({ to, labelKey, ...rest }) => (
-            <li key={to}>
-              <NavLink
-                to={to}
-                end={'end' in rest ? rest.end : false}
-                className={({ isActive }) =>
-                  isActive
-                    ? 'site-header__link site-header__link--active'
-                    : 'site-header__link'
-                }
-                onClick={closeMenu}
-              >
-                {t(labelKey)}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </header>
   )
 }

@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   max-width: 100%;
+  box-sizing: border-box;
   overflow-x: clip;
   background: var(--color-header-bg);
   color: var(--color-header-text);
@@ -26,6 +27,7 @@
   display: flex;
   align-items: center;
   height: var(--header-bar-height);
+  min-width: 0;
 }
 
 .site-header__logo {
@@ -86,6 +88,10 @@
   gap: 0.75rem;
   margin-left: auto;
   flex-shrink: 0;
+}
+
+.site-header__tools {
+  display: contents;
 }
 
 .site-header__menu-btn {
@@ -173,6 +179,7 @@
 
 /* Selector de idioma sobre fondo primario */
 .site-header .lang-toggle {
+  flex-shrink: 0;
   border-color: var(--color-header-border);
   background: rgba(255, 255, 255, 0.1);
   color: var(--color-header-text-muted);
@@ -194,42 +201,58 @@
 
 /* Escritorio: barra única con navegación horizontal */
 @media (min-width: 1300px) {
-  .site-header {
-    display: flex;
+  .site-header__bar {
+    display: grid;
+    grid-template-columns: minmax(0, auto) minmax(0, 1fr);
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    column-gap: clamp(0.75rem, 1.5vw, 1.5rem);
+    width: 100%;
+    max-width: 100%;
     min-height: var(--header-bar-height);
-    padding: 0 1.5rem;
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+    box-sizing: border-box;
   }
 
-  .site-header__bar {
-    display: contents;
-    padding: 0;
-    min-height: 0;
+  .site-header__tools {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(0.75rem, 1.25vw, 1.25rem);
+    min-width: 0;
+    max-width: 100%;
   }
 
   .site-header__brand {
-    order: 1;
     height: var(--header-bar-height);
+    min-width: 0;
+    max-width: min(24rem, 42vw);
   }
 
   .site-header__nav {
-    order: 2;
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0;
+    position: static;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+    overflow: visible;
   }
 
   .site-header__list {
     justify-content: flex-end;
+    gap: 0.5rem clamp(0.65rem, 1.1vw, 1.25rem);
+    max-width: 100%;
+  }
+
+  .site-header__link {
+    font-size: clamp(0.8125rem, 0.75rem + 0.25vw, 0.95rem);
   }
 
   .site-header__actions {
-    order: 3;
     margin-left: 0;
     flex-shrink: 0;
+  }
+
+  .site-header__menu-btn {
+    display: none;
   }
 
   .site-header__backdrop {
@@ -239,6 +262,10 @@
 
 /* Móvil / tablet: menú hamburguesa */
 @media (max-width: 1299px) {
+  .site-header__tools {
+    display: contents;
+  }
+
   .site-header__menu-btn {
     display: inline-flex;
   }

@@ -1,6 +1,6 @@
 {
   "col1": "Activity",
-  "col2": "Hour weighting",
+  "col2": "Hours",
   "culturales": {
     "fila1": { "c1a": "Contest", "c1b": "1st, 2nd or 3rd place", "c2": "100" },
     "fila2": { "c1b": "Other place", "c2": "30" },

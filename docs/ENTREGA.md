@@ -137,7 +137,7 @@ Hay cuatro bloques: `culturales`, `deportivas`, `emprendimiento`, `investigacion
 | `c1a` | Parte izquierda de «Actividad» (~30 %) |
 | `c1b` | Parte derecha de «Actividad» (~70 %) |
 | `c1` | Actividad en una sola celda (cuando la fila no se divide) |
-| `c2` | Ponderación de horas |
+| `c2` | Horas |
 
 **Importante:** la estructura visual (celdas unidas con `rowspan`, filas de ancho completo) está definida en código (`src/components/alumno/HorasCompTabla.tsx`).  
 Si solo cambias **textos o números**, edita los JSON.  

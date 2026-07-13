@@ -1,6 +1,6 @@
 {
   "col1": "Actividad",
-  "col2": "Ponderación de horas",
+  "col2": "Horas",
   "culturales": {
     "fila1": { "c1a": "Concurso", "c1b": "1°, 2° o 3° lugar", "c2": "100" },
     "fila2": { "c1b": "Otro lugar", "c2": "30" },

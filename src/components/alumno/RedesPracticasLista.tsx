@@ -41,7 +41,6 @@ export function RedesPracticasLista({ practicas }: RedesPracticasListaProps) {
                 title={t('pages.soyAlumno.practicaRedes.vistaPrevia', {
                   num: practica.titleNum ?? index + 1,
                 })}
-                iframeStyle={{ minHeight: 500 }}
               />
             ))}
           </div>

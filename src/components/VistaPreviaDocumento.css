@@ -1,12 +1,16 @@
 .vista-previa-documento {
   width: 100%;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .vista-previa-documento__iframe {
   display: block;
   width: 100%;
-  min-height: 400px;
+  max-width: 100%;
+  min-height: clamp(280px, 55vw, 500px);
   border: none;
   border-radius: 4px;
   background: var(--bg);

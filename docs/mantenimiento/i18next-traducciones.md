@@ -167,7 +167,7 @@ Algunos bloques embebidos en iframe llevan el texto **dentro del HTML** del comp
 
 Para traducir esos bloques habría que duplicar el HTML por idioma o generar el `srcDoc` según `i18n.language` (no está implementado hoy).
 
-El archivo `src/data/guiaTitulacion.json` es **referencia de contenido**; los textos visibles de titulación están en `pages.soyEgresado` dentro de `es.json` / `en.json`.
+Los textos visibles de titulación (Soy egresado) están en `pages.soyEgresado` dentro de `es.json` / `en.json`.
 
 ---
 

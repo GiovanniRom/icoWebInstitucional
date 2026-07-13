@@ -1,73 +1,178 @@
-# React + TypeScript + Vite
+# ICO FES Aragón — Sitio web institucional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web institucional de la carrera de **Ingeniería en Computación** de la **FES Aragón, UNAM**.
 
-Currently, two official plugins are available:
+Permite consultar información académica y de servicios para:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- aspirantes y comunidad general (**Inicio**, **Programa académico**)
+- alumnado (**Soy alumno**)
+- profesorado (**Soy profesor**)
+- egresados (**Soy egresado**)
 
-## React Compiler
+El contenido está disponible en **español** e **inglés**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Stack técnico
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Tecnología | Uso |
+|------------|-----|
+| [React](https://react.dev/) 19 | Interfaz de usuario |
+| [TypeScript](https://www.typescriptlang.org/) | Tipado estático |
+| [Vite](https://vite.dev/) 8 | Desarrollo y empaquetado |
+| [React Router](https://reactrouter.com/) | Navegación por rutas |
+| [i18next](https://www.i18next.com/) + react-i18next | Traducciones ES / EN |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Requisitos
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Node.js** 20 o superior (recomendado LTS)
+- **npm** (incluido con Node.js)
+
+Comprueba las versiones:
+
+```bash
+node -v
+npm -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Instalación y arranque
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Desde la raíz del repositorio:
+
+```bash
+# 1. Instalar dependencias
+npm install
+
+# 2. Servidor de desarrollo (con recarga en caliente)
+npm run dev
 ```
+
+Por defecto Vite abre en `http://localhost:5173` (el puerto puede variar si está ocupado).
+
+### Otros comandos
+
+| Comando | Descripción |
+|---------|-------------|
+| `npm run build` | Compila TypeScript y genera la carpeta `dist/` para producción |
+| `npm run preview` | Sirve localmente el build de producción (`dist/`) |
+| `npm run lint` | Ejecuta ESLint sobre el código |
+
+---
+
+## Estructura del proyecto
+
+```
+icoWebInstitucional/
+├── public/                 # Archivos estáticos (favicon, etc.)
+├── docs/mantenimiento/     # Guías de mantenimiento por sección
+├── src/
+│   ├── assets/             # Imágenes, PDF y recursos visuales
+│   ├── components/         # Componentes por área (alumno, egresado, layout, …)
+│   ├── data/               # Datos editables (p. ej. tablas de horas)
+│   ├── i18n/               # Configuración y archivos de traducción
+│   │   └── locales/        # es.json / en.json
+│   ├── pages/              # Páginas asociadas a las rutas
+│   ├── routes/             # Definición de rutas (AppRoutes.tsx)
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+---
+
+## Rutas principales
+
+| Ruta | Página |
+|------|--------|
+| `/` | Inicio |
+| `/programa-academico` | Programa académico |
+| `/soy-alumno` | Soy alumno |
+| `/soy-alumno/horarios` | Horarios |
+| `/soy-alumno/extraordinarios` | Extraordinarios |
+| `/soy-alumno/horas-comp` | Horas de formación complementaria |
+| `/soy-profesor` | Soy profesor |
+| `/soy-egresado` | Soy egresado |
+
+Las rutas se definen en `src/routes/AppRoutes.tsx`.
+
+---
+
+## Idioma (ES / EN)
+
+- El interruptor **ES / EN** está en el header.
+- Los textos de interfaz viven en:
+  - `src/i18n/locales/es.json`
+  - `src/i18n/locales/en.json`
+- El idioma elegido se guarda en el navegador (`localStorage`, clave `ico-lang`).
+
+Guía detallada: [`docs/mantenimiento/i18next-traducciones.md`](docs/mantenimiento/i18next-traducciones.md).
+
+---
+
+## Guía de entrega (operación)
+
+Si recibes el repositorio por primera vez y debes operarlo o actualizar contenido, empieza aquí:
+
+- **[`docs/ENTREGA.md`](docs/ENTREGA.md)** — guía de operación para quien no conoce el proyecto (primeros pasos, mapa del sitio, tareas frecuentes, publicación y checklist de recepción).
+
+## Documentación de mantenimiento
+
+Guías prácticas para actualizar contenido sin reescribir la aplicación:
+
+| Documento | Tema |
+|-----------|------|
+| [Carrusel de convocatorias (Inicio)](docs/mantenimiento/inicio-carrusel-convocatorias.md) | Imágenes y datos del carrusel de inicio |
+| [Carrusel institucional (Programa académico)](docs/mantenimiento/programa-academico-carrusel-institucional.md) | Carrusel entre secciones institucionales |
+| [Iframes embebidos (Soy alumno)](docs/mantenimiento/soy-alumno-iframes-embebidos.md) | Calendario, tutores, prácticas / Drive |
+| [Directorio de correos (Soy profesor)](docs/mantenimiento/soy-profesor-iframe-correos.md) | Iframe de correos institucionales |
+| [Traducciones i18next](docs/mantenimiento/i18next-traducciones.md) | Cómo agregar o corregir textos ES / EN |
+
+> **Nota:** otras secciones frecuentes de edición (por ejemplo, tablas de horas de formación complementaria en `src/data/horasCompTablas.*.json`) se irán documentando en esta misma carpeta.
+
+---
+
+## Edición frecuente de contenido
+
+| Qué actualizar | Dónde |
+|----------------|-------|
+| Textos de interfaz | `src/i18n/locales/es.json` y `en.json` |
+| Convocatorias del inicio | `src/components/inicio/convocatoriasData.ts` + imágenes en `src/assets/images/inicio/` |
+| Carrusel institucional | `src/components/programaAcademico/institucionalCarouselData.ts` |
+| Tablas de horas complementarias | `src/data/horasCompTablas.es.json` y `horasCompTablas.en.json` |
+| Favicon y título de pestaña | `public/favicon.png` e `index.html` |
+
+---
+
+## Build de producción
+
+```bash
+npm run build
+```
+
+El resultado queda en `dist/`. Esa carpeta es la que se publica en el servidor o hosting estático que indique la unidad académica.
+
+Para revisar el build en local:
+
+```bash
+npm run preview
+```
+
+---
+
+## Contacto y continuidad
+
+Este repositorio se entrega como producto del **servicio social**.
+
+Orden recomendado para quien hereda el proyecto:
+
+1. Este **README** (instalación y visión general)
+2. **[`docs/ENTREGA.md`](docs/ENTREGA.md)** (operación día a día)
+3. Las guías en **`docs/mantenimiento/`** según la tarea
+
+Si se agrega documentación nueva, conviene enlazarla aquí y en `docs/ENTREGA.md`.

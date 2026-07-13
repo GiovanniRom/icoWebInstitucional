@@ -268,45 +268,71 @@
         "modalidades": {
           "conReplicaOral": {
             "titulo": "Trabajo escrito con réplica oral",
-            "descripcion": "Incluye componentes de tesis/tesina y una actividad de investigación.",
+            "descripcion": "Opciones con tesis, tesina o trabajo final y defensa oral ante jurado.",
             "submodalidades": {
               "tesisTesina": {
-                "titulo": "Tesis/Tesina",
-                "descripcion": "Trabajo escrito de investigación y su defensa oral ante jurado, según las etapas que marca tu plan de estudios.",
+                "titulo": "Tesis o tesina y examen profesional",
+                "descripcion": "Tesis individual o grupal, o tesina individual, con réplica oral ante jurado.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Selección de tutor aprobado por el comité académico",
-                    "texto": "Se debe contar con la selección de un tutor académico aprobada por el comité académico de la carrera, quien acompaña la elaboración del trabajo escrito."
+                    "titulo": "Selección de tutor aprobado",
+                    "texto": "Selecciona a una persona tutora previamente aprobada según los lineamientos de la FES Aragón (Art. 15 y 34). La tutora o el tutor te orientará en el tema y en la elaboración del trabajo escrito."
                   },
                   "paso2": {
-                    "titulo": "Registro formal de proyecto ante jefatura",
-                    "texto": "Trámite ante la jefatura de carrera para registrar formalmente el proyecto de investigación o trabajo escrito, conforme a formatos, requisitos y calendario que indique la jefatura."
+                    "titulo": "Registro formal del proyecto ante jefatura",
+                    "texto": "Registra la opción de titulación ante la Jefatura de Carrera una vez cubiertos los requisitos generales y los adicionales de esta opción."
                   },
                   "paso3": {
-                    "titulo": "Aprobación de borrador final por el tutor",
-                    "texto": "El tutor debe firmar un documento en el que acredite que el trabajo está terminado y que cumple con los requisitos establecidos; con ello queda formalizada la aprobación del borrador final."
+                    "titulo": "Elaboración de tesis o tesina",
+                    "texto": "Desarrolla una tesis individual o grupal (hasta tres integrantes con aprobación de jefatura) o una tesina individual, conforme a los objetivos y características que determine el plan de estudios."
                   },
                   "paso4": {
-                    "titulo": "Defensa oral ante jurado",
-                    "texto": "Presentación y defensa ante un jurado del trabajo desarrollado por el egresado."
+                    "titulo": "Votos aprobatorios y réplica oral",
+                    "texto": "Obtén el voto aprobatorio unánime del jurado sobre el trabajo escrito y presenta la réplica oral (examen profesional). Después, gestiona la programación del examen ante Servicios Escolares / Secretaría Académica."
                   }
                 }
               },
               "actividadInvestigacion": {
-                "titulo": "Actividad de investigación",
-                "descripcion": "Participación en un proyecto de investigación y presentación de resultados ante jurado.",
+                "titulo": "Actividad de investigación (tesis o tesina)",
+                "descripcion": "Incorporación a un proyecto de investigación registrado y elaboración de tesis o tesina con réplica oral.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Participación certificada en proyecto (mín. 1 semestre)",
-                    "texto": "Integración a un proyecto de investigación activo durante al menos un semestre. El proyecto debe estar avalado por una institución académica reconocida; el investigador principal debe emitir una carta de aceptación. Además, se requiere constancia o documento que certifique la participación ante la jefatura o instancia correspondiente."
+                    "titulo": "Proyecto registrado y participación (≥ 1 semestre)",
+                    "texto": "Debes incorporarte a un proyecto de investigación previamente registrado y aprobado por el comité académico de la carrera (Art. 13). La participación mínima es de un semestre."
                   },
                   "paso2": {
-                    "titulo": "Informe detallado de actividades y resultados",
-                    "texto": "Documento en el que se detallan las actividades realizadas en el proyecto y los resultados obtenidos, como evidencia del trabajo desarrollado durante la actividad de investigación. Su elaboración se realiza con el acompañamiento del tutor o asesor académico."
+                    "titulo": "Constancia de actividad de investigación",
+                    "texto": "Presenta constancia válida (carta del responsable, cartas de término/liberación de SS registrado para este fin, o constancia de prácticas profesionales registradas). La constancia tiene vigencia de un año para registrar esta opción (Art. 14)."
                   },
                   "paso3": {
-                    "titulo": "Presentación y defensa de resultados",
-                    "texto": "Exposición ante jurado en la que se presentan y defienden los resultados de la actividad de investigación y el informe elaborado."
+                    "titulo": "Tesis o tesina derivada de la investigación",
+                    "texto": "Elabora una tesis individual o grupal, o una tesina individual, con el contenido y características que determine el plan de estudios a partir de la actividad de investigación."
+                  },
+                  "paso4": {
+                    "titulo": "Réplica oral ante jurado",
+                    "texto": "La evaluación incluye réplica oral ante jurado. La persona responsable del proyecto funge como tutora, o designa a quien corresponda con visto bueno de la Jefatura de Carrera."
+                  }
+                }
+              },
+              "seminarioTesisTesina": {
+                "titulo": "Seminario de tesis o tesina",
+                "descripcion": "Trabajo final desarrollado en el seminario curricular, con promedio mínimo y réplica oral.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Promedio general ≥ 8.5",
+                    "texto": "Cada persona solicitante debe tener un promedio general mínimo de 8.5 para optar por esta vía (Art. 38)."
+                  },
+                  "paso2": {
+                    "titulo": "Seminario curricular aprobado",
+                    "texto": "El seminario de tesis o tesina debe ser asignatura del plan (obligatoria u optativa) y estar considerada para titulación. Debe aprobarse en examen ordinario con calificación mínima de 9.0; esa calificación tiene vigencia de un año para registrar la opción (Arts. 41–42)."
+                  },
+                  "paso3": {
+                    "titulo": "Trabajo final del seminario",
+                    "texto": "Elabora el trabajo final durante el seminario, aprobado por el o la profesora titular. Puede ser individual o con hasta tres integrantes previa aprobación de jefatura."
+                  },
+                  "paso4": {
+                    "titulo": "Registro y réplica oral",
+                    "texto": "Registra la opción ante jefatura dentro de la vigencia y presenta la réplica oral ante jurado conforme a los lineamientos de la modalidad con trabajo escrito y réplica oral."
                   }
                 }
               }
@@ -314,73 +340,85 @@
           },
           "sinReplicaOral": {
             "titulo": "Trabajo escrito sin réplica oral",
-            "descripcion": "Se enfoca en experiencia o actividades profesionales/docentes, complementado con servicio social y un artículo académico.",
+            "descripcion": "Opciones evaluadas por comité, con trabajo escrito y sin réplica oral obligatoria.",
             "submodalidades": {
               "apoyoDocencia": {
-                "titulo": "Apoyo a la docencia",
-                "descripcion": "Apoyo a la docencia en la facultad: elaboración de material y acompañamiento con asesor docente.",
+                "titulo": "Actividad de apoyo a la docencia",
+                "descripcion": "Material didáctico y/o crítica escrita, con servicio social o prácticas registradas para este fin.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Crear material didáctico",
-                    "texto": "Trabajo académico orientado a la generación de materiales o productos que contribuyan al proceso de enseñanza-aprendizaje o al desarrollo de actividades de investigación. La creación de dicho material requiere la aprobación del comité académico, supervisión docente y evaluación por especialistas pedagógicos."
+                    "titulo": "Servicio social o prácticas para este fin",
+                    "texto": "Debes haber registrado, participado, terminado y liberado un programa de servicio social o prácticas profesionales establecido para apoyo a la docencia ante la Jefatura de Carrera (Art. 46-I)."
                   },
                   "paso2": {
-                    "titulo": "Selección de asesor docente",
-                    "texto": "Debes contar con la selección formal de un asesor docente: académico que orienta, supervisa y valida el desarrollo del trabajo de titulación, conforme a la modalidad y los lineamientos de la jefatura."
+                    "titulo": "Registro en el primer año tras egresar",
+                    "texto": "Realiza el registro de esta opción durante el primer año después de haber cubierto la totalidad de créditos del plan de estudios (Art. 46-II)."
+                  },
+                  "paso3": {
+                    "titulo": "Selección de tutor(a)",
+                    "texto": "Selecciona a una persona tutora previamente aprobada según el Art. 15 de los lineamientos."
+                  },
+                  "paso4": {
+                    "titulo": "Material didáctico y/o crítica escrita",
+                    "texto": "Desarrolla material didáctico y/o una crítica escrita al programa de alguna asignatura o actividad académica (licenciatura o bachillerato), con las características que determine el plan de estudios. El material debe relacionarse con una necesidad curricular concreta."
                   }
                 }
               },
               "trabajoProfesional": {
                 "titulo": "Trabajo profesional",
-                "descripcion": "Experiencia laboral acreditable y documentación del trabajo realizado en el ámbito profesional.",
+                "descripcion": "Experiencia laboral afín comprobable (mínimo dos años) e informe escrito.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "2 años de experiencia laboral",
-                    "texto": "Comprobante de trabajo continuo por un plazo de dos años; pueden ser múltiples períodos laborales, siempre y cuando no se superen los 15 días entre un período y otro. El documento debe estar membretado por el empleador, tener firma autógrafa, especificar el período laboral y las actividades realizadas."
+                    "titulo": "2 años de actividad profesional afín",
+                    "texto": "Desde seis meses antes o al término de tus estudios, debes haberte incorporado al menos dos años naturales a una actividad profesional comprobable afín a tu formación (Art. 48)."
                   },
                   "paso2": {
-                    "titulo": "Informe del trabajo realizado",
-                    "texto": "Consiste en la elaboración de un informe técnico-académico en el que el egresado documenta su experiencia laboral en un área afín a su formación, demostrando la aplicación de conocimientos, habilidades y resolución de problemas reales. Este documento se elabora acompañado de un asesor docente que valida el trabajo."
+                    "titulo": "Comprobantes laborales",
+                    "texto": "Integra el registro oficial de la institución empleadora ante el gobierno y carta o constancia laboral oficial. Puede sumarse la participación en distintas instituciones si es continua, con interrupción no mayor a dos meses entre una y otra (Art. 51)."
+                  },
+                  "paso3": {
+                    "titulo": "Tutor(a) e informe escrito",
+                    "texto": "Selecciona a una persona tutora aprobada y presenta el informe escrito del trabajo profesional con las características que determine el plan de estudios."
                   }
                 }
               },
               "servicioSocial": {
                 "titulo": "Servicio social",
-                "descripcion": "Cumplimiento del servicio social y entrega de la documentación que exige esta modalidad.",
+                "descripcion": "Tesina sobre el servicio social, constancia de actividades y registro oportuno.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Haber cumplido 100% créditos",
-                    "texto": "Obtención del 100% de créditos totales en historial académico con estatus de término 11."
+                    "titulo": "Constancia de actividades del servicio social",
+                    "texto": "Presenta constancia de actividades acorde a tu área de conocimientos, emitida por la persona responsable directa del servicio social, quien debe ser profesionista de perfil afín (Art. 55-I). No aplica este numeral si cuentas con el reconocimiento Gustavo Baz Prada."
                   },
                   "paso2": {
-                    "titulo": "Constancia de acreditación de idioma inglés.",
-                    "texto": "Es el documento oficial que acredita que tienes comprensión de lectura en inglés. Puedes obtenerlo del centro de lenguas FES Aragón. Si la constancia es digital, es necesario imprimirla en papel opalina a color."
+                    "titulo": "Registro en el primer año tras egresar",
+                    "texto": "Registra esta opción durante el primer año después de haber cubierto la totalidad de créditos del plan de estudios (Art. 55-II)."
                   },
                   "paso3": {
-                    "titulo": "Horas complementarias",
-                    "texto": "La constancia de horas de formación complementaria es un documento oficial que acredita que el egresado ha cumplido con el número de horas requeridas en actividades extracurriculares establecidas por el plan de estudios. Este documento lo puedes obtener en la jefatura de carrera."
+                    "titulo": "Selección de tutor(a)",
+                    "texto": "Selecciona a una persona tutora previamente aprobada para la tesina del servicio social."
                   },
                   "paso4": {
-                    "titulo": "Informe de actividades",
-                    "texto": "Informe académico en el que el egresado documenta las actividades realizadas durante su servicio social, destacando la aplicación de conocimientos y el impacto del trabajo desarrollado. El desarrollo de este documento se realiza acompañado de un asesor académico."
-                  },
-                  "paso5": {
-                    "titulo": "Carta de término y liberación de servicio social",
-                    "texto": "Este documento no es necesario para registrar la modalidad de titulación; sin embargo, es necesario para concluir el trámite."
+                    "titulo": "Tesina individual del servicio social",
+                    "texto": "Entrega una tesina individual sobre las actividades realizadas en el servicio social, con el objetivo y las características que determine el plan de estudios (Arts. 52–53). La evaluación la realiza un comité (sin réplica oral obligatoria)."
                   }
                 }
               },
               "articuloAcademico": {
-                "titulo": "Artículo académico",
-                "descripcion": "Publicación en revista indexada y constancia de autoría o coautoría del artículo.",
+                "titulo": "Actividad de investigación (artículo académico)",
+                "descripcion": "Artículo aceptado en revista arbitrada, derivado de un proyecto de investigación registrado.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Publicación en revista indexada",
-                    "texto": "Participar en un proyecto de investigación avalado por un académico. Se requiere como evidencia la portada de la revista, datos de indexación e identificadores ISSN/ISBN, carta de aceptación del artículo en revista indexada y copia del artículo mostrando afiliación institucional."
+                    "titulo": "Proyecto registrado y constancia de investigación",
+                    "texto": "Debes incorporarte a un proyecto de investigación registrado (Art. 13) y contar con constancia de la actividad de investigación (Art. 14), con vigencia de un año para el registro de la opción."
                   },
                   "paso2": {
-                    "titulo": "Autor o coautor",
-                    "texto": "El egresado debe figurar como autor o coautor de la publicación. En caso de coautoría, se requiere carta del investigador principal que confirme la participación del egresado."
+                    "titulo": "Artículo en revista arbitrada",
+                    "texto": "Comprueba tu participación (autoría o coautoría) en un artículo académico aceptado para publicación en una revista arbitrada, reconociendo a quien sea responsable del proyecto (Art. 58-I)."
+                  },
+                  "paso3": {
+                    "titulo": "Registro en el primer año tras egresar",
+                    "texto": "Realiza el registro de esta opción durante el primer año después de cubrir la totalidad de créditos (Art. 58-II). La persona responsable del proyecto funge como tutora o designa a quien corresponda con visto bueno de jefatura."
                   }
                 }
               }
@@ -388,83 +426,99 @@
           },
           "sinTrabajoEscrito": {
             "titulo": "Sin trabajo escrito",
-            "descripcion": "Se cubren requisitos base y se realiza un examen general (CENEVAL/EGEL) y condiciones de desempeño, con posibilidad de posgrado.",
+            "descripcion": "Opciones sin trabajo escrito: examen externo, alto nivel académico, posgrado o ampliación de conocimientos.",
             "submodalidades": {
               "examenGeneralCeneval": {
-                "titulo": "Examen general (CENEVAL)",
-                "descripcion": "Requisitos del examen general de egreso (EGEL/CENEVAL) y testimonios de desempeño.",
+                "titulo": "Examen general de conocimientos externo",
+                "descripcion": "Examen escrito de una institución externa reconocida por el comité de carrera. En ICO suele aplicarse el EGEL (CENEVAL).",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Comprobante aprobatorio emitido por EGEL",
-                    "texto": "Debes presentar el Examen General para el Egreso de Licenciatura (EGEL) en el área de Ingeniería en Computación y conservar el comprobante aprobatorio emitido por el organismo aplicador (CENEVAL/EGEL) que acredite resultado aprobatorio."
+                    "titulo": "Institución externa reconocida",
+                    "texto": "Debes aprobar un examen escrito aplicado por una institución externa a la Facultad, reconocida para este fin por el comité de carrera correspondiente (Art. 59)."
                   },
                   "paso2": {
-                    "titulo": "Constancia oficial de resultados",
-                    "texto": "Contar con la constancia oficial de resultados emitida por CENEVAL (documento que acredita el desempeño en el examen)."
+                    "titulo": "Testimonio satisfactorio o sobresaliente",
+                    "texto": "Obtén testimonio de desempeño satisfactorio o sobresaliente como resultado de la prueba (Art. 60). En Ingeniería en Computación, la vía habitual reconocida es el EGEL (CENEVAL); confirma con jefatura la institución vigente."
+                  },
+                  "paso3": {
+                    "titulo": "Registro ante jefatura",
+                    "texto": "La Jefatura de Carrera aprueba el registro de la opción al validar el cumplimiento de requisitos y, en su caso, convoca la toma de protesta."
                   }
                 }
               },
               "altoNivelAcademico": {
-                "titulo": "Alto nivel académico",
-                "descripcion": "Criterios de excelencia académica: promedio, historial sin reprobadas y conclusión en tiempo curricular.",
+                "titulo": "Totalidad de créditos y alto nivel académico",
+                "descripcion": "Promedio mínimo 9.5, tiempo curricular y aprobación en primera inscripción.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Promedio ≥ 9.5",
-                    "texto": "Es necesario contar con un promedio final de 9.5, comprobable mediante historial académico."
+                    "titulo": "Promedio general ≥ 9.5",
+                    "texto": "Debes tener un promedio general en la carrera como mínimo de 9.5 (Art. 61-I)."
                   },
                   "paso2": {
-                    "titulo": "Sin materias reprobadas",
-                    "texto": "Es necesario haber cursado todas las materias de forma ordinaria, sin haber reprobado ninguna o presentado extraordinarios."
+                    "titulo": "Créditos en tiempo curricular",
+                    "texto": "Cubre la totalidad de los créditos del plan de estudios en tiempo curricular (Art. 61-II)."
                   },
                   "paso3": {
-                    "titulo": "Terminar en tiempo curricular",
-                    "texto": "Es requisito indispensable haber cursado las materias en el tiempo curricular establecido."
+                    "titulo": "Aprobación en primera inscripción",
+                    "texto": "Todas las asignaturas o módulos deben tener calificación aprobatoria en su primera inscripción (Art. 61-III)."
+                  },
+                  "paso4": {
+                    "titulo": "Plazo de registro (2 años)",
+                    "texto": "Registra la opción durante los primeros dos años después de cubrir la totalidad de créditos. Este plazo no aplica a quienes egresaron antes de la aprobación de los lineamientos vigentes (Art. 62)."
                   }
                 }
               },
               "estudiosPosgrado": {
-                "titulo": "Estudios de posgrado",
-                "descripcion": "Ingreso y permanencia en programas de posgrado reconocidos y autorizados.",
+                "titulo": "Estudios en posgrado",
+                "descripcion": "Posgrado UNAM afín, con autorización previa de jefatura y acreditación del primer semestre.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Ingreso a posgrado válido",
-                    "texto": "El posgrado debe estar avalado por la institución (no cualquier programa es válido). Cumplir con los requisitos de ingreso establecidos por el programa de posgrado. Es necesario presentar carta de aceptación al programa de posgrado al que se ingresa."
+                    "titulo": "Autorización previa de jefatura",
+                    "texto": "Debes obtener autorización de la Jefatura de Carrera antes de ingresar a la especialización, maestría o doctorado para optar por esta vía (Art. 64)."
                   },
                   "paso2": {
-                    "titulo": "Comprobante de acreditación satisfactoria del primer semestre",
-                    "texto": "El programa de posgrado debe estar autorizado o validado por la institución para esta modalidad. Se requiere comprobante de acreditación satisfactoria del primer semestre en dicho programa."
+                    "titulo": "Posgrado UNAM afín",
+                    "texto": "Ingresa a una especialización, maestría o doctorado impartido por la UNAM, afín a tu área de formación o vinculado a tus conocimientos, aprobado por la comisión académica ad hoc de la carrera (Art. 63-I)."
+                  },
+                  "paso3": {
+                    "titulo": "Acreditación del primer semestre",
+                    "texto": "Acredita en tiempo y forma las asignaturas o actividades del primer semestre del posgrado y cumple los requisitos del plan de estudios para esta opción (Art. 63-II y III)."
                   }
                 }
               },
               "cursosAmpliacion": {
-                "titulo": "Cursos para ampliación y profundización de conocimientos",
-                "descripcion": "Cursos adicionales para ampliar y profundizar competencias, con promedio mínimo requerido.",
+                "titulo": "Ampliación y profundización (semestre adicional)",
+                "descripcion": "Asignaturas adicionales (≥ 10 % de créditos) en un semestre extra, con promedio mínimo 8.5 de egreso y 9.0 en las extras.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Cursar materias extra (~10% créditos)",
-                    "texto": "Inscribirse a asignaturas adicionales equivalentes a aproximadamente el 10% de los créditos totales del plan de estudios y cursar dichas asignaturas en un período adicional de semestre. Las asignaturas deben ser diferentes a las ya cursadas."
+                    "titulo": "Egreso en tiempo curricular con promedio ≥ 8.5",
+                    "texto": "Debes haber concluido los créditos de la licenciatura en tiempo curricular con promedio mínimo de 8.5 (Art. 65-I)."
                   },
                   "paso2": {
-                    "titulo": "Promedio mínimo 9",
-                    "texto": "Todas las asignaturas extras deben acreditarse con una calificación mínima de 9."
+                    "titulo": "Semestre adicional (≥ 10 % de créditos)",
+                    "texto": "Aprueba un número adicional de asignaturas de la misma licenciatura o de otra afín de la UNAM, equivalente al menos al 10 % de los créditos totales, con promedio mínimo de 9.0 (Art. 65-II)."
+                  },
+                  "paso3": {
+                    "titulo": "Plazo máximo de un año",
+                    "texto": "Una vez cubierto el requisito de egreso, cursa el semestre adicional en un plazo máximo de un año, gestionando la inscripción ante la Jefatura de Carrera (Art. 66)."
                   }
                 }
               },
               "diplomado": {
-                "titulo": "Diplomado",
-                "descripcion": "Diplomado con carga horaria, calificación mínima y validación por comité correspondiente.",
+                "titulo": "Ampliación y profundización (cursos o diplomados)",
+                "descripcion": "Cursos o diplomados de educación continua UNAM (≥ 240 h), con autorización previa y promedio ≥ 8.0.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Mínimo 240 horas",
-                    "texto": "La duración mínima del curso deberá ser de 240 horas."
+                    "titulo": "Autorización previa de jefatura",
+                    "texto": "Obtén autorización de la Jefatura de Carrera antes de ingresar a los cursos o diplomados de educación continua (Art. 68)."
                   },
                   "paso2": {
-                    "titulo": "Promedio mínimo 8",
-                    "texto": "La calificación mínima aprobatoria es de 8."
+                    "titulo": "Mínimo 240 horas (UNAM)",
+                    "texto": "Aprueba cursos o diplomados de educación continua impartidos por la UNAM cuya duración sume al menos 240 horas, definidos para este fin por la comisión académica ad hoc de la carrera (Art. 67)."
                   },
                   "paso3": {
-                    "titulo": "Debe estar aprobado por comité",
-                    "texto": "El curso o diplomado deberá estar avalado por el comité de carrera; de lo contrario no será válido para esta modalidad."
+                    "titulo": "Promedio final ≥ 8.0",
+                    "texto": "Para registrar esta opción debes aprobar los cursos o diplomados con un promedio final mínimo de 8.0 (Art. 69)."
                   }
                 }
               }

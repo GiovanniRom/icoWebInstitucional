@@ -268,45 +268,71 @@
         "modalidades": {
           "conReplicaOral": {
             "titulo": "Written work with oral defense",
-            "descripcion": "Includes thesis/tesina components and a research activity.",
+            "descripcion": "Options involving a thesis, tesina or final paper and an oral defense before a jury.",
             "submodalidades": {
               "tesisTesina": {
-                "titulo": "Thesis/Tesina",
-                "descripcion": "Written research work and its oral defense before a committee, according to the stages outlined in your study plan.",
+                "titulo": "Thesis or tesina and professional examination",
+                "descripcion": "Individual or group thesis, or individual tesina, with an oral defense before a jury.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Tutor selected and approved by the academic committee",
-                    "texto": "You must have an academic tutor selected and approved by the programme's academic committee, who guides the preparation of the written work."
+                    "titulo": "Approved tutor selection",
+                    "texto": "Select a tutor previously approved under FES Aragón guidelines (Arts. 15 and 34). The tutor will guide your topic and the preparation of the written work."
                   },
                   "paso2": {
-                    "titulo": "Formal project registration with programme office",
-                    "texto": "Procedure with the programme office to formally register the research project or written work, following the formats, requirements, and calendar indicated by the office."
+                    "titulo": "Formal project registration with the programme office",
+                    "texto": "Register the degree option with the Programme Office once general requirements and those specific to this option are met."
                   },
                   "paso3": {
-                    "titulo": "Final draft approved by the tutor",
-                    "texto": "The tutor must sign a document certifying that the work is finished and meets the requirements; this formally approves the final draft."
+                    "titulo": "Preparation of thesis or tesina",
+                    "texto": "Develop an individual or group thesis (up to three members with programme office approval) or an individual tesina, according to the objectives and characteristics set by the study plan."
                   },
                   "paso4": {
-                    "titulo": "Oral defence before a committee",
-                    "texto": "Presentation and defence of the graduate's work before a committee."
+                    "titulo": "Approving votes and oral defense",
+                    "texto": "Obtain the jury's unanimous approving vote on the written work and present the oral defense (professional examination). Then arrange scheduling with Student Services / Academic Secretariat."
                   }
                 }
               },
               "actividadInvestigacion": {
-                "titulo": "Research activity",
-                "descripcion": "Participation in a research project and presentation of results before a committee.",
+                "titulo": "Research activity (thesis or tesina)",
+                "descripcion": "Incorporation into a registered research project and preparation of a thesis or tesina with oral defense.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Certified participation in a project (min. 1 semester)",
-                    "texto": "Participation in an active research project for at least one semester. The project must be endorsed by a recognised academic institution; the principal investigator must issue an acceptance letter. You also need a certificate or document proving participation, filed with the programme office or the relevant authority."
+                    "titulo": "Registered project and participation (≥ 1 semester)",
+                    "texto": "You must join a research project previously registered and approved by the programme's academic committee (Art. 13). Minimum participation is one semester."
                   },
                   "paso2": {
-                    "titulo": "Detailed report of activities and results",
-                    "texto": "Document detailing the activities carried out in the project and the results obtained, as evidence of the work during the research activity. It is prepared with guidance from the tutor or academic advisor."
+                    "titulo": "Research activity certificate",
+                    "texto": "Submit a valid certificate (letter from the project lead, social-service completion/release letters registered for this purpose, or a certificate of professional practice registered for this purpose). The certificate is valid for one year to register this option (Art. 14)."
                   },
                   "paso3": {
-                    "titulo": "Presentation and defence of results",
-                    "texto": "Presentation before a committee where the results of the research activity and the report are presented and defended."
+                    "titulo": "Thesis or tesina derived from the research",
+                    "texto": "Prepare an individual or group thesis, or an individual tesina, with the content and characteristics the study plan requires based on the research activity."
+                  },
+                  "paso4": {
+                    "titulo": "Oral defense before a jury",
+                    "texto": "Assessment includes an oral defense before a jury. The project lead acts as tutor, or designates someone with the Programme Office's endorsement."
+                  }
+                }
+              },
+              "seminarioTesisTesina": {
+                "titulo": "Thesis or tesina seminar",
+                "descripcion": "Final paper developed in the curricular seminar, with minimum GPA requirements and oral defense.",
+                "pasos": {
+                  "paso1": {
+                    "titulo": "Overall GPA ≥ 8.5",
+                    "texto": "Each applicant must have an overall GPA of at least 8.5 to choose this pathway (Art. 38)."
+                  },
+                  "paso2": {
+                    "titulo": "Approved curricular seminar",
+                    "texto": "The thesis/tesina seminar must be a course in the study plan (required or elective) and designated for degree purposes. It must be passed in the regular exam with a minimum grade of 9.0; that grade is valid for one year to register the option (Arts. 41–42)."
+                  },
+                  "paso3": {
+                    "titulo": "Seminar final paper",
+                    "texto": "Prepare the final paper during the seminar, approved by the course instructor. It may be individual or involve up to three members with prior programme office approval."
+                  },
+                  "paso4": {
+                    "titulo": "Registration and oral defense",
+                    "texto": "Register the option with the programme office within the validity period and present the oral defense before a jury under the written-work-with-oral-defense modality."
                   }
                 }
               }
@@ -314,73 +340,85 @@
           },
           "sinReplicaOral": {
             "titulo": "Written work without oral defense",
-            "descripcion": "Focuses on professional or teaching experience, complemented by social service and an academic article.",
+            "descripcion": "Options assessed by a committee, with written work and no mandatory oral defense.",
             "submodalidades": {
               "apoyoDocencia": {
-                "titulo": "Teaching support",
-                "descripcion": "Teaching support at the faculty: preparation of materials and guidance with a faculty advisor.",
+                "titulo": "Teaching support activity",
+                "descripcion": "Teaching materials and/or written critique, with social service or practice registered for this purpose.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Create teaching materials",
-                    "texto": "Academic work aimed at producing materials or products that support teaching and learning or research activities. Creating such material requires approval by the academic committee, faculty supervision, and evaluation by pedagogical specialists."
+                    "titulo": "Social service or practice for this purpose",
+                    "texto": "You must have registered, completed, and been released from a social-service or professional-practice programme established for teaching support with the Programme Office (Art. 46-I)."
                   },
                   "paso2": {
-                    "titulo": "Select a faculty advisor",
-                    "texto": "You must have formal selection of a faculty advisor: an academic who guides, supervises, and validates the graduation work according to the modality and programme office guidelines."
+                    "titulo": "Register within the first year after graduating",
+                    "texto": "Register this option within the first year after completing all credits in the study plan (Art. 46-II)."
+                  },
+                  "paso3": {
+                    "titulo": "Tutor selection",
+                    "texto": "Select a tutor previously approved under Art. 15 of the guidelines."
+                  },
+                  "paso4": {
+                    "titulo": "Teaching materials and/or written critique",
+                    "texto": "Develop teaching materials and/or a written critique of a course or academic activity (bachelor's or upper-secondary), as defined by the study plan. The material must address a specific curricular need."
                   }
                 }
               },
               "trabajoProfesional": {
                 "titulo": "Professional work",
-                "descripcion": "Verifiable work experience and documentation of work performed in the professional field.",
+                "descripcion": "Verifiable related professional experience (at least two years) and a written report.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Two years of work experience",
-                    "texto": "Proof of two years of continuous work; multiple employment periods are allowed as long as gaps do not exceed 15 days between periods. The document must be on company letterhead, bear a handwritten signature, and specify the employment period and activities performed."
+                    "titulo": "Two years of related professional activity",
+                    "texto": "From six months before or upon completing your studies, you must have engaged for at least two calendar years in verifiable professional activity related to your training (Art. 48)."
                   },
                   "paso2": {
-                    "titulo": "Report on work performed",
-                    "texto": "A technical-academic report in which the graduate documents professional experience in a field related to their training, demonstrating applied knowledge, skills, and solving real problems. The document is prepared with a faculty advisor who validates the work."
+                    "titulo": "Employment evidence",
+                    "texto": "Include the employer's official government registration and an official employment letter or certificate. Work at different institutions may be combined if continuous, with gaps of no more than two months between them (Art. 51)."
+                  },
+                  "paso3": {
+                    "titulo": "Tutor and written report",
+                    "texto": "Select an approved tutor and submit the written professional-work report with the characteristics required by the study plan."
                   }
                 }
               },
               "servicioSocial": {
                 "titulo": "Social service",
-                "descripcion": "Completion of social service and submission of the documentation required by this modality.",
+                "descripcion": "Tesina on social service, activity certificate, and timely registration.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Have completed 100% of credits",
-                    "texto": "100% of total credits on the academic transcript with termination status 11."
+                    "titulo": "Social-service activity certificate",
+                    "texto": "Submit an activity certificate aligned with your field of knowledge, issued by the direct social-service supervisor, who must be a professional with a related profile (Art. 55-I). This item does not apply if you hold the Gustavo Baz Prada recognition."
                   },
                   "paso2": {
-                    "titulo": "Certificate of English reading proficiency.",
-                    "texto": "This official document certifies English reading comprehension. You can obtain it from the FES Aragón language centre. If the certificate is digital, print it in colour on opaline paper."
+                    "titulo": "Register within the first year after graduating",
+                    "texto": "Register this option within the first year after completing all credits in the study plan (Art. 55-II)."
                   },
                   "paso3": {
-                    "titulo": "Complementary hours",
-                    "texto": "The complementary training hours certificate is an official document certifying that the graduate has completed the required hours in extracurricular activities set by the study plan. You can obtain this document at the programme office."
+                    "titulo": "Tutor selection",
+                    "texto": "Select a previously approved tutor for the social-service tesina."
                   },
                   "paso4": {
-                    "titulo": "Activity report",
-                    "texto": "Academic report in which the graduate documents activities during social service, highlighting applied knowledge and the impact of the work. The report is developed with guidance from an academic advisor."
-                  },
-                  "paso5": {
-                    "titulo": "Termination letter and release of social service",
-                    "texto": "This document is not required to register the graduation modality; however, it is required to complete the procedure."
+                    "titulo": "Individual social-service tesina",
+                    "texto": "Submit an individual tesina on the activities carried out during social service, with the objectives and characteristics set by the study plan (Arts. 52–53). Assessment is by a committee (no mandatory oral defense)."
                   }
                 }
               },
               "articuloAcademico": {
-                "titulo": "Academic article",
-                "descripcion": "Publication in an indexed journal and proof of authorship or co-authorship of the article.",
+                "titulo": "Research activity (academic article)",
+                "descripcion": "Article accepted in a peer-reviewed journal, derived from a registered research project.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Publication in an indexed journal",
-                    "texto": "Participate in a research project endorsed by a faculty member. Evidence required: journal cover, indexing data and ISSN/ISBN identifiers, acceptance letter for the article in an indexed journal, and a copy of the article showing institutional affiliation."
+                    "titulo": "Registered project and research certificate",
+                    "texto": "You must join a registered research project (Art. 13) and hold a research-activity certificate (Art. 14), valid for one year to register this option."
                   },
                   "paso2": {
-                    "titulo": "Author or co-author",
-                    "texto": "The graduate must appear as author or co-author of the publication. For co-authorship, a letter from the principal investigator confirming the graduate's participation is required."
+                    "titulo": "Article in a peer-reviewed journal",
+                    "texto": "Prove your participation (authorship or co-authorship) in an academic article accepted for publication in a peer-reviewed journal, acknowledging the project lead (Art. 58-I)."
+                  },
+                  "paso3": {
+                    "titulo": "Register within the first year after graduating",
+                    "texto": "Register this option within the first year after completing all credits (Art. 58-II). The project lead acts as tutor or designates someone with the programme office's endorsement."
                   }
                 }
               }
@@ -388,83 +426,99 @@
           },
           "sinTrabajoEscrito": {
             "titulo": "No written work",
-            "descripcion": "Base requirements are met and a general exam (CENEVAL/EGEL) and performance conditions are completed, with the possibility of graduate studies.",
+            "descripcion": "Options without written work: external exam, high academic standing, graduate studies, or knowledge expansion.",
             "submodalidades": {
               "examenGeneralCeneval": {
-                "titulo": "General exam (CENEVAL)",
-                "descripcion": "Requirements for the general graduation exam (EGEL/CENEVAL) and performance records.",
+                "titulo": "External general knowledge examination",
+                "descripcion": "Written exam from an external institution recognised by the programme committee. For Computer Engineering, EGEL (CENEVAL) is commonly used.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Pass certificate issued by EGEL",
-                    "texto": "You must take the General Examination for the Completion of the Bachelor's Degree (EGEL) in Computer Engineering and keep the pass certificate issued by the testing organisation (CENEVAL/EGEL) that proves a passing result."
+                    "titulo": "Recognised external institution",
+                    "texto": "You must pass a written exam administered by an institution external to the Faculty and recognised for this purpose by the corresponding programme committee (Art. 59)."
                   },
                   "paso2": {
-                    "titulo": "Official results certificate",
-                    "texto": "You must have the official results certificate issued by CENEVAL (document certifying your performance on the exam)."
+                    "titulo": "Satisfactory or outstanding testimony",
+                    "texto": "Obtain a testimony of satisfactory or outstanding performance as the exam result (Art. 60). In Computer Engineering, the usual recognised pathway is EGEL (CENEVAL); confirm the current institution with the programme office."
+                  },
+                  "paso3": {
+                    "titulo": "Registration with the programme office",
+                    "texto": "The Programme Office approves registration of the option after validating requirements and, where applicable, convenes the oath-taking ceremony."
                   }
                 }
               },
               "altoNivelAcademico": {
-                "titulo": "High academic standing",
-                "descripcion": "Academic excellence criteria: grade point average, transcript with no failed courses, and completion within the standard program duration.",
+                "titulo": "Full credits and high academic standing",
+                "descripcion": "Minimum GPA 9.5, completion within curricular time, and pass on first enrolment.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "GPA ≥ 9.5",
-                    "texto": "A final grade point average of 9.5 is required, verifiable with the academic transcript."
+                    "titulo": "Overall GPA ≥ 9.5",
+                    "texto": "You must have an overall programme GPA of at least 9.5 (Art. 61-I)."
                   },
                   "paso2": {
-                    "titulo": "No failed courses",
-                    "texto": "All courses must have been taken in the regular term, with no failures or make-up exams."
+                    "titulo": "Credits within curricular time",
+                    "texto": "Complete all credits in the study plan within the standard curricular time (Art. 61-II)."
                   },
                   "paso3": {
-                    "titulo": "Finish within standard curriculum time",
-                    "texto": "It is mandatory to have completed coursework within the standard curriculum time."
+                    "titulo": "Pass on first enrolment",
+                    "texto": "All courses or modules must have a passing grade on first enrolment (Art. 61-III)."
+                  },
+                  "paso4": {
+                    "titulo": "Registration window (2 years)",
+                    "texto": "Register the option within the first two years after completing all credits. This deadline does not apply to those who graduated before the current guidelines were approved (Art. 62)."
                   }
                 }
               },
               "estudiosPosgrado": {
                 "titulo": "Graduate studies",
-                "descripcion": "Admission to and continuation in recognized and authorized graduate programs.",
+                "descripcion": "Related UNAM graduate programme, with prior programme-office authorisation and first-semester completion.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Valid graduate programme admission",
-                    "texto": "The graduate programme must be endorsed by the institution (not every programme qualifies). You must meet the admission requirements of the graduate programme. You must submit an acceptance letter for the graduate programme you enter."
+                    "titulo": "Prior programme-office authorisation",
+                    "texto": "You must obtain Programme Office authorisation before entering the specialization, master's or doctoral programme to use this pathway (Art. 64)."
                   },
                   "paso2": {
-                    "titulo": "Proof of satisfactory completion of the first semester",
-                    "texto": "The graduate programme must be authorised or validated by the institution for this modality. Proof of satisfactory completion of the first semester in that programme is required."
+                    "titulo": "Related UNAM graduate programme",
+                    "texto": "Enter a specialization, master's or doctoral programme offered by UNAM, related to your training or knowledge area, and approved by the programme's ad hoc academic commission (Art. 63-I)."
+                  },
+                  "paso3": {
+                    "titulo": "First-semester completion",
+                    "texto": "Complete on time the courses or academic activities of the graduate programme's first semester and meet the study-plan requirements for this option (Art. 63-II and III)."
                   }
                 }
               },
               "cursosAmpliacion": {
-                "titulo": "Courses for expanding and deepening knowledge",
-                "descripcion": "Additional courses to broaden and deepen competencies, with a required minimum grade point average.",
+                "titulo": "Knowledge expansion (additional semester)",
+                "descripcion": "Additional courses (≥ 10% of credits) in an extra semester, with exit GPA ≥ 8.5 and ≥ 9.0 in the extra courses.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Take extra courses (~10% credits)",
-                    "texto": "Enrol in additional courses equivalent to approximately 10% of the total credits in the study plan and complete them in an additional semester term. The courses must differ from those already taken."
+                    "titulo": "Graduation within curricular time with GPA ≥ 8.5",
+                    "texto": "You must have completed bachelor's credits within curricular time with a minimum GPA of 8.5 (Art. 65-I)."
                   },
                   "paso2": {
-                    "titulo": "Minimum grade 9",
-                    "texto": "All extra courses must be passed with a minimum grade of 9."
+                    "titulo": "Additional semester (≥ 10% of credits)",
+                    "texto": "Pass additional courses in the same bachelor's programme or a related UNAM programme, amounting to at least 10% of total credits, with a minimum GPA of 9.0 (Art. 65-II)."
+                  },
+                  "paso3": {
+                    "titulo": "Maximum one-year window",
+                    "texto": "After meeting the graduation requirement, take the additional semester within one year, arranging enrolment with the Programme Office (Art. 66)."
                   }
                 }
               },
               "diplomado": {
-                "titulo": "Diploma program",
-                "descripcion": "Diploma program with required hours, minimum grade, and validation by the corresponding committee.",
+                "titulo": "Knowledge expansion (continuing-education courses or diplomas)",
+                "descripcion": "UNAM continuing-education courses or diplomas (≥ 240 hours), with prior authorisation and final GPA ≥ 8.0.",
                 "pasos": {
                   "paso1": {
-                    "titulo": "Minimum 240 hours",
-                    "texto": "The course must last at least 240 hours."
+                    "titulo": "Prior programme-office authorisation",
+                    "texto": "Obtain Programme Office authorisation before entering the continuing-education courses or diplomas (Art. 68)."
                   },
                   "paso2": {
-                    "titulo": "Minimum grade 8",
-                    "texto": "The minimum passing grade is 8."
+                    "titulo": "Minimum 240 hours (UNAM)",
+                    "texto": "Pass UNAM continuing-education courses or diplomas totaling at least 240 hours, as defined for this purpose by the programme's ad hoc academic commission (Art. 67)."
                   },
                   "paso3": {
-                    "titulo": "Must be approved by the committee",
-                    "texto": "The course or diploma must be endorsed by the programme committee; otherwise it is not valid for this modality."
+                    "titulo": "Final GPA ≥ 8.0",
+                    "texto": "To register this option you must pass the courses or diplomas with a final GPA of at least 8.0 (Art. 69)."
                   }
                 }
               }

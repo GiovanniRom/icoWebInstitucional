@@ -131,6 +131,10 @@
   margin-top: 1.5rem;
 }
 
+.egresado-modalidad__subgrid--tres {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .egresado-modalidad__subgrid--cuatro {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -221,6 +225,7 @@
 }
 
 @media (max-width: 1200px) {
+  .egresado-modalidad__subgrid--tres,
   .egresado-modalidad__subgrid--cuatro,
   .egresado-modalidad__subgrid--cinco {
     grid-template-columns: repeat(2, minmax(0, 1fr));

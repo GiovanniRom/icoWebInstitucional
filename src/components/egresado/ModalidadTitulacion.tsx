@@ -6,7 +6,7 @@ import './ModalidadTitulacion.css'
 const MODALIDADES = ['conReplicaOral', 'sinReplicaOral', 'sinTrabajoEscrito'] as const
 
 const SUBMODALIDADES = {
-  conReplicaOral: ['tesisTesina', 'actividadInvestigacion'],
+  conReplicaOral: ['tesisTesina', 'actividadInvestigacion', 'seminarioTesisTesina'],
   sinReplicaOral: ['apoyoDocencia', 'trabajoProfesional', 'servicioSocial', 'articuloAcademico'],
   sinTrabajoEscrito: [
     'examenGeneralCeneval',
@@ -24,7 +24,7 @@ const SUBGRID_IDS = {
 } as const satisfies Partial<Record<(typeof MODALIDADES)[number], string>>
 
 const SUBGRID_CLASES = {
-  conReplicaOral: '',
+  conReplicaOral: ' egresado-modalidad__subgrid--tres',
   sinReplicaOral: ' egresado-modalidad__subgrid--cuatro',
   sinTrabajoEscrito: ' egresado-modalidad__subgrid--cinco',
 } as const satisfies Partial<Record<(typeof MODALIDADES)[number], string>>

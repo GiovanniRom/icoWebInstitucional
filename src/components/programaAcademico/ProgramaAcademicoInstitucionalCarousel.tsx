@@ -19,8 +19,22 @@ export function ProgramaAcademicoInstitucionalCarousel() {
         autoplay
         autoplaySpeed={AUTOPLAY_MS}
         dots
-        effect="fade"
+        infinite
+        centerMode
+        slidesToShow={1}
+        centerPadding="28%"
+        speed={500}
         pauseOnHover
+        swipeToSlide
+        focusOnSelect
+        responsive={[
+          {
+            breakpoint: 768,
+            settings: {
+              centerPadding: '16%',
+            },
+          },
+        ]}
       >
         {INSTITUCIONAL_CAROUSEL_SLIDES.map((slide) => (
           <div key={slide.id}>

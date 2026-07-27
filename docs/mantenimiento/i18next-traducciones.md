@@ -2,17 +2,19 @@
 
 El sitio usa **i18next** con **react-i18next** para mostrar textos en español e inglés. El idioma se cambia desde el interruptor **ES / EN** del header y se recuerda en el navegador.
 
+> **Tip:** las rutas en azul son enlaces. Al hacer clic (en Cursor, VS Code o GitHub) abres el archivo que debes editar.
+
 ---
 
 ## Archivos del sistema de traducción
 
-| Archivo | Función |
-|---------|---------|
-| `src/i18n/index.ts` | Configuración de i18next, carga de idiomas y función `setLanguage` |
-| `src/i18n/locales/es.json` | **Todas las claves en español** |
-| `src/i18n/locales/en.json` | **Todas las claves en inglés** (misma estructura que `es.json`) |
-| `src/components/LanguageToggle.tsx` | Botón ES/EN del header |
-| `src/main.tsx` | Importa `./i18n` al arrancar la aplicación |
+| Archivo (clic para abrir) | Función |
+|---------------------------|---------|
+| [`src/i18n/index.ts`](../../src/i18n/index.ts) | Configuración de i18next, carga de idiomas y [`setLanguage`](../../src/i18n/index.ts#L23) |
+| [`src/i18n/locales/es.json`](../../src/i18n/locales/es.json) | **Todas las claves en español** |
+| [`src/i18n/locales/en.json`](../../src/i18n/locales/en.json) | **Todas las claves en inglés** (misma estructura que `es.json`) |
+| [`src/components/LanguageToggle.tsx`](../../src/components/LanguageToggle.tsx) | Botón ES/EN del header |
+| [`src/main.tsx`](../../src/main.tsx) | Importa `./i18n` al arrancar la aplicación |
 
 ---
 
@@ -87,31 +89,29 @@ Los componentes que usan `t()` se re-renderizan automáticamente con el nuevo id
 
 Ambos archivos comparten **exactamente la misma jerarquía de claves**. Solo cambian los valores traducidos.
 
-```
-src/i18n/locales/es.json   ← español
-src/i18n/locales/en.json   ← inglés
-```
+- Español: [`src/i18n/locales/es.json`](../../src/i18n/locales/es.json)
+- Inglés: [`src/i18n/locales/en.json`](../../src/i18n/locales/en.json)
 
 ### Secciones principales (raíz del JSON)
 
-| Sección | Contenido |
-|---------|-----------|
-| `nav` | Menú de navegación, logos, título del programa en header |
-| `schedulesView` | Títulos del iframe de horarios |
-| `tutorsView` | Títulos del iframe de tutores |
-| `language` | Etiquetas «ES» y «EN» del interruptor de idioma |
-| `pages` | Textos por página del sitio |
-| `footer` | Pie de página (contacto, redes, aniversario) |
+| Sección | Contenido | Ir a (ES) |
+|---------|-----------|-----------|
+| `nav` | Menú de navegación, logos, título del programa en header | [`es.json`](../../src/i18n/locales/es.json#L1) |
+| `schedulesView` | Títulos del iframe de horarios | buscar `schedulesView` en el JSON |
+| `tutorsView` | Títulos del iframe de tutores | buscar `tutorsView` en el JSON |
+| `language` | Etiquetas «ES» y «EN» del interruptor de idioma | buscar `language` en el JSON |
+| `pages` | Textos por página del sitio | [`pages`](../../src/i18n/locales/es.json#L29) |
+| `footer` | Pie de página (contacto, redes, aniversario) | buscar `footer` en el JSON |
 
 ### Dentro de `pages`
 
-| Clave | Página |
-|-------|--------|
-| `pages.inicio` | Inicio (carrusel, accesos, enlaces) |
-| `pages.programaAcademico` | Programa académico (cabecera, filas, carrusel institucional, misión/visión) |
-| `pages.soyAlumno` | Soy alumno (calendario, accesos, prácticas de redes, extraordinarios) |
-| `pages.soyProfesor` | Soy profesor (directorio de correos) |
-| `pages.soyEgresado` | Soy egresado (pasos, documentación, modalidades de titulación, pasos detallados) |
+| Clave | Página | Ir a (ES) |
+|-------|--------|-----------|
+| `pages.inicio` | Inicio (carrusel, accesos, enlaces) | [`#L30`](../../src/i18n/locales/es.json#L30) |
+| `pages.programaAcademico` | Programa académico | [`#L50`](../../src/i18n/locales/es.json#L50) |
+| `pages.soyAlumno` | Soy alumno | [`#L108`](../../src/i18n/locales/es.json#L108) |
+| `pages.soyProfesor` | Soy profesor | [`#L184`](../../src/i18n/locales/es.json#L184) |
+| `pages.soyEgresado` | Soy egresado | buscar `soyEgresado` en el JSON |
 
 ### Convención de nombres
 
@@ -161,9 +161,9 @@ Algunos bloques embebidos en iframe llevan el texto **dentro del HTML** del comp
 
 | Contenido | Archivo | Idioma actual |
 |-----------|---------|---------------|
-| Directorio de correos (Soy profesor) | `src/components/embeded/correo.tsx` | Solo español en el HTML embebido |
-| Búsqueda de tutores | `src/components/embeded/tutores.tsx` | Solo español |
-| Horarios | `src/components/embeded/horarios.tsx` | Solo español |
+| Directorio de correos (Soy profesor) | [`correo.tsx`](../../src/components/embeded/correo.tsx#L98) | Solo español en el HTML embebido |
+| Búsqueda de tutores | [`tutores.tsx`](../../src/components/embeded/tutores.tsx#L203) | Solo español |
+| Horarios | [`horarios.tsx`](../../src/components/embeded/horarios.tsx) | Solo español |
 
 Para traducir esos bloques habría que duplicar el HTML por idioma o generar el `srcDoc` según `i18n.language` (no está implementado hoy).
 

@@ -128,7 +128,7 @@ Guías prácticas para actualizar contenido sin reescribir la aplicación:
 | Documento | Tema |
 |-----------|------|
 | [Carrusel de convocatorias (Inicio)](docs/mantenimiento/inicio-carrusel-convocatorias.md) | Imágenes y datos del carrusel de inicio |
-| [Carrusel institucional (Programa académico)](docs/mantenimiento/programa-academico-carrusel-institucional.md) | Carrusel entre secciones institucionales |
+| [Carrusel institucional (Programa académico)](docs/mantenimiento/programa-academico-carrusel-institucional.md) | Imágenes en `carrusel/`; laterales visibles y posición central rotatoria |
 | [Iframes embebidos (Soy alumno)](docs/mantenimiento/soy-alumno-iframes-embebidos.md) | Calendario, tutores, prácticas / Drive |
 | [Directorio de correos (Soy profesor)](docs/mantenimiento/soy-profesor-iframe-correos.md) | Iframe de correos institucionales |
 | [Traducciones i18next](docs/mantenimiento/i18next-traducciones.md) | Cómo agregar o corregir textos ES / EN |
@@ -139,13 +139,13 @@ Guías prácticas para actualizar contenido sin reescribir la aplicación:
 
 ## Edición frecuente de contenido
 
-| Qué actualizar | Dónde |
-|----------------|-------|
-| Textos de interfaz | `src/i18n/locales/es.json` y `en.json` |
-| Convocatorias del inicio | `src/components/inicio/convocatoriasData.ts` + imágenes en `src/assets/images/inicio/` |
-| Carrusel institucional | `src/components/programaAcademico/institucionalCarouselData.ts` |
-| Tablas de horas complementarias | `src/data/horasCompTablas.es.json` y `horasCompTablas.en.json` |
-| Favicon y título de pestaña | `public/favicon.png` e `index.html` |
+| Qué actualizar | Dónde (clic para abrir) |
+|----------------|-------------------------|
+| Textos de interfaz | [`es.json`](src/i18n/locales/es.json) · [`en.json`](src/i18n/locales/en.json) |
+| Convocatorias del inicio | [`convocatoriasData.ts`](src/components/inicio/convocatoriasData.ts) + [`images/inicio/convocatorias/`](src/assets/images/inicio/convocatorias/) |
+| Carrusel institucional | [`institucionalCarouselData.ts`](src/components/programaAcademico/institucionalCarouselData.ts) + [`images/programaacademico/carrusel/`](src/assets/images/programaacademico/carrusel/) |
+| Tablas de horas complementarias | [`horasCompTablas.es.json`](src/data/horasCompTablas.es.json) · [`horasCompTablas.en.json`](src/data/horasCompTablas.en.json) |
+| Favicon y título de pestaña | [`favicon.png`](public/favicon.png) · [`index.html`](index.html) |
 
 ---
 

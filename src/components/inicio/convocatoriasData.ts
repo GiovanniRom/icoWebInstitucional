@@ -1,5 +1,5 @@
-import convocatoriaImg from '../../assets/images/inicio/convocatoria.png'
-import convocatoria2Img from '../../assets/images/inicio/convocatoria2.png'
+import convocatoriaImg from '../../assets/images/inicio/convocatorias/convocatoria.png'
+import convocatoria2Img from '../../assets/images/inicio/convocatorias/convocatoria2.png'
 
 export type ConvocatoriaSlide = {
   readonly id: string

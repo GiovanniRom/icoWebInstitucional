@@ -50,7 +50,7 @@ Si algo falla:
 | En el menú | URL | Contenido principal |
 |------------|-----|---------------------|
 | Inicio | `/` | Accesos rápidos + carrusel de convocatorias |
-| Programa académico | `/programa-academico` | Misión/visión, grid académico, carrusel institucional |
+| Programa académico | `/programa-academico` | Misión/visión, grid académico, carrusel institucional (laterales + centro rotatorio) |
 | Soy alumno | `/soy-alumno` | Accesos, calendario, tutores, prácticas de redes, etc. |
 | → Horarios | `/soy-alumno/horarios` | Horarios embebidos |
 | → Extraordinarios | `/soy-alumno/extraordinarios` | PDFs de extraordinarios |
@@ -90,16 +90,16 @@ Guía detallada: [`mantenimiento/i18next-traducciones.md`](mantenimiento/i18next
 
 Usa esta tabla como índice rápido. Para el detalle paso a paso, abre la guía enlazada.
 
-| Tarea | Dónde tocar | Guía |
-|-------|-------------|------|
-| Cambiar un título o párrafo de la interfaz | `es.json` / `en.json` | [i18n](mantenimiento/i18next-traducciones.md) |
-| Actualizar imágenes del carrusel de inicio | `src/assets/images/inicio/` + `convocatoriasData.ts` | [Convocatorias](mantenimiento/inicio-carrusel-convocatorias.md) |
-| Actualizar carrusel de Programa académico | datos + imágenes en `programaAcademico/` | [Carrusel institucional](mantenimiento/programa-academico-carrusel-institucional.md) |
-| Cambiar calendario / tutores / prácticas | componentes e iframes en Soy alumno | [Iframes alumno](mantenimiento/soy-alumno-iframes-embebidos.md) |
-| Actualizar directorio de correos | Soy profesor / iframe | [Correos](mantenimiento/soy-profesor-iframe-correos.md) |
-| Editar ponderaciones de horas complementarias | `src/data/horasCompTablas.es.json` y `.en.json` | Sección 6 de esta guía |
-| Cambiar PDFs de extraordinarios | `src/assets/pdfs/` + componente relacionado | Código en `ExtraordinariosPdfs.tsx` |
-| Favicon o título de la pestaña | `public/favicon.png`, `index.html` | — |
+| Tarea | Dónde tocar (clic) | Guía |
+|-------|--------------------|------|
+| Cambiar un título o párrafo de la interfaz | [`es.json`](../src/i18n/locales/es.json) / [`en.json`](../src/i18n/locales/en.json) | [i18n](mantenimiento/i18next-traducciones.md) |
+| Actualizar imágenes del carrusel de inicio | [`convocatorias/`](../src/assets/images/inicio/convocatorias/) + [`convocatoriasData.ts`](../src/components/inicio/convocatoriasData.ts#L11) | [Convocatorias](mantenimiento/inicio-carrusel-convocatorias.md) |
+| Actualizar carrusel de Programa académico | [`carrusel/`](../src/assets/images/programaacademico/carrusel/) + [`institucionalCarouselData.ts`](../src/components/programaAcademico/institucionalCarouselData.ts#L12) | [Carrusel institucional](mantenimiento/programa-academico-carrusel-institucional.md) |
+| Cambiar calendario / tutores / prácticas | [`CalendarioEscolar.tsx`](../src/components/embeded/CalendarioEscolar.tsx#L5) · [`tutores.tsx`](../src/components/embeded/tutores.tsx#L203) · [`redesData.ts`](../src/components/alumno/redesData.ts#L12) | [Iframes alumno](mantenimiento/soy-alumno-iframes-embebidos.md) |
+| Actualizar directorio de correos | [`correo.tsx`](../src/components/embeded/correo.tsx#L98) | [Correos](mantenimiento/soy-profesor-iframe-correos.md) |
+| Editar tablas de horas complementarias | [`horasCompTablas.es.json`](../src/data/horasCompTablas.es.json) · [`horasCompTablas.en.json`](../src/data/horasCompTablas.en.json) | Sección 6 de esta guía |
+| Cambiar PDFs de extraordinarios | [`src/assets/pdfs/`](../src/assets/pdfs/) + [`ExtraordinariosPdfs.tsx`](../src/components/alumno/ExtraordinariosPdfs.tsx) | — |
+| Favicon o título de la pestaña | [`favicon.png`](../public/favicon.png) · [`index.html`](../index.html) | — |
 
 ### Flujo seguro para cualquier cambio
 
@@ -118,15 +118,15 @@ Página: `/soy-alumno/horas-comp`.
 ### Textos de la página (introducciones, títulos de tarjetas)
 
 - Claves bajo `pages.soyAlumno.formacionComp` en:
-  - `src/i18n/locales/es.json`
-  - `src/i18n/locales/en.json`
+  - [`src/i18n/locales/es.json`](../src/i18n/locales/es.json#L136)
+  - [`src/i18n/locales/en.json`](../src/i18n/locales/en.json#L136)
 
 ### Contenido de las tablas
 
-| Archivo | Idioma de la tabla |
-|---------|--------------------|
-| `src/data/horasCompTablas.es.json` | Español |
-| `src/data/horasCompTablas.en.json` | Inglés |
+| Archivo (clic) | Idioma de la tabla |
+|----------------|--------------------|
+| [`horasCompTablas.es.json`](../src/data/horasCompTablas.es.json) | Español |
+| [`horasCompTablas.en.json`](../src/data/horasCompTablas.en.json) | Inglés |
 
 Hay cuatro bloques: `culturales`, `deportivas`, `emprendimiento`, `investigacion`.
 
@@ -139,7 +139,7 @@ Hay cuatro bloques: `culturales`, `deportivas`, `emprendimiento`, `investigacion
 | `c1` | Actividad en una sola celda (cuando la fila no se divide) |
 | `c2` | Horas |
 
-**Importante:** la estructura visual (celdas unidas con `rowspan`, filas de ancho completo) está definida en código (`src/components/alumno/HorasCompTabla.tsx`).  
+**Importante:** la estructura visual (celdas unidas con `rowspan`, filas de ancho completo) está definida en código ([`HorasCompTabla.tsx`](../src/components/alumno/HorasCompTabla.tsx)).  
 Si solo cambias **textos o números**, edita los JSON.  
 Si necesitas **unir/separar filas o agregar columnas**, hace falta ajustar también ese componente (pide apoyo a alguien con experiencia en React).
 
@@ -247,7 +247,7 @@ Para quien asume el mantenimiento por primera vez:
 | [`README.md`](../README.md) | Instalación, stack, estructura, rutas |
 | [`mantenimiento/i18next-traducciones.md`](mantenimiento/i18next-traducciones.md) | Sistema de idiomas |
 | [`mantenimiento/inicio-carrusel-convocatorias.md`](mantenimiento/inicio-carrusel-convocatorias.md) | Carrusel de inicio |
-| [`mantenimiento/programa-academico-carrusel-institucional.md`](mantenimiento/programa-academico-carrusel-institucional.md) | Carrusel institucional |
+| [`mantenimiento/programa-academico-carrusel-institucional.md`](mantenimiento/programa-academico-carrusel-institucional.md) | Carrusel institucional (imágenes + rotación centrada) |
 | [`mantenimiento/soy-alumno-iframes-embebidos.md`](mantenimiento/soy-alumno-iframes-embebidos.md) | Calendario, tutores, prácticas |
 | [`mantenimiento/soy-profesor-iframe-correos.md`](mantenimiento/soy-profesor-iframe-correos.md) | Directorio de correos |
 

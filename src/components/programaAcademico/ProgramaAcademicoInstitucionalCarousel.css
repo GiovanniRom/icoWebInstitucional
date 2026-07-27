@@ -1,7 +1,8 @@
 .programa-academico-institucional-carousel {
   width: 100%;
-  max-width: 56rem;
+  max-width: 64rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .programa-academico-institucional-carousel__slider {
@@ -9,9 +10,36 @@
   margin: 0 !important;
 }
 
-.programa-academico-institucional-carousel__slider .slick-slider,
-.programa-academico-institucional-carousel__slider .slick-list,
-.programa-academico-institucional-carousel__slider .slick-track,
+.programa-academico-institucional-carousel__slider .slick-slider {
+  width: 100%;
+}
+
+.programa-academico-institucional-carousel__slider .slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding-block: 0.35rem;
+}
+
+.programa-academico-institucional-carousel__slider .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Las laterales se ven; solo el slide que llega al centro destaca */
+.programa-academico-institucional-carousel__slider .slick-slide {
+  opacity: 0.4;
+  transform: scale(0.82);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.programa-academico-institucional-carousel__slider .slick-slide.slick-center {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
 .programa-academico-institucional-carousel__slider .slick-slide > div {
   width: 100%;
 }
@@ -23,8 +51,10 @@
   width: 100%;
   min-height: 0;
   margin: 0;
-  padding: 0;
+  padding: 0 0.65rem;
   line-height: 0;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .programa-academico-institucional-carousel__imagen {
@@ -37,6 +67,7 @@
   object-fit: contain;
   object-position: center;
   border-radius: 0.5rem;
+  user-select: none;
 }
 
 .programa-academico-institucional-carousel__slider .slick-dots {
@@ -51,4 +82,14 @@
 .programa-academico-institucional-carousel__slider .slick-dots li.slick-active button {
   opacity: 1;
   background: var(--color-dorado);
+}
+
+@media (max-width: 768px) {
+  .programa-academico-institucional-carousel__slide {
+    padding: 0 0.35rem;
+  }
+
+  .programa-academico-institucional-carousel__imagen {
+    max-height: clamp(7rem, 36vw, 11rem);
+  }
 }

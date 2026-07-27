@@ -85,8 +85,9 @@
         "ariaLabel": "UNAM and Engineering in Aragón institutional identity",
         "todosSomosUnam": "#TodosSomosUNAM",
         "carouselLabel": "Program institutional gallery",
-        "carouselSlide1Alt": "Computer engineering program faculty",
-        "carouselSlide2Alt": "Computer engineering academic program",
+        "carouselSlide1Alt": "Computer engineering program institutional gallery, image 1",
+        "carouselSlide2Alt": "Computer engineering program institutional gallery, image 2",
+        "carouselSlide3Alt": "Computer engineering program institutional gallery, image 3",
         "hechoEnAragon": "#HechoEnAragón"
       },
       "misionVision": {

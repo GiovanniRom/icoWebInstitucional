@@ -85,8 +85,9 @@
         "ariaLabel": "Identidad institucional UNAM e Ingeniería en Aragón",
         "todosSomosUnam": "#TodosSomosUNAM",
         "carouselLabel": "Galería institucional del programa",
-        "carouselSlide1Alt": "Cuerpo académico del programa de ingeniería en computación",
-        "carouselSlide2Alt": "Programa académico de ingeniería en computación",
+        "carouselSlide1Alt": "Galería institucional del programa de ingeniería en computación, imagen 1",
+        "carouselSlide2Alt": "Galería institucional del programa de ingeniería en computación, imagen 2",
+        "carouselSlide3Alt": "Galería institucional del programa de ingeniería en computación, imagen 3",
         "hechoEnAragon": "#HechoEnAragón"
       },
       "misionVision": {

@@ -169,7 +169,10 @@
         "extraLine2": "extraordinarios",
         "formacion": "Horas de formación complementaria",
         "formacionLine1": "Horas de formación",
-        "formacionLine2": "complementaria"
+        "formacionLine2": "complementaria",
+        "laboratorios": "Laboratorios",
+        "laboratoriosLine1": "Laboratorios",
+        "laboratoriosLine2": ""
       },
       "practicaRedes": {
         "titulo": "Práctica de redes",

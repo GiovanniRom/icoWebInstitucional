@@ -4,6 +4,7 @@ import evalProfIcon from '../../assets/images/alumno/evalproficon.png'
 import horariosLabIcon from '../../assets/images/alumno/horarioslabicon.png'
 import extraIcon from '../../assets/images/alumno/extraicon.png'
 import formacionIcon from '../../assets/images/alumno/formacionicon.png'
+import laboratoriosIcon from '../../assets/images/alumno/laboratoriosicon.png'
 import './AlumnoAccesos.css'
 
 const ACCESOS = [
@@ -21,6 +22,12 @@ const ACCESOS = [
   },
   { id: 'extra', src: extraIcon, labelKey: 'extra', to: '/soy-alumno/extraordinarios' },
   { id: 'formacion', src: formacionIcon, labelKey: 'formacion', to: '/soy-alumno/horas-comp' },
+  {
+    id: 'laboratorios',
+    src: laboratoriosIcon,
+    labelKey: 'laboratorios',
+    href: 'https://sites.google.com/aragon.unam.mx/fes-aragon-l4/laboratorios',
+  },
 ] as const
 
 export function AlumnoAccesos() {
@@ -34,15 +41,16 @@ export function AlumnoAccesos() {
       <ul className="alumno-accesos__lista">
         {ACCESOS.map(({ id, src, labelKey, ...rest }) => {
           const ariaLabel = t(`pages.soyAlumno.accesos.${labelKey}`)
+          const line2 = t(`pages.soyAlumno.accesos.${labelKey}Line2`).trim()
           const tarjeta = (
             <span className="alumno-accesos__tarjeta">
               <span className="alumno-accesos__titulo">
                 <span className="alumno-accesos__titulo-linea">
                   {t(`pages.soyAlumno.accesos.${labelKey}Line1`)}
                 </span>
-                <span className="alumno-accesos__titulo-linea">
-                  {t(`pages.soyAlumno.accesos.${labelKey}Line2`)}
-                </span>
+                {line2 ? (
+                  <span className="alumno-accesos__titulo-linea">{line2}</span>
+                ) : null}
               </span>
               <img
                 src={src}

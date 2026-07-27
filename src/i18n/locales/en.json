@@ -169,7 +169,10 @@
         "extraLine2": "schedules",
         "formacion": "Complementary training hours",
         "formacionLine1": "Complementary",
-        "formacionLine2": "training hours"
+        "formacionLine2": "training hours",
+        "laboratorios": "Laboratories",
+        "laboratoriosLine1": "Laboratories",
+        "laboratoriosLine2": ""
       },
       "practicaRedes": {
         "titulo": "Network practicum",

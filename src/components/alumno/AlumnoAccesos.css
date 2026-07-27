@@ -5,7 +5,7 @@
 
 .alumno-accesos__lista {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: clamp(1rem, 2vw, 1.5rem);
   width: 100%;
   margin: 0;
@@ -110,6 +110,12 @@
 
   .alumno-accesos__boton:active .alumno-accesos__tarjeta {
     transform: translateY(-6px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .alumno-accesos__lista {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

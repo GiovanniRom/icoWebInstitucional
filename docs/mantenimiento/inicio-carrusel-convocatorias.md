@@ -109,7 +109,7 @@ En [`ConvocatoriasCarousel.tsx`](../../src/components/inicio/ConvocatoriasCarous
 
 | Constante / prop | Valor actual | Efecto |
 |------------------|--------------|--------|
-| `AUTOPLAY_MS` | `5000` | Milisegundos entre cambios (5 s) |
+| `AUTOPLAY_MS` | `2000` | Milisegundos entre cambios (2 s) |
 | `autoplay` | `true` | Rotación automática |
 | `effect` | `"fade"` | Transición entre slides |
 | `pauseOnHover` | `true` | Pausa al pasar el cursor |

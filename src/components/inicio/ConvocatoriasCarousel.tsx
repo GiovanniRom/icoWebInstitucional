@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { CONVOCATORIAS_SLIDES } from './convocatoriasData'
 import './ConvocatoriasCarousel.css'
 
-const AUTOPLAY_MS = 5000
+const AUTOPLAY_MS = 2000
 
 export function ConvocatoriasCarousel() {
   const { t } = useTranslation()

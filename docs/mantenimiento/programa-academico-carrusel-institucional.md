@@ -154,11 +154,15 @@ En [`ProgramaAcademicoInstitucionalCarousel.tsx`](../../src/components/programaA
 | `centerPadding` | `28%` (desktop) / `16%` (móvil) | Cuánto se ve de las imágenes vecinas |
 | `infinite` | `true` | Bucle continuo |
 | `focusOnSelect` | `true` | Clic en una lateral la lleva al centro |
-| `pauseOnHover` | `true` | Pausa al pasar el cursor |
+| `draggable` | `true` | Permite deslizar con el mouse (Ant Design v6 lo desactiva por defecto) |
+| `pauseOnHover` | `false` | El autoplay no se detiene al pasar el cursor |
+| `pauseOnFocus` | `false` | El autoplay no se detiene al enfocar una diapositiva |
 
 Para que se vea **más** o **menos** de las laterales, ajusta `centerPadding` (porcentaje mayor = más peek lateral).
 
 Para opacidad/escala del centro vs laterales, edita las reglas `.slick-slide` y `.slick-center` en el CSS.
+
+El autoplay se reactiva al entrar en pantalla (Intersection Observer) por si la sección queda fuera del viewport al cargar la página.
 
 ---
 
